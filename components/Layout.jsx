@@ -10,12 +10,14 @@ const Layout = (props) => {
     <>
       <HeadComponent styles={styles} />
 
-      <div class="container-page">
+      <div className="container-page">
         <Preloader />
         <Header />
-        <div class="wrapper">{children}</div>
+        {children}
         <Footer />
       </div>
+
+      <div className="cursor"></div>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-function portfolio() {
+const Portfolio = () => {
   return (
     <section className="lui-section lui-gradient-top" id="works-section">
       <div className="lui-heading">
@@ -100,7 +100,7 @@ function portfolio() {
                   </div>
                   <div
                     className="bg-img"
-                    style="background-image: url(assets/images/pat-2.png);"
+                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
                   ></div>
                 </div>
               </div>
@@ -138,7 +138,7 @@ function portfolio() {
                   </div>
                   <div
                     className="bg-img"
-                    style="background-image: url(assets/images/pat-2.png);"
+                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
                   ></div>
                 </div>
               </div>
@@ -160,10 +160,7 @@ function portfolio() {
                     </div>
                   </div>
                   <div className="desc">
-                    <span className="category">
-                      {" "}
-                      Development, UI UX Design{" "}
-                    </span>
+                    <span className="category">Development, UI UX Design</span>
                     <h5 className="name">
                       <a href="work-single.html">Explore</a>
                     </h5>
@@ -179,7 +176,7 @@ function portfolio() {
                   </div>
                   <div
                     className="bg-img"
-                    style="background-image: url(assets/images/pat-2.png);"
+                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
                   ></div>
                 </div>
               </div>
@@ -217,7 +214,7 @@ function portfolio() {
                   </div>
                   <div
                     className="bg-img"
-                    style="background-image: url(assets/images/pat-2.png);"
+                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
                   ></div>
                 </div>
               </div>
@@ -239,10 +236,7 @@ function portfolio() {
                     </div>
                   </div>
                   <div className="desc">
-                    <span className="category">
-                      {" "}
-                      Development, UI UX Design{" "}
-                    </span>
+                    <span className="category">Development, UI UX Design</span>
                     <h5 className="name">
                       <a href="work-single.html">Stay Fit</a>
                     </h5>
@@ -258,7 +252,7 @@ function portfolio() {
                   </div>
                   <div
                     className="bg-img"
-                    style="background-image: url(assets/images/pat-2.png);"
+                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
                   ></div>
                 </div>
               </div>
@@ -296,7 +290,7 @@ function portfolio() {
                   </div>
                   <div
                     className="bg-img"
-                    style="background-image: url(assets/images/pat-2.png);"
+                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
                   ></div>
                 </div>
               </div>
@@ -319,6 +313,6 @@ function portfolio() {
       </div>
     </section>
   );
-}
+};
 
-export default portfolio;
+export default Portfolio;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const hero = () => {
+const Hero = () => {
   return (
     <section
       className="lui-section lui-section-hero lui-gradient-top"
@@ -77,16 +77,17 @@ const hero = () => {
               <span className="circle circle-1"></span>
               <span
                 className="circle img-1"
-                style="background-image: url(assets/images/pat-1.png);"
+                style={{ backgroundImage: "url(assets/images/pat-1.png)" }}
               ></span>
               <span
                 className="circle img-2"
-                style="background-image: url(assets/images/pat-2.png);"
+                style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
               ></span>
               <span
                 className="circle img-3"
-                style="background-image: url(assets/images/pat-2.png);"
+                style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
               ></span>
+
               <div className="info-list">
                 <ul>
                   <li>
@@ -116,4 +117,4 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;

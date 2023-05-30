@@ -1,6 +1,6 @@
 import React from "react";
 
-function Skills() {
+const Skills = () => {
   return (
     <section className="lui-section lui-gradient-center" id="skills-section">
       <div className="lui-heading">
@@ -48,7 +48,7 @@ function Skills() {
                     </div>
                   </div>
                   <div className="dots">
-                    <div className="dot" style="width: 85%;">
+                    <div className="dot" style={{ width: "85%" }}>
                       <span></span>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ function Skills() {
                     </div>
                   </div>
                   <div className="dots">
-                    <div className="dot" style="width: 75%;">
+                    <div className="dot" style={{ width: "75%" }}>
                       <span></span>
                     </div>
                   </div>
@@ -106,7 +106,7 @@ function Skills() {
                     </div>
                   </div>
                   <div className="dots">
-                    <div className="dot" style="width: 75%;">
+                    <div className="dot" style={{ width: "75%" }}>
                       <span></span>
                     </div>
                   </div>
@@ -133,7 +133,7 @@ function Skills() {
                     </div>
                   </div>
                   <div className="dots">
-                    <div className="dot" style="width: 70%;">
+                    <div className="dot" style={{ width: "70%" }}>
                       <span></span>
                     </div>
                   </div>
@@ -164,7 +164,7 @@ function Skills() {
                     </div>
                   </div>
                   <div className="dots">
-                    <div className="dot" style="width: 90%;">
+                    <div className="dot" style={{ width: "90%" }}>
                       <span></span>
                     </div>
                   </div>
@@ -191,7 +191,7 @@ function Skills() {
                     </div>
                   </div>
                   <div className="dots">
-                    <div className="dot" style="width: 80%;">
+                    <div className="dot" style={{ width: "80%" }}>
                       <span></span>
                     </div>
                   </div>
@@ -212,6 +212,6 @@ function Skills() {
       </div>
     </section>
   );
-}
+};
 
 export default Skills;

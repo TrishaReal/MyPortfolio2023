@@ -1,6 +1,6 @@
 import React from "react";
 
-function contact() {
+const Contact = () => {
   return (
     <section className="lui-section lui-gradient-bottom" id="contact-section">
       <div className="lui-heading">
@@ -96,7 +96,7 @@ function contact() {
               >
                 <div
                   className="bg-img"
-                  style="background-image: url(assets/images/pat-1.png);"
+                  style={{ backgroundImage: "url(assets/images/pat-1.png)" }}
                 ></div>
                 <div className="contacts-form">
                   <form id="cform" method="post">
@@ -147,7 +147,7 @@ function contact() {
                       </div>
                     </div>
                   </form>
-                  <div className="alert-success" style="display: none;">
+                  <div className="alert-success" style={{ display: "none" }}>
                     <p>Thanks, your message is sent successfully.</p>
                   </div>
                 </div>
@@ -162,6 +162,6 @@ function contact() {
       </div>
     </section>
   );
-}
+};
 
-export default contact;
+export default Contact;

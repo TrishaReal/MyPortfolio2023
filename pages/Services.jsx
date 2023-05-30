@@ -53,8 +53,8 @@ const Services = () => {
                     See Pricing
                   </a>
                   <div
-                    className="image"
-                    style="background-image: url(assets/images/pat-2.png);"
+                    className="bg-img"
+                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
                   ></div>
                 </div>
               </div>
@@ -80,8 +80,8 @@ const Services = () => {
                     See Pricing
                   </a>
                   <div
-                    className="image"
-                    style="background-image: url(assets/images/pat-2.png);"
+                    className="bg-img"
+                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
                   ></div>
                 </div>
               </div>
@@ -105,8 +105,8 @@ const Services = () => {
                     See Pricing
                   </a>
                   <div
-                    className="image"
-                    style="background-image: url(assets/images/pat-2.png);"
+                    className="bg-img"
+                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
                   ></div>
                 </div>
               </div>
@@ -130,8 +130,8 @@ const Services = () => {
                     See Pricing
                   </a>
                   <div
-                    className="image"
-                    style="background-image: url(assets/images/pat-2.png);"
+                    className="bg-img"
+                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
                   ></div>
                 </div>
               </div>
@@ -156,8 +156,8 @@ const Services = () => {
                     See Pricing
                   </a>
                   <div
-                    className="image"
-                    style="background-image: url(assets/images/pat-2.png);"
+                    className="bg-img"
+                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
                   ></div>
                 </div>
               </div>

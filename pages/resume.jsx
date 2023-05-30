@@ -1,6 +1,6 @@
 import React from "react";
 
-function resume() {
+const Resume = () => {
   return (
     <section className="lui-section lui-gradient-bottom" id="resume-section">
       <div className="lui-heading">
@@ -212,6 +212,6 @@ function resume() {
       </div>
     </section>
   );
-}
+};
 
-export default resume;
+export default Resume;
