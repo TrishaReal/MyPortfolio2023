@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Header = () => {
@@ -7,14 +8,14 @@ const Header = () => {
         <div className="row">
           <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <div className="logo">
-              <a href="index.html">
+              <Link href="/">
                 <img
                   width="228"
                   height="38"
                   src="assets/images/logo2.png"
                   alt=""
                 />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
@@ -66,160 +67,80 @@ const Header = () => {
                       <div className="menu-full">
                         <ul className="menu-full">
                           <li className="menu-item">
-                            <a
+                            <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
-                              href="index.html"
+                              href="/"
                             >
                               Home
-                            </a>
+                            </Link>
                           </li>
                           <li className="menu-item">
-                            <a
+                            <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
                               href="#services-section"
                             >
                               Services
-                            </a>
+                            </Link>
                           </li>
                           <li className="menu-item">
-                            <a
+                            <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
                               href="#skills-section"
                             >
                               Skills
-                            </a>
+                            </Link>
                           </li>
                           <li className="menu-item">
-                            <a
+                            <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
                               href="#works-section"
                             >
                               Works
-                            </a>
+                            </Link>
                           </li>
                           <li className="menu-item">
-                            <a
+                            <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
                               href="#resume-section"
                             >
                               Resume
-                            </a>
+                            </Link>
                           </li>
+
                           <li className="menu-item">
-                            <a
-                              className="splitting-text-anim-2"
-                              data-splitting="chars"
-                              href="#testimonials-section"
-                            >
-                              Testimonials
-                            </a>
-                          </li>
-                          <li className="menu-item">
-                            <a
-                              className="splitting-text-anim-2"
-                              data-splitting="chars"
-                              href="#pricing-section"
-                            >
-                              Pricing
-                            </a>
-                          </li>
-                          <li className="menu-item">
-                            <a
-                              className="splitting-text-anim-2"
-                              data-splitting="chars"
-                              href="#blog-section"
-                            >
-                              Blog
-                            </a>
-                          </li>
-                          <li className="menu-item">
-                            <a
+                            <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
                               href="#contact-section"
                             >
                               Contact
-                            </a>
+                            </Link>
                           </li>
-                          <li className="menu-item menu-item-has-children has-children">
-                            <a
-                              className="splitting-text-anim-2"
-                              data-splitting="chars"
-                            >
-                              Pages
-                            </a>
-                            <ul className="sub-menu">
-                              <li className="menu-item">
-                                <a
-                                  className="splitting-text-anim-1"
-                                  data-splitting="chars"
-                                  href="works-list.html"
-                                >
-                                  Works (List)
-                                </a>
-                              </li>
-                              <li className="menu-item">
-                                <a
-                                  className="splitting-text-anim-1"
-                                  data-splitting="chars"
-                                  href="works.html"
-                                >
-                                  Works (Grid)
-                                </a>
-                              </li>
-                              <li className="menu-item">
-                                <a
-                                  className="splitting-text-anim-1"
-                                  data-splitting="chars"
-                                  href="work-single.html"
-                                >
-                                  Work Single Page
-                                </a>
-                              </li>
-                              <li className="menu-item">
-                                <a
-                                  className=" splitting-text-anim-1"
-                                  data-splitting="chars"
-                                  href="blog.html"
-                                >
-                                  Blog
-                                </a>
-                              </li>
-                              <li className="menu-item">
-                                <a
-                                  className="splitting-text-anim-1"
-                                  data-splitting="chars"
-                                  href="blog-single.html"
-                                >
-                                  Single Post
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
+                          
                         </ul>
                       </div>
 
                       <div className="menu-social-links">
                         <a
-                          href="http://dribbble.com"
+                          href="https://github.com/TrishaReal"
                           target="blank"
                           className="scrolla-element-anim-1"
-                          title="dribbble"
+                          title="github"
                         >
-                          <i className="fab fa-dribbble"></i>
+                         <i className="fab fa-github"></i>
                         </a>
                         <a
-                          href="http://twitter.com"
+                          href="https://www.linkedin.com/in/trishasairenereal/"
                           target="blank"
                           className="scrolla-element-anim-1"
                           title="twitter"
                         >
-                          <i className="fab fa-twitter"></i>
+                         <i className="fab fa-linkedin-in"></i>
                         </a>
                         <a
                           href="http://behance.com"

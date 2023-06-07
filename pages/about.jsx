@@ -1,6 +1,6 @@
 import React from "react";
 
-const Services = () => {
+const About = () => {
   return (
     <section className="lui-section lui-gradient-bottom" id="services-section">
       <div className="lui-heading">
@@ -9,17 +9,15 @@ const Services = () => {
             <h2
               className="m-title splitting-text-anim-1 scroll-animate"
               data-splitting="words"
-              data-animate="active"
-            >
-              <span> What I Do </span>
+              data-animate="active">
+              <span> About Me</span>
             </h2>
             <div
               className="m-subtitle splitting-text-anim-1 scroll-animate"
               data-splitting="words"
-              data-animate="active"
-            >
+              data-animate="active">
               <span>
-                my <b>Services</b>
+                my <b></b>
               </span>
             </div>
           </div>
@@ -30,8 +28,7 @@ const Services = () => {
         <div className="container">
           <div
             className="swiper-container js-services scrolla-element-anim-1 scroll-animate"
-            data-animate="active"
-          >
+            data-animate="active">
             <div className="swiper-wrapper">
               <div className="swiper-slide">
                 <div className="services-item">
@@ -54,8 +51,9 @@ const Services = () => {
                   </a> */}
                   <div
                     className="bg-img"
-                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
-                  ></div>
+                    style={{
+                      backgroundImage: "url(assets/images/pat-2.png)",
+                    }}></div>
                 </div>
               </div>
               <div className="swiper-slide">
@@ -81,8 +79,9 @@ const Services = () => {
                   </a>
                   <div
                     className="bg-img"
-                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
-                  ></div>
+                    style={{
+                      backgroundImage: "url(assets/images/pat-2.png)",
+                    }}></div>
                 </div>
               </div>
             </div>
@@ -90,7 +89,7 @@ const Services = () => {
           </div>
 
           <div className="lui-bgtitle">
-            <span> Services </span>
+            <span> About Me </span>
           </div>
         </div>
       </div>
@@ -98,4 +97,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default About;

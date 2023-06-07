@@ -1,8 +1,12 @@
 import React from "react";
 
 const Contact = () => {
+  const handleClick = () => {
+    document.getElementById("cform").submit();
+  };
+
   return (
-    <section className="lui-section lui-gradient-bottom" id="contact-section">
+    <section className="lui-section lui-gradient-top" id="contact-section">
       <div className="lui-heading">
         <div className="container">
           <div className="m-titles align-center">
@@ -137,11 +141,7 @@ const Contact = () => {
                         <div className="terms-label">
                           * Accept the terms and conditions.
                         </div>
-                        <a
-                          href="#"
-                          className="btn"
-                          onclick="$('#cform').submit(); return false;"
-                        >
+                        <a href="#" className="btn" onClick={handleClick}>
                           <span>Send Message</span>
                         </a>
                       </div>

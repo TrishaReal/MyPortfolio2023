@@ -9,15 +9,13 @@ const Portfolio = () => {
             <h2
               className="m-title splitting-text-anim-1 scroll-animate"
               data-splitting="words"
-              data-animate="active"
-            >
+              data-animate="active">
               <span> Portfolio </span>
             </h2>
             <div
               className="m-subtitle splitting-text-anim-1 scroll-animate"
               data-splitting="words"
-              data-animate="active"
-            >
+              data-animate="active">
               <span>
                 my <b>Cases</b>
               </span>
@@ -31,20 +29,17 @@ const Portfolio = () => {
           <div className="works-box">
             <div
               className="filter-links scrolla-element-anim-1 scroll-animate"
-              data-animate="active"
-            >
+              data-animate="active">
               <a
                 href="#"
                 className="lui-subtitle active"
-                data-href=".works-col"
-              >
+                data-href=".works-col">
                 All
               </a>
               <a
                 href="#"
                 className="lui-subtitle"
-                data-href=".sorting-ui-ux-design"
-              >
+                data-href=".sorting-ui-ux-design">
                 UI UX Design
               </a>
               <a href="#" className="lui-subtitle" data-href=".sorting-photo">
@@ -53,15 +48,13 @@ const Portfolio = () => {
               <a
                 href="#"
                 className="lui-subtitle"
-                data-href=".sorting-development"
-              >
+                data-href=".sorting-development">
                 Development
               </a>
               <a
                 href="#"
                 className="lui-subtitle"
-                data-href=".sorting-branding"
-              >
+                data-href=".sorting-branding">
                 Branding
               </a>
             </div>
@@ -69,8 +62,7 @@ const Portfolio = () => {
               <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-branding sorting-photo ">
                 <div
                   className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
+                  data-animate="active">
                   <div className="image">
                     <div className="img">
                       <a href="work-single.html">
@@ -100,15 +92,15 @@ const Portfolio = () => {
                   </div>
                   <div
                     className="bg-img"
-                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
-                  ></div>
+                    style={{
+                      backgroundImage: "url(assets/images/pat-2.png)",
+                    }}></div>
                 </div>
               </div>
               <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-branding sorting-ui-ux-design ">
                 <div
                   className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
+                  data-animate="active">
                   <div className="image">
                     <div className="img">
                       <a href="work-single.html">
@@ -138,15 +130,15 @@ const Portfolio = () => {
                   </div>
                   <div
                     className="bg-img"
-                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
-                  ></div>
+                    style={{
+                      backgroundImage: "url(assets/images/pat-2.png)",
+                    }}></div>
                 </div>
               </div>
               <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development sorting-ui-ux-design ">
                 <div
                   className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
+                  data-animate="active">
                   <div className="image">
                     <div className="img">
                       <a href="work-single.html">
@@ -176,15 +168,15 @@ const Portfolio = () => {
                   </div>
                   <div
                     className="bg-img"
-                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
-                  ></div>
+                    style={{
+                      backgroundImage: "url(assets/images/pat-2.png)",
+                    }}></div>
                 </div>
               </div>
               <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-branding sorting-photo ">
                 <div
                   className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
+                  data-animate="active">
                   <div className="image">
                     <div className="img">
                       <a href="work-single.html">
@@ -214,15 +206,15 @@ const Portfolio = () => {
                   </div>
                   <div
                     className="bg-img"
-                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
-                  ></div>
+                    style={{
+                      backgroundImage: "url(assets/images/pat-2.png)",
+                    }}></div>
                 </div>
               </div>
               <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development sorting-ui-ux-design ">
                 <div
                   className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
+                  data-animate="active">
                   <div className="image">
                     <div className="img">
                       <a href="work-single.html">
@@ -252,15 +244,15 @@ const Portfolio = () => {
                   </div>
                   <div
                     className="bg-img"
-                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
-                  ></div>
+                    style={{
+                      backgroundImage: "url(assets/images/pat-2.png)",
+                    }}></div>
                 </div>
               </div>
               <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development sorting-photo ">
                 <div
                   className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
+                  data-animate="active">
                   <div className="image">
                     <div className="img">
                       <a href="work-single.html">
@@ -290,8 +282,9 @@ const Portfolio = () => {
                   </div>
                   <div
                     className="bg-img"
-                    style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
-                  ></div>
+                    style={{
+                      backgroundImage: "url(assets/images/pat-2.png)",
+                    }}></div>
                 </div>
               </div>
             </div>
@@ -299,8 +292,7 @@ const Portfolio = () => {
               <a
                 href="works.html"
                 className="btn scrolla-element-anim-1 scroll-animate"
-                data-animate="active"
-              >
+                data-animate="active">
                 <span>View More</span>
               </a>
             </div>

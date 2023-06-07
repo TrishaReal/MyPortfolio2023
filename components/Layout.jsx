@@ -11,13 +11,13 @@ const Layout = (props) => {
       <HeadComponent styles={styles} />
 
       <div className="container-page">
-        <Preloader />
+        {/* <Preloader /> */}
         <Header />
-        {children}
+        <div className="wrapper">{children}</div>
         <Footer />
       </div>
 
-      <div className="cursor"></div>
+      {/* <div className="cursor"></div> */}
     </>
   );
 };

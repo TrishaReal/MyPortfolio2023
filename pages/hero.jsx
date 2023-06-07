@@ -4,15 +4,13 @@ const Hero = () => {
   return (
     <section
       className="lui-section lui-section-hero lui-gradient-top"
-      id="started-section"
-    >
+      id="started-section">
       <div className="container">
         <div className="lui-started v-line v-line-left">
           <div className="section hero-started">
             <div
               className="content scrolla-element-anim-1 scroll-animate"
-              data-animate="active"
-            >
+              data-animate="active">
               <div className="titles">
                 <div className="lui-subtitle">
                   <span>
@@ -22,30 +20,30 @@ const Hero = () => {
                 <h1
                   className="title splitting-text-anim-1 scroll-animate"
                   data-splitting="chars"
-                  data-animate="active"
-                >
+                  data-animate="active">
                   <span>
-                    <b>Zoé</b> Miller
+                    <b>Trisha</b> Real
                   </span>
                 </h1>
                 <div className="label lui-subtitle">
-                  I am <strong>Web Developer</strong>
+                  I am <strong>React Web Developer</strong>
                 </div>
               </div>
               <div className="description">
                 <div>
                   <p>
-                    From France, Paris. I have rich experience in web design,
-                    also I am good at wordpress. I love to talk with you about
-                    our unique.
+                    A go-getter with a strong desire to try new things.
+                    Friendly, reflective, always up for a challenge, and loves
+                    learning. Expresses emotions through creativity, fueled by a
+                    passion for art, computers, and technology.
                   </p>
                 </div>
                 <div className="social-links">
                   <a target="_blank" rel="nofollow" href="#">
-                    <i aria-hidden="true" className="fab fa-twitter"></i>
+                    <i aria-hidden="true" className="fab fa-github"></i>
                   </a>
                   <a target="_blank" rel="nofollow" href="#">
-                    <i aria-hidden="true" className="fab fa-dribbble"></i>
+                    <i aria-hidden="true" className="fab fa-linkedin-in"></i>
                   </a>
                   <a target="_blank" rel="nofollow" href="#">
                     <i aria-hidden="true" className="fab fa-behance"></i>
@@ -56,8 +54,7 @@ const Hero = () => {
                 <a
                   target="_blank"
                   href="https://drive.google.com/"
-                  className="btn"
-                >
+                  className="btn">
                   <span>Download CV</span>
                 </a>
                 <a href="#skills-section" className="btn-lnk">
@@ -67,26 +64,28 @@ const Hero = () => {
             </div>
             <div
               className="slide scrolla-element-anim-1 scroll-animate"
-              data-animate="active"
-            >
+              data-animate="active">
               <img
                 decoding="async"
-                src="assets/images/profile2.png"
-                alt="&lt;b&gt;Zoé&lt;/b&gt; Miller"
+                src="assets/images/profile01.png"
+                alt="Trisha Sairene Real"
               />
               <span className="circle circle-1"></span>
               <span
                 className="circle img-1"
-                style={{ backgroundImage: "url(assets/images/pat-1.png)" }}
-              ></span>
+                style={{
+                  backgroundImage: "url(assets/images/pat-1.png)",
+                }}></span>
               <span
                 className="circle img-2"
-                style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
-              ></span>
+                style={{
+                  backgroundImage: "url(assets/images/pat-2.png)",
+                }}></span>
               <span
                 className="circle img-3"
-                style={{ backgroundImage: "url(assets/images/pat-2.png)" }}
-              ></span>
+                style={{
+                  backgroundImage: "url(assets/images/pat-2.png)",
+                }}></span>
 
               <div className="info-list">
                 <ul>
