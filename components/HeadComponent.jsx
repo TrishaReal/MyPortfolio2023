@@ -4,6 +4,8 @@ const HeadComponent = ({ styles }) => {
   return (
     <Head>
       <title>Trisha Sairene Real</title>
+      <link rel="icon" href="/icon01.png" />
+      {/* <link rel="icon" href="/3.png" /> */}
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />

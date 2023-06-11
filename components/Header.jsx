@@ -3,16 +3,16 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header ">
       <div className="header__builder">
         <div className="row">
           <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <div className="logo">
+            <div className="logo ">
               <Link href="/">
                 <img
                   width="228"
                   height="38"
-                  src="assets/images/logo2.png"
+                  src="assets/images/logo02.png"
                   alt=""
                 />
               </Link>
@@ -25,8 +25,7 @@ const Header = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   width="23"
                   height="23"
-                  viewBox="0 0 23 23"
-                >
+                  viewBox="0 0 23 23">
                   <path
                     id="Dark_Theme"
                     data-name="Dark Theme"
@@ -41,8 +40,7 @@ const Header = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   width="22.22"
                   height="22.313"
-                  viewBox="0 0 22.22 22.313"
-                >
+                  viewBox="0 0 22.22 22.313">
                   <path
                     id="Light_Theme"
                     data-name="Light Theme"
@@ -70,8 +68,7 @@ const Header = () => {
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
-                              href="/"
-                            >
+                              href="/">
                               Home
                             </Link>
                           </li>
@@ -79,17 +76,7 @@ const Header = () => {
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
-                              href="#services-section"
-                            >
-                              Services
-                            </Link>
-                          </li>
-                          <li className="menu-item">
-                            <Link
-                              className="splitting-text-anim-2"
-                              data-splitting="chars"
-                              href="#skills-section"
-                            >
+                              href="#skills-section">
                               Skills
                             </Link>
                           </li>
@@ -97,8 +84,7 @@ const Header = () => {
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
-                              href="#works-section"
-                            >
+                              href="#works-section">
                               Works
                             </Link>
                           </li>
@@ -106,8 +92,7 @@ const Header = () => {
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
-                              href="#resume-section"
-                            >
+                              href="#resume-section">
                               Resume
                             </Link>
                           </li>
@@ -116,12 +101,10 @@ const Header = () => {
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
-                              href="#contact-section"
-                            >
+                              href="#contact-section">
                               Contact
                             </Link>
                           </li>
-                          
                         </ul>
                       </div>
 
@@ -130,24 +113,21 @@ const Header = () => {
                           href="https://github.com/TrishaReal"
                           target="blank"
                           className="scrolla-element-anim-1"
-                          title="github"
-                        >
-                         <i className="fab fa-github"></i>
+                          title="github">
+                          <i className="fab fa-github"></i>
                         </a>
                         <a
                           href="https://www.linkedin.com/in/trishasairenereal/"
                           target="blank"
                           className="scrolla-element-anim-1"
-                          title="twitter"
-                        >
-                         <i className="fab fa-linkedin-in"></i>
+                          title="twitter">
+                          <i className="fab fa-linkedin-in"></i>
                         </a>
                         <a
-                          href="http://behance.com"
+                          href="https://www.behance.net/trishasairenereal"
                           target="blank"
                           className="scrolla-element-anim-1"
-                          title="behance"
-                        >
+                          title="behance">
                           <i className="fab fa-behance"></i>
                         </a>
                       </div>

@@ -53,7 +53,7 @@ const Hero = () => {
               <div className="bts">
                 <a
                   target="_blank"
-                  href="https://drive.google.com/"
+                  href="/assets/CV_TrishaS.Real.pdf"
                   className="btn">
                   <span>Download CV</span>
                 </a>
@@ -90,17 +90,15 @@ const Hero = () => {
               <div className="info-list">
                 <ul>
                   <li>
-                    <span className="num">
-                      12 <strong>+</strong>
-                    </span>
+                    <span className="num">1{/* <strong>+</strong> */}</span>
                     <span className="value">
-                      Years of <strong>Experience</strong>
+                      Year of <strong>Experience</strong>
                     </span>
                   </li>
                   <li>
-                    <span className="num">330</span>
+                    <span className="num num-custom">100%</span>
                     <span className="value">
-                      Completed <strong>Projects</strong>
+                      Energy and <strong>Ambition</strong>
                     </span>
                   </li>
                 </ul>
