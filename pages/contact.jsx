@@ -136,7 +136,7 @@ const Contact = () => {
               data-splitting="words"
               data-animate="active">
               <span>
-                Let's <b>Talk About Ideas</b>
+                Let&apos;s <b>Talk About Ideas</b>
               </span>
             </div>
           </div>

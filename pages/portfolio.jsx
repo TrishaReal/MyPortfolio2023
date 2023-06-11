@@ -132,8 +132,8 @@ const Portfolio = () => {
                         Page, and a Contact Page. Users can search for the name
                         of any existing cocktail and receive all the
                         instructions to make and enjoy it. If their favorite
-                        cocktail is missing, they can reach out to us and we'll
-                        add it for them.
+                        cocktail is missing, they can reach out to us and
+                        we&apos;ll add it for them.
                       </p>
                     </div>
                     <a
@@ -193,8 +193,8 @@ const Portfolio = () => {
                       <p>
                         Designing a promotional flyer to raise awareness for a
                         theatrical performance on the International Day against
-                        Violence towards Women, featuring Franca Rame's powerful
-                        play, "Lo Stupro."
+                        Violence towards Women, featuring Franca Rame&apos;s
+                        powerful play, "Lo Stupro."
                       </p>
                     </div>
                     <a
@@ -293,13 +293,14 @@ const Portfolio = () => {
                       <a
                         href="https://www.behance.net/gallery/139222527/Linsostenibile-leggerezza-dellessere-Milan-Kundera"
                         target="_blank">
-                        Milan Kundera's Book
+                        Milan Kundera&apos;s Book
                       </a>
                     </h5>
                     <div className="text">
                       <p>
                         Study, analysis, and creation of the cover for Milan
-                        Kundera's novel "The Unbearable Lightness of Being".
+                        Kundera&apos;s novel "The Unbearable Lightness of
+                        Being".
                       </p>
                     </div>
                     <a
@@ -518,8 +519,8 @@ const Portfolio = () => {
                         End-of-year team project. We collaborated to create a
                         logo and brand identity for a Sardinian agricultural
                         industry. We interacted with the client to gather
-                        information and study the industry's image, which guided
-                        us in conceptualizing the brand.
+                        information and study the industry&apos;s image, which
+                        guided us in conceptualizing the brand.
                       </p>
                     </div>
                     <a

@@ -171,14 +171,14 @@ const Resume = () => {
                     <div className="text">
                       <div>
                         <p>
-                          Following the internship at this company, I'd the
+                          Following the internship at this company, I&apos;d the
                           opportunity to continue working with them, allowing me
                           to further enhance my skills and continue working in
                           the React JS team utilizing the M.E.R.N javascript
                           stack for various projects. In the short time that
-                          I've been working here, I've already had the chance to
-                          collaborate on projects for clients such as the
-                          Sardegna Region, Green Peace, Gaxa etc...
+                          I&apos;ve been working here, I&apos;ve already had the
+                          chance to collaborate on projects for clients such as
+                          the Sardegna Region, Green Peace, Gaxa etc...
                         </p>
                       </div>
                     </div>
@@ -200,7 +200,7 @@ const Resume = () => {
                     <div className="text">
                       <div>
                         <p>
-                          I've taken on small commissioned projects such as
+                          I&apos;ve taken on small commissioned projects such as
                           creating invitations, making menu modifications for
                           pizzerias, designing banners for social media
                           profiles, and more. These freelance jobs have provided
