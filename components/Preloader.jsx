@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Preloader = () => {
@@ -6,8 +7,10 @@ const Preloader = () => {
       <div className="centrize full-width">
         <div className="vertical-center">
           <div className="spinner-logo">
-            <img
-              src="assets/images/logo02.png"
+            <Image
+              width={200}
+              height={200}
+              src="/assets/images/logo02.png"
               alt="Luique - Personal Portfolio HTML Template"
             />
             <div className="spinner-dot"></div>

@@ -26,7 +26,7 @@ const HeadComponent = ({ styles }) => {
 
       {styles?.map((style) => (
         <link
-          // key={style}
+          key={style}
           rel="stylesheet"
           href={style}
           type="text/css"

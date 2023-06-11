@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
@@ -65,9 +66,11 @@ const Hero = () => {
             <div
               className="slide scrolla-element-anim-1 scroll-animate"
               data-animate="active">
-              <img
+              <Image
+                width="1000"
+                height="1000"
                 decoding="async"
-                src="assets/images/profile01.png"
+                src="/assets/images/profile01.png"
                 alt="Trisha Sairene Real"
               />
               <span className="circle circle-1"></span>

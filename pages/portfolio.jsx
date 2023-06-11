@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Portfolio = () => {
@@ -57,9 +58,11 @@ const Portfolio = () => {
                       <a
                         href="https://github.com/TrishaReal/PickMe-REDUX"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/web-pickMe.png"
+                          src="/assets/images/web-pickMe.png"
                           alt="Pick Me NFT"
                         />
                         <span className="overlay"></span>
@@ -105,9 +108,11 @@ const Portfolio = () => {
                       <a
                         href="https://wiki-drink-website.netlify.app/"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/web-wikidrink.png"
+                          src="/assets/images/web-wikidrink.png"
                           alt=" Wiki Drink"
                         />
                         <span className="overlay"></span>
@@ -162,9 +167,11 @@ const Portfolio = () => {
                       <a
                         href="https://www.behance.net/gallery/139230679/Franca-Rame-Locandina-Evento"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/graphic-franca.jpg"
+                          src="/assets/images/graphic-franca.jpg"
                           alt=" Giù Le Mani"
                         />
                         <span className="overlay"></span>
@@ -213,9 +220,11 @@ const Portfolio = () => {
                       <a
                         href="https://ice-cream-menu-site.netlify.app/"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/web-niceCream.png"
+                          src="/assets/images/web-niceCream.png"
                           alt="Nice Cream"
                         />
                         <span className="overlay"></span>
@@ -267,9 +276,11 @@ const Portfolio = () => {
                       <a
                         href="https://www.behance.net/gallery/139222527/Linsostenibile-leggerezza-dellessere-Milan-Kundera"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/graphic-kundera.jpg"
+                          src="/assets/images/graphic-kundera.jpg"
                           alt="The Unbearable Lightness of Being"
                         />
                         <span className="overlay"></span>
@@ -314,9 +325,11 @@ const Portfolio = () => {
                       <a
                         href="https://www.behance.net/gallery/139229395/Kobe-Bryant-Through-The-Years"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/graphic-kobe.jpg"
+                          src="/assets/images/graphic-kobe.jpg"
                           alt="Through the years"
                         />
                         <span className="overlay"></span>
@@ -363,9 +376,11 @@ const Portfolio = () => {
                       <a
                         href="https://myfirst-color-grading-website.netlify.app/"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/web-colors.png"
+                          src="/assets/images/web-colors.png"
                           alt="Color Grading"
                         />
                         <span className="overlay"></span>
@@ -418,9 +433,11 @@ const Portfolio = () => {
                       <a
                         href="https://lista-vacanza.netlify.app/"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/web-vacation.png"
+                          src="/assets/images/web-vacation.png"
                           alt="Carousel Vacation Packages"
                         />
                         <span className="overlay"></span>
@@ -474,9 +491,11 @@ const Portfolio = () => {
                       <a
                         href="https://www.behance.net/gallery/139231125/Areila-Azienda-Agricola-%28Brand-Identity%29"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/graphic-areilà.jpg"
+                          src="/assets/images/graphic-areilà.jpg"
                           alt="Areilà"
                         />
                         <span className="overlay"></span>
@@ -526,9 +545,11 @@ const Portfolio = () => {
                       <a
                         href="https://www.behance.net/gallery/139230857/Lancome-Paris-La-Vie-Est-Belle"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/graphic-lancome.jpg"
+                          src="/assets/images/graphic-lancome.jpg"
                           alt="La vie est belle"
                         />
                         <span className="overlay"></span>
@@ -574,9 +595,11 @@ const Portfolio = () => {
                       <a
                         href="https://www.behance.net/gallery/139230133/Vanity-Fair-Lady-Gaga"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/graphic-gaga.jpg"
+                          src="/assets/images/graphic-gaga.jpg"
                           alt="Vanity Fair Cover"
                         />
                         <span className="overlay"></span>
@@ -622,9 +645,11 @@ const Portfolio = () => {
                       <a
                         href="https://my-first-to-do-list.netlify.app/"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/web-todolist.png"
+                          src="/assets/images/web-todolist.png"
                           alt="To do list"
                         />
                         <span className="overlay"></span>
@@ -680,9 +705,11 @@ const Portfolio = () => {
                       <a
                         href="https://first-parallax-website.netlify.app/"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/web-parallax.png"
+                          src="/assets/images/web-parallax.png"
                           alt="Parallax Web"
                         />
                         <span className="overlay"></span>
@@ -737,9 +764,11 @@ const Portfolio = () => {
                       <a
                         href="https://whatsapp-web-replica.netlify.app/#"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/web-whatsapp.png"
+                          src="/assets/images/web-whatsapp.png"
                           alt="Whatsapp Web"
                         />
                         <span className="overlay"></span>
@@ -794,9 +823,11 @@ const Portfolio = () => {
                       <a
                         href="https://youtube-replica-base.netlify.app/"
                         target="_blank">
-                        <img
+                        <Image
+                          width={300}
+                          height={240}
                           decoding="async"
-                          src="assets/images/web-yt.png"
+                          src="/assets/images/web-yt.png"
                           alt="Youtube Web"
                         />
                         <span className="overlay"></span>

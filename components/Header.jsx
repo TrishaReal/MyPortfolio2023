@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -9,10 +10,10 @@ const Header = () => {
           <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <div className="logo ">
               <Link href="/">
-                <img
+                <Image
                   width="228"
                   height="38"
-                  src="assets/images/logo02.png"
+                  src="/assets/images/logo02.png"
                   alt=""
                 />
               </Link>
