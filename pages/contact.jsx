@@ -258,35 +258,36 @@ const Contact = () => {
 
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-right terms-button">
                           {!valid && (
-                            <div className="terms-label warning-label">
-                              * Please fill out all fields correctly.
-                            </div>
+                            <>
+                              <div className="terms-label warning-label">
+                                * Please fill out all fields correctly.
+                              </div>
+
+                              <button
+                                href="#"
+                                className="btn btn-disabled"
+                                disabled>
+                                <span>Send Message</span>
+                              </button>
+                            </>
                           )}
 
                           {valid && (
-                            <div className="terms-label ready-label">
-                              Ready to send <span>✔</span>
-                            </div>
-                          )}
-                          {!valid && (
-                            <button
-                              href="#"
-                              className="btn btn-disabled"
-                              disabled>
-                              <span>Send Message</span>
-                            </button>
-                          )}
+                            <>
+                              <div className="terms-label ready-label">
+                                Ready to send <span>✔</span>
+                              </div>
 
-                          {valid && (
-                            <button
-                              href="#"
-                              className="btn"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                sendEmail();
-                              }}>
-                              <span>Send Message</span>
-                            </button>
+                              <button
+                                href="#"
+                                className="btn"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  sendEmail();
+                                }}>
+                                <span>Send Message</span>
+                              </button>
+                            </>
                           )}
                         </div>
                       </div>

@@ -1,5 +1,4 @@
 import Hero from "./hero";
-import Services from "./Services";
 import Portfolio from "./portfolio";
 import Resume from "./resume";
 import Contact from "./contact";
@@ -12,7 +11,6 @@ export default function Home(props) {
   return (
     <>
       <Hero />
-      {/* <Services /> */}
       <MySkills />
       <Portfolio />
       <Resume />

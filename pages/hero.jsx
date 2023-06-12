@@ -67,8 +67,8 @@ const Hero = () => {
               className="slide scrolla-element-anim-1 scroll-animate"
               data-animate="active">
               <Image
-                width="1000"
-                height="1000"
+                width={1000}
+                height={1000}
                 decoding="async"
                 src="/assets/images/profile01.png"
                 alt="Trisha Sairene Real"
