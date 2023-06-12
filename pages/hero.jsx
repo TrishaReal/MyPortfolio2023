@@ -1,7 +1,30 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
+import { Typewriter } from "react-simple-typewriter";
+import { motion, useAnimation } from "framer-motion";
 
 const Hero = () => {
+  const cloudControls = useAnimation();
+
+  const cloudAnimation = {
+    y: [-10, 10],
+    opacity: [1],
+    transition: {
+      duration: 1.5,
+      ease: "easeInOut",
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  };
+
+  const startCloudAnimation = async () => {
+    await cloudControls.start(cloudAnimation);
+  };
+
+  useEffect(() => {
+    startCloudAnimation();
+  }, []);
+
   return (
     <section
       className="lui-section lui-section-hero lui-gradient-top"
@@ -18,16 +41,35 @@ const Hero = () => {
                     Hello, <b>my name is</b>
                   </span>
                 </div>
-                <h1
+                <motion.h1
+                  initial={{ x: 0, opacity: 0 }}
+                  whileInView={{ x: [-225, 0], opacity: 1 }}
+                  transition={{ duration: 0.8 }}
                   className="title splitting-text-anim-1 scroll-animate"
                   data-splitting="chars"
                   data-animate="active">
                   <span>
                     <b>Trisha</b> Real
                   </span>
-                </h1>
+                </motion.h1>
+
                 <div className="label lui-subtitle">
-                  I am <strong>React Web Developer</strong>
+                  I am
+                  <strong>
+                    <Typewriter
+                      loop
+                      cursor
+                      cursorStyle="|"
+                      typeSpeed={70}
+                      deleteSpeed={50}
+                      delaySpeed={1000}
+                      words={[
+                        "Front-End Developer",
+                        "React Developer",
+                        "Graphic Designer",
+                      ]}
+                    />
+                  </strong>
                 </div>
               </div>
               <div className="description">
@@ -40,13 +82,22 @@ const Hero = () => {
                   </p>
                 </div>
                 <div className="social-links">
-                  <a target="_blank" rel="nofollow" href="#">
+                  <a
+                    target="_blank"
+                    rel="nofollow"
+                    href="https://github.com/TrishaReal">
                     <i aria-hidden="true" className="fab fa-github"></i>
                   </a>
-                  <a target="_blank" rel="nofollow" href="#">
+                  <a
+                    target="_blank"
+                    rel="nofollow"
+                    href="https://www.linkedin.com/in/trishasairenereal/">
                     <i aria-hidden="true" className="fab fa-linkedin-in"></i>
                   </a>
-                  <a target="_blank" rel="nofollow" href="#">
+                  <a
+                    target="_blank"
+                    rel="nofollow"
+                    href="https://www.behance.net/trishasairenereal">
                     <i aria-hidden="true" className="fab fa-behance"></i>
                   </a>
                 </div>
@@ -63,7 +114,10 @@ const Hero = () => {
                 </a>
               </div>
             </div>
-            <div
+            <motion.div
+              initial={{ x: 0, opacity: 0 }}
+              whileInView={{ x: [225, 0], opacity: 1 }}
+              transition={{ duration: 0.8 }}
               className="slide scrolla-element-anim-1 scroll-animate"
               data-animate="active">
               <Image
@@ -91,9 +145,11 @@ const Hero = () => {
                 }}></span>
 
               <div className="info-list">
-                <ul>
+                <motion.ul
+                  initial={{ x: 0, opacity: 0 }}
+                  animate={cloudControls}>
                   <li>
-                    <span className="num">1{/* <strong>+</strong> */}</span>
+                    <span className="num">1</span>
                     <span className="value">
                       Year of <strong>Experience</strong>
                     </span>
@@ -104,9 +160,9 @@ const Hero = () => {
                       Energy and <strong>Ambition</strong>
                     </span>
                   </li>
-                </ul>
+                </motion.ul>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className="lui-bgtitle">
             <span> Web Developer </span>
