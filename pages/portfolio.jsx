@@ -194,7 +194,7 @@ const Portfolio = () => {
                         Designing a promotional flyer to raise awareness for a
                         theatrical performance on the International Day against
                         Violence towards Women, featuring Franca Rame&apos;s
-                        powerful play, "Lo Stupro."
+                        powerful play, &ldquo;Lo Stupro.&rdquo;
                       </p>
                     </div>
                     <a
@@ -299,8 +299,8 @@ const Portfolio = () => {
                     <div className="text">
                       <p>
                         Study, analysis, and creation of the cover for Milan
-                        Kundera&apos;s novel "The Unbearable Lightness of
-                        Being".
+                        Kundera&apos;s novel &ldquo;The Unbearable Lightness of
+                        Being&rdquo;.
                       </p>
                     </div>
                     <a
@@ -343,7 +343,7 @@ const Portfolio = () => {
                       <a
                         href="https://www.behance.net/gallery/139229395/Kobe-Bryant-Through-The-Years"
                         target="_blank">
-                        Kobe Bryant <br /> "Through the years"
+                        Kobe Bryant <br /> &quot;Through the years&quot;
                       </a>
                     </h5>
                     <div className="text">
@@ -875,14 +875,6 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="load-more-link">
-              <a
-                href="works.html"
-                className="btn scrolla-element-anim-1 scroll-animate"
-                data-animate="active">
-                <span>View More</span>
-              </a>
-            </div> */}
           </div>
 
           <div className="lui-bgtitle">
