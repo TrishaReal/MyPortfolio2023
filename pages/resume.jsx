@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const Resume = () => {
   return (
@@ -27,15 +27,16 @@ const Resume = () => {
 
       <div className="v-line v-line-right">
         <div className="container">
-          <div className="row">
-            <Fade left>
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+          <div className="row d-flex flex-direction-row">
+
+            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <Fade direction="right">
                 <h5
                   className="history-title scrolla-element-anim-1 scroll-animate"
                   data-animate="active">
                   <span> Education </span>
                 </h5>
-
                 <div className="history-items">
                   <div
                     className="history-item lui-collapse-item opened scrolla-element-anim-1 scroll-animate"
@@ -53,21 +54,24 @@ const Resume = () => {
                       <div className="text">
                         <div>
                           <p>
-                            During a 6-month internship, I had the opportunity
-                            to revisit, enhance, and solidify my web programming
-                            skills, focusing primarily on the JavaScript
-                            language with the React Js library. Additionally, I
-                            gained experience in utilizing the M.E.R.N stack,
-                            which encompasses various JavaScript software tools.
+                            During a 6-month internship, I had the opportunity to
+                            revisit, enhance, and solidify my web programming
+                            skills, focusing primarily on the JavaScript language
+                            with the React Js library. Additionally, I gained
+                            experience in utilizing the M.E.R.N stack, which
+                            encompasses various JavaScript software tools.
                           </p>
                         </div>
                       </div>
                     </div>
-                  </div>
 
+                  </div>
                   <div
                     className="history-item lui-collapse-item scrolla-element-anim-1 scroll-animate"
                     data-animate="active">
+
+
+
                     <h6 className="name lui-collapse-btn">
                       <span> React Js and Redux </span>
                     </h6>
@@ -82,22 +86,23 @@ const Resume = () => {
                         <div>
                           <p>
                             UDEMY Course where I learned to create modern,
-                            performant, and responsive interfaces, the
-                            fundamental theory of the JSX language, creating
-                            reusable interface components, mastering the main
-                            React Hooks, gaining proficiency in using Redux,
-                            getting acquainted with the primary libraries used
-                            in the React ecosystemand last but not least
-                            creating custom hooks.
+                            performant, and responsive interfaces, the fundamental
+                            theory of the JSX language, creating reusable
+                            interface components, mastering the main React Hooks,
+                            gaining proficiency in using Redux, getting acquainted
+                            with the primary libraries used in the React
+                            ecosystemand last but not least creating custom hooks.
                           </p>
                         </div>
                       </div>
                     </div>
-                  </div>
 
+
+                  </div>
                   <div
                     className="history-item lui-collapse-item scrolla-element-anim-1 scroll-animate"
                     data-animate="active">
+
                     <h6 className="name lui-collapse-btn">
                       <span> Web Development </span>
                     </h6>
@@ -113,20 +118,21 @@ const Resume = () => {
                       <div className="text">
                         <div>
                           <p>
-                            Self-taught study in which I have focused on the
-                            main Front-End development languages such as: <br />{" "}
-                            - HTML5 <br />- CSS/CSS3/SASS: Media Queries,
-                            Flexbox, Grid, Animations <br /> - JAVASCRIPT:
-                            JQuery, Ajax Calls
+                            Self-taught study in which I have focused on the main
+                            Front-End development languages such as: <br /> -
+                            HTML5 <br />- CSS/CSS3/SASS: Media Queries, Flexbox,
+                            Grid, Animations <br /> - JAVASCRIPT: JQuery, Ajax
+                            Calls
                           </p>
                         </div>
                       </div>
                     </div>
-                  </div>
 
+                  </div>
                   <div
                     className="history-item lui-collapse-item scrolla-element-anim-1 scroll-animate"
                     data-animate="active">
+
                     <h6 className="name lui-collapse-btn">
                       <span> Graphic &amp; Web Deisgn</span>
                     </h6>
@@ -150,19 +156,22 @@ const Resume = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </Fade>
 
-            <Fade right>
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                  </div>
+
+                </div>
+              </Fade>
+            </div>
+
+
+            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <Fade direction="left">
                 <h5
                   className="history-title scrolla-element-anim-1 scroll-animate history-title-custom"
                   data-animate="active">
                   <span> Experience </span>
                 </h5>
-
                 <div className="history-items">
                   <div
                     className="history-item lui-collapse-item opened scrolla-element-anim-1 scroll-animate"
@@ -182,15 +191,14 @@ const Resume = () => {
                       <div className="text">
                         <div>
                           <p>
-                            Following the internship at this company, I&apos;d
-                            the opportunity to continue working with them,
-                            allowing me to further enhance my skills and
-                            continue working in the React JS team utilizing the
-                            M.E.R.N javascript stack for various projects. In
-                            the short time that I&apos;ve been working here,
-                            I&apos;ve already had the chance to collaborate on
-                            projects for clients such as the Sardegna Region,
-                            Green Peace, Gaxa etc...
+                            Following the internship at this company, I&apos;d the
+                            opportunity to continue working with them, allowing me
+                            to further enhance my skills and continue working in
+                            the React JS team utilizing the M.E.R.N javascript
+                            stack for various projects. In the short time that
+                            I&apos;ve been working here, I&apos;ve already had the
+                            chance to collaborate on projects for clients such as
+                            the Sardegna Region, Green Peace, Gaxa etc...
                           </p>
                         </div>
                       </div>
@@ -212,13 +220,12 @@ const Resume = () => {
                       <div className="text">
                         <div>
                           <p>
-                            I&apos;ve taken on small commissioned projects such
-                            as creating invitations, making menu modifications
-                            for pizzerias, designing banners for social media
-                            profiles, and more. These freelance jobs have
-                            provided me with valuable experience and
-                            opportunities to continuously apply and enhance my
-                            skills.
+                            I&apos;ve taken on small commissioned projects such as
+                            creating invitations, making menu modifications for
+                            pizzerias, designing banners for social media
+                            profiles, and more. These freelance jobs have provided
+                            me with valuable experience and opportunities to
+                            continuously apply and enhance my skills.
                           </p>
                         </div>
                       </div>
@@ -241,8 +248,8 @@ const Resume = () => {
                         <div>
                           <p>
                             After graduating from high school, I worked as a
-                            babysitter/personal nanny. This kind of job allowed
-                            me to acquire various soft skills, including time
+                            babysitter/personal nanny. This kind of job allowed me
+                            to acquire various soft skills, including time
                             management, safety awareness, discipline strategies,
                             stress management, patience, problem-solving and
                             conflict resolution, event planning, communication,
@@ -269,22 +276,25 @@ const Resume = () => {
                       <div className="text">
                         <div>
                           <p>
-                            Essential in every work sector are also the
-                            following skills I have acquired while working as a
-                            waitress: customer service orientation, ability to
-                            work in a team, kindness and politeness, resilience
-                            to fatigue and stress, dynamism and speed, precision
-                            and attention to detail, flexibility, reliability,
-                            and honesty.
+                            Essential in every work sector are also the following
+                            skills I have acquired while working as a waitress:
+                            customer service orientation, ability to work in a
+                            team, kindness and politeness, resilience to fatigue
+                            and stress, dynamism and speed, precision and
+                            attention to detail, flexibility, reliability, and
+                            honesty.
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </Fade>
+              </Fade>
+            </div>
+
           </div>
+
+
 
           <div className="lui-bgtitle">
             <span> History </span>

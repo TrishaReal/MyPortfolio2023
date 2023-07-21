@@ -1,5 +1,4 @@
-import React from "react";
-import { Slide, Flip } from "react-reveal";
+import { Slide } from "react-awesome-reveal";
 
 const MySkills = () => {
   return (
@@ -31,8 +30,9 @@ const MySkills = () => {
         <div className="container pt-4 ">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 pb-5">
-              <Flip right cascade>
-                <div className="numbers-items">
+              <div className="numbers-items">
+                <Slide cascade damping={0.1}>
+
                   <div
                     className="numbers-item scrolla-element-anim-1 scroll-animate"
                     data-animate="active">
@@ -72,12 +72,15 @@ const MySkills = () => {
                       <span> Italian, English, Tagalog, Spanish</span>
                     </div>
                   </div>
-                </div>
-              </Flip>
+                </Slide>
+              </div>
+
             </div>
             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-              <Slide right cascade>
-                <div className="skills-items">
+              <div className="skills-items">
+                <Slide cascade damping={0.1} direction="right" className="slide">
+
+
                   <div
                     className="skills-item scrolla-element-anim-1 scroll-animate"
                     data-animate="active">
@@ -168,12 +171,13 @@ const MySkills = () => {
                       </span>
                     </div>
                   </div>
-                </div>
-              </Slide>
+
+                </Slide>
+              </div>
             </div>
             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-              <Slide right cascade>
-                <div className="skills-items">
+              <div className="skills-items">
+                <Slide cascade damping={0.1} direction="right" className="slide">
                   <div
                     className="skills-item scrolla-element-anim-1 scroll-animate"
                     data-animate="active">
@@ -246,8 +250,8 @@ const MySkills = () => {
                       </span>
                     </div>
                   </div>
-                </div>
-              </Slide>
+                </Slide>
+              </div>
             </div>
           </div>
 

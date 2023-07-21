@@ -114,12 +114,7 @@ const Hero = () => {
                 </a>
               </div>
             </div>
-            <motion.div
-              initial={{ x: 0, opacity: 0 }}
-              whileInView={{ x: [225, 0], opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              className="slide scrolla-element-anim-1 scroll-animate"
-              data-animate="active">
+            <div className="slide scrolla-element-anim-1 scroll-animate">
               <Image
                 width={1000}
                 height={1000}
@@ -162,7 +157,7 @@ const Hero = () => {
                   </li>
                 </motion.ul>
               </div>
-            </motion.div>
+            </div>
           </div>
           <div className="lui-bgtitle">
             <span> Web Developer </span>

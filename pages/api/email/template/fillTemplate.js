@@ -40,15 +40,21 @@ const fillTemplate = (data) => {
             <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
                 <title>${options?.title}</title>
-                <style>
-                @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+                <style>
+                @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
+                </style>
                 /* -------------------------------------
                     GLOBAL RESETS
                 ------------------------------------- */
                 
                 /*All the styling goes here*/
+
+                
                 
                 img {
                     border: none;
@@ -58,8 +64,8 @@ const fillTemplate = (data) => {
             
                 body {
                     background-color: transparent;
-    background-image: linear-gradient(0deg, #ffffff 0%, #f8ecdb 100%);
-                    font-family: 'Rubik', sans-serif;
+                    background-image: linear-gradient(0deg, #ffffff 0%, #f3efe8 100%);
+                    font-family: "Jost", sans-serif;
                     -webkit-font-smoothing: antialiased;
                     font-size: 16px;
                     line-height: 1.4;
@@ -75,7 +81,7 @@ const fillTemplate = (data) => {
                     mso-table-rspace: 0pt;
                     width: 100%; }
                     table td {
-                    font-family: 'Rubik', sans-serif;
+                    font-family: "Jost", sans-serif;
                     font-size: 16px;
                     vertical-align: top; 
                 }
@@ -86,7 +92,7 @@ const fillTemplate = (data) => {
             
                 .body {
                     background-color: transparent;
-    background-image: linear-gradient(0deg, #ffffff 0%, #f8ecdb 100%);
+                    background-image: linear-gradient(0deg, #ffffff 0%, #f3efe8 100%);
                     width: 100%; 
                 }
             
@@ -114,9 +120,9 @@ const fillTemplate = (data) => {
                 ------------------------------------- */
                 .main {
                     background: #ffffff;
-                    border-radius: 10px;
                     width: 100%; 
-                    border: 2px #000 solid;
+                    border: 2px solid #000;
+                    border-radius: 30px;
                 }
             
                 .wrapper {
@@ -153,7 +159,7 @@ const fillTemplate = (data) => {
                 h3,
                 h4 {
                     color: #000000;
-                    font-family: 'Rubik', sans-serif;
+                    font-family: "Jost", sans-serif;
                     font-weight: 400;
                     line-height: 1.4;
                     margin: 0;
@@ -170,7 +176,7 @@ const fillTemplate = (data) => {
                 p,
                 ul,
                 ol {
-                    font-family: 'Rubik', sans-serif;
+                    font-family: "Jost", sans-serif;
                     font-size: 16px;
                     font-weight: normal;
                     margin: 0;
@@ -207,29 +213,59 @@ const fillTemplate = (data) => {
                     text-align: center; 
                 }
                     .btn a {
-                    background-color: #ffffff;
-                    border: solid 1px #000;
-                    border-radius: 5px;
-                    box-sizing: border-box;
-                    color: #5C64CF;
-                    cursor: pointer;
-                    display: inline-block;
-                    font-size: 16px;
-                    font-weight: bold;
-                    margin: 0;
-                    padding: 10px 20px;
-                    text-decoration: none;
-                    text-transform: capitalize; 
+                        padding: 0 40px;
+                        position: relative;
+                        overflow: hidden;
+                        display: inline-block;
+                        vertical-align: top;
+                        font-size: 13px;
+                        color: #000;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.05em;
+                        height: 56px;
+                        line-height: 52px;
+                        text-align: center;
+                        text-decoration: none;
+                        outline: none !important;
+                        cursor: pointer;
+                        transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
+                        -webkit-transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
+                        border: 2px solid #000;
+                        background: transparent;
+                        box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+                        border-radius: 56px;
+                        -webkit-border-radius: 56px;
                 }
             
                 .btn-primary table td {
-                    background-color: #5C64CF; 
+                    background-color: trasparent; 
                 }
             
                 .btn-primary a {
-                    background-color: #5C64CF;
-                    border-color: #5C64CF;
-                    color: #ffffff; 
+                    padding: 0 40px;
+                    position: relative;
+                    overflow: hidden;
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 13px;
+                    color: #000;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                    height: 56px;
+                    line-height: 52px;
+                    text-align: center;
+                    text-decoration: none;
+                    outline: none !important;
+                    cursor: pointer;
+                    transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
+                    -webkit-transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
+                    border: 2px solid #000;
+                    background: transparent;
+                    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+                    border-radius: 56px;
+                    -webkit-border-radius: 56px;
                 }
             
                 /* -------------------------------------
@@ -368,13 +404,13 @@ const fillTemplate = (data) => {
                     font-weight: inherit;
                     line-height: inherit;
                     }
-                    .btn-primary table td:hover {
-                    background-color: #34495e !important; 
-                    }
-                    .btn-primary a:hover {
-                    background-color: #34495e !important;
-                    border-color: #34495e !important; 
-                    } 
+                    // .btn-primary table td:hover {
+                    // background-color: #34495e !important; 
+                    // }
+                    // .btn-primary a:hover {
+                    // background-color: #34495e !important;
+                    // border-color: #34495e !important; 
+                    // } 
                 }
             
                 </style>
@@ -401,11 +437,10 @@ const fillTemplate = (data) => {
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                                         <tbody>
                                             
-                                            ${
-                                                (options?.callToAction &&
-                                                    options?.callToAction
-                                                        ?.active &&
-                                                    `<tr>
+                                            ${(options?.callToAction &&
+                    options?.callToAction
+                        ?.active &&
+                    `<tr>
                                                     <td align="left">
                                                         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                                             <tbody>
@@ -416,8 +451,8 @@ const fillTemplate = (data) => {
                                                         </table>
                                                     </td>
                                                 </tr>`) ||
-                                                ''
-                                            }
+                ''
+                }
                                             
                                         </tbody>
                                     </table>
@@ -436,27 +471,25 @@ const fillTemplate = (data) => {
                         <!-- START FOOTER -->
                         <div class="footer">
                             <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                ${
-                                    (options?.unsubscribe &&
-                                        options?.unsubscribe?.active &&
-                                        `<tr>
+                                ${(options?.unsubscribe &&
+                    options?.unsubscribe?.active &&
+                    `<tr>
                                         <td class="content-block">
                                             <span class="apple-link"></span>
                                             <br> ${options?.unsubscribe?.message} <a href=${options?.unsubscribe?.href}>${options?.unsubscribe?.name}</a>.
                                         </td>
                                     </tr>`) ||
-                                    ''
-                                }
-                                ${
-                                    (options?.footer &&
-                                        options?.footer?.active &&
-                                        `<tr>
+                ''
+                }
+                                ${(options?.footer &&
+                    options?.footer?.active &&
+                    `<tr>
                                         <td class="content-block powered-by">
                                             ${options?.footer?.name} <a>${options?.footer?.message}</a>.
                                         </td>
                                     </tr>`) ||
-                                    ''
-                                }
+                ''
+                }
                             </table>
                         </div>
                         <!-- END FOOTER -->
@@ -495,7 +528,7 @@ const fillTemplate = (data) => {
                 body {
                     background-color: transparent;
     background-image: linear-gradient(0deg, #ffffff 0%, #f8ecdb 100%);
-                    font-family: 'Rubik', sans-serif;
+                    font-family: "Jost", sans-serif;
                     -webkit-font-smoothing: antialiased;
                     font-size: 16px;
                     line-height: 1.4;
@@ -511,7 +544,7 @@ const fillTemplate = (data) => {
                     mso-table-rspace: 0pt;
                     width: 100%; }
                     table td {
-                    font-family: 'Rubik', sans-serif;
+                    font-family: "Jost", sans-serif;
                     font-size: 16px;
                     vertical-align: top; 
                 }
@@ -589,7 +622,7 @@ const fillTemplate = (data) => {
                 h3,
                 h4 {
                     color: #000000;
-                    font-family: 'Rubik', sans-serif;
+                    font-family: "Jost", sans-serif;
                     font-weight: 400;
                     line-height: 1.4;
                     margin: 0;
@@ -606,7 +639,7 @@ const fillTemplate = (data) => {
                 p,
                 ul,
                 ol {
-                    font-family: 'Rubik', sans-serif;
+                    font-family: "Jost", sans-serif;
                     font-size: 16px;
                     font-weight: normal;
                     margin: 0;
@@ -835,11 +868,10 @@ const fillTemplate = (data) => {
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                                         <tbody>
                                             
-                                            ${
-                                                (options?.callToAction &&
-                                                    options?.callToAction
-                                                        ?.active &&
-                                                    `<tr>
+                                            ${(options?.callToAction &&
+                    options?.callToAction
+                        ?.active &&
+                    `<tr>
                                                     <td align="left">
                                                         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                                             <tbody>
@@ -850,8 +882,8 @@ const fillTemplate = (data) => {
                                                         </table>
                                                     </td>
                                                 </tr>`) ||
-                                                ''
-                                            }
+                ''
+                }
                                             
                                         </tbody>
                                     </table>
@@ -870,27 +902,25 @@ const fillTemplate = (data) => {
                         <!-- START FOOTER -->
                         <div class="footer">
                             <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                ${
-                                    (options?.unsubscribe &&
-                                        options?.unsubscribe?.active &&
-                                        `<tr>
+                                ${(options?.unsubscribe &&
+                    options?.unsubscribe?.active &&
+                    `<tr>
                                         <td class="content-block">
                                             <span class="apple-link"></span>
                                             <br> ${options?.unsubscribe?.message} <a href=${options?.unsubscribe?.href}>${options?.unsubscribe?.name}</a>.
                                         </td>
                                     </tr>`) ||
-                                    ''
-                                }
-                                ${
-                                    (options?.footer &&
-                                        options?.footer?.active &&
-                                        `<tr>
+                ''
+                }
+                                ${(options?.footer &&
+                    options?.footer?.active &&
+                    `<tr>
                                         <td class="content-block powered-by">
                                             ${options?.footer?.name} <a href=${options?.footer?.href}>${options?.footer?.message}</a>.
                                         </td>
                                     </tr>`) ||
-                                    ''
-                                }
+                ''
+                }
                             </table>
                         </div>
                         <!-- END FOOTER -->
@@ -928,7 +958,7 @@ const fillTemplate = (data) => {
                         body {
                             background-color: transparent;
     background-image: linear-gradient(0deg, #ffffff 0%, #f8ecdb 100%);
-                            font-family: 'Rubik', sans-serif;
+                            font-family: "Jost", sans-serif;
                             -webkit-font-smoothing: antialiased;
                             font-size: 16px;
                             line-height: 1.4;
@@ -944,7 +974,7 @@ const fillTemplate = (data) => {
                             mso-table-rspace: 0pt;
                             width: 100%; }
                             table td {
-                            font-family: 'Rubik', sans-serif;
+                            font-family: "Jost", sans-serif;
                             font-size: 16px;
                             vertical-align: top; 
                         }
@@ -1022,7 +1052,7 @@ const fillTemplate = (data) => {
                         h3,
                         h4 {
                             color: #000000;
-                            font-family: 'Rubik', sans-serif;
+                            font-family: "Jost", sans-serif;
                             font-weight: 400;
                             line-height: 1.4;
                             margin: 0;
@@ -1039,7 +1069,7 @@ const fillTemplate = (data) => {
                         p,
                         ul,
                         ol {
-                            font-family: 'Rubik', sans-serif;
+                            font-family: "Jost", sans-serif;
                             font-size: 16px;
                             font-weight: normal;
                             margin: 0;
@@ -1266,12 +1296,11 @@ const fillTemplate = (data) => {
                                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                                                 <tbody>
                                                     
-                                                    ${
-                                                        (options?.callToAction &&
-                                                            options
-                                                                ?.callToAction
-                                                                ?.active &&
-                                                            `<tr>
+                                                    ${(options?.callToAction &&
+                    options
+                        ?.callToAction
+                        ?.active &&
+                    `<tr>
                                                             <td align="left">
                                                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                                                     <tbody>
@@ -1282,8 +1311,8 @@ const fillTemplate = (data) => {
                                                                 </table>
                                                             </td>
                                                         </tr>`) ||
-                                                        ''
-                                                    }
+                ''
+                }
                                                     
                                                 </tbody>
                                             </table>
@@ -1302,27 +1331,25 @@ const fillTemplate = (data) => {
                                 <!-- START FOOTER -->
                                 <div class="footer">
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                        ${
-                                            (options?.unsubscribe &&
-                                                options?.unsubscribe?.active &&
-                                                `<tr>
+                                        ${(options?.unsubscribe &&
+                    options?.unsubscribe?.active &&
+                    `<tr>
                                                 <td class="content-block">
                                                     <span class="apple-link"></span>
                                                     <br> ${options?.unsubscribe?.message} <a href=${options?.unsubscribe?.href}>${options?.unsubscribe?.name}</a>.
                                                 </td>
                                             </tr>`) ||
-                                            ''
-                                        }
-                                        ${
-                                            (options?.footer &&
-                                                options?.footer?.active &&
-                                                `<tr>
+                ''
+                }
+                                        ${(options?.footer &&
+                    options?.footer?.active &&
+                    `<tr>
                                                 <td class="content-block powered-by">
                                                     ${options?.footer?.name} <a href=${options?.footer?.href}>${options?.footer?.message}</a>.
                                                 </td>
                                             </tr>`) ||
-                                            ''
-                                        }
+                ''
+                }
                                     </table>
                                 </div>
                                 <!-- END FOOTER -->

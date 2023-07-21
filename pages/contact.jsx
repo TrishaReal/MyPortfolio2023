@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
+import { Bounce, Fade, Slide } from "react-awesome-reveal";
 import toast, { Toaster } from "react-hot-toast";
-import { Flip, Bounce } from "react-reveal";
 
 const Contact = () => {
   const [fullName, setFullname] = useState("");
@@ -21,7 +21,7 @@ const Contact = () => {
       nameRegex.test(fullName) &&
       emailRegex.test(email) &&
       subject.length > 1 &&
-      message.length > 5
+      message.length > 10
     ) {
       setValid(true);
     } else setValid(false);
@@ -40,26 +40,26 @@ const Contact = () => {
     const greetingsEmail = {
       from: email,
       type: "greetings",
-      subject: "Grazie per avermi contatta!",
-      preheader: "Grazie per avermi contatta!",
-      greetings: `Gentile  <strong>${fullName}</strong>,`,
+      subject: "Thank you for contacting me!",
+      preheader: "Thank you for contacting me!",
+      greetings: `Dear <strong>${fullName}</strong>,`,
       message:
-        "Grazie per avermi contatta! <br> Esaminerò la tua richiesta e ti contatterò il prima possibile. <br> Nel frattempo seguimi su <b>LinkedIn</b> per altre informazioni. <br> <br> Cordiali Saluti, <br> Trisha.  ",
+        "Thank you for contacting me! <br> I will review your request and get back to you asap. <br> In the meantime, please follow me on <b>LinkedIn</b> for further updates. <br> <br>Have a great day and best regards, <br> Trisha.  ",
       callToAction: {
-        name: "Seguimi su LinkedIn",
+        name: "Follow me on LinkedIn",
         href: "https://www.linkedin.com/in/graphic-web-trisha",
         active: true,
       },
       conclusion: "",
       thanks: "",
       unsubscribe: {
-        name: "Annulla l'iscrizione",
+        name: "Cancel subscription",
         href: "http://localhost:3000/",
-        message: "Email invadenti?",
+        message: "Intrusive emails?",
         active: false,
       },
       footer: {
-        name: "© 2023, Offerta da",
+        name: "© 2023, Offer by",
         href: "https://trishasairenereal.vercel.app/",
         message: "trishasairenereal.vercel.app",
         active: true,
@@ -69,25 +69,25 @@ const Contact = () => {
     const summaryEmail = {
       from: email,
       type: "summary",
-      subject: "Congratulazioni Trisha, hai ricevuto una richiesta!",
-      preheader: "Congratulazioni Trisha, hai ricevuto una richiesta!",
-      greetings: `Ciao Trisha, <strong>${fullName}</strong> ti ha inviato un messaggio:`,
-      message: `<i>${message}</i>`,
+      subject: "Congratz Tri! You've just received a new request!",
+      preheader: "Congratz Tri! You've just received a new request!",
+      greetings: `Hey 3sha, <strong>${fullName}</strong> just sent you a message:`,
+      message: `" <i>${message}</i> "`,
       callToAction: {
         name: "",
         href: "https://trishasairenereal.vercel.app/",
         active: false,
       },
-      conclusion: `Rispondi e contatta <strong>${fullName}</strong> all'email: <strong>${email}</strong>.`,
-      thanks: "Buon Lavoro!",
+      conclusion: `Remember to reply and contact <strong>${fullName}</strong> at the email: <strong>${email}</strong>.`,
+      thanks: "Have a great day!",
       unsubscribe: {
-        name: "Annulla l'iscrizione",
+        name: "Cancel subscription",
         href: "http://localhost:3000/",
-        message: "Email invadenti?",
+        message: "Intrusive emails?",
         active: false,
       },
       footer: {
-        name: "© 2023, Offerta da",
+        name: "© 2023, Offer by",
         href: "https://trishasairenereal.vercel.app/",
         message: "trishasairenereal.vercel.app",
         active: true,
@@ -148,8 +148,8 @@ const Contact = () => {
         <div className="container ">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-5 pt-5">
-              <Flip left cascade>
-                <div className="numbers-items">
+              <div className="numbers-items">
+                <Slide cascade damping={0.1} >
                   <div
                     className="numbers-item scrolla-element-anim-1 scroll-animate"
                     data-animate="active">
@@ -189,8 +189,9 @@ const Contact = () => {
                       <span> +39 327 407 3331 </span>
                     </div>
                   </div>
-                </div>
-              </Flip>
+                </Slide>
+
+              </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-7">
               <div
@@ -201,17 +202,18 @@ const Contact = () => {
                   style={{
                     backgroundImage: "url(assets/images/pat-1.png)",
                   }}></div>
+                {!emailSent && (
+                  <div className="contacts-form">
 
-                <Bounce bottom>
-                  {!emailSent && (
-                    <div className="contacts-form">
-                      <form id="cform" method="POST">
+                    <form id="cform" method="POST">
+                      <Fade direction="right">
                         <div className="row">
                           <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <div className="group">
                               <label>
                                 Your Full Name <b>*</b>
                                 <input
+                                  className="text-capitalize"
                                   type="text"
                                   name="name"
                                   onChange={(e) => setFullname(e.target.value)}
@@ -250,14 +252,17 @@ const Contact = () => {
                           </div>
                           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div className="group">
-                              <label>
+                              <label className="msg-label">
                                 Your Message <b>*</b>
+                                <span className="txt-warn">(At least 10 characters)</span>
+                              </label>
+                              <div className="textarea-container">
                                 <textarea
                                   name="message"
                                   onChange={(e) =>
                                     setMessage(e.target.value)
                                   }></textarea>
-                              </label>
+                              </div>
                             </div>
                           </div>
 
@@ -296,13 +301,14 @@ const Contact = () => {
                             )}
                           </div>
                         </div>
-                      </form>
-                    </div>
-                  )}
-                </Bounce>
+                      </Fade>
+                    </form>
+                  </div>
+                )}
 
-                <Flip top>
-                  {emailSent && (
+                {emailSent && (
+                  <Bounce>
+
                     <div className="contacts-form contacts-form-confirmed">
                       <div className="msg-confirmed">
                         <svg
@@ -325,12 +331,13 @@ const Contact = () => {
                           href="#contact-section"
                           className="lnk back-to-form"
                           onClick={() => setEmailSent(false)}>
-                          Go Back
+                          Go Back to the form
                         </a>
+
                       </div>
                     </div>
-                  )}
-                </Flip>
+                  </Bounce>
+                )}
               </div>
             </div>
           </div>
@@ -339,10 +346,10 @@ const Contact = () => {
             <span> Contact Me </span>
           </div>
         </div>
-      </div>
+      </div >
 
       <Toaster position="top-center" reverseOrder={false} />
-    </section>
+    </section >
   );
 };
 

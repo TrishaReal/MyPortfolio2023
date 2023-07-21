@@ -1,5 +1,6 @@
 import fillTemplate from "./template/fillTemplate.js";
 
+console.log("CIAOOOO")
 export default function (req, res) {
   require("dotenv").config();
 
@@ -9,6 +10,14 @@ export default function (req, res) {
 
   if (data) {
     let promises = [];
+
+    console.log(
+      process.env.PORT_EMAIL,
+      process.env.HOST_EMAIL,
+      process.env.ACCOUNT_EMAIL,
+      process.env.APP_PASSWORD,
+      process.env.TRANSPORTER_SECURE
+    )
 
     for (let email of data) {
       const { from, subject, message, type } = email;
@@ -49,6 +58,7 @@ export default function (req, res) {
 
           transporter.sendMail(mailData, function (err, info) {
             if (err) {
+              console.log("bunaks")
               console.log(err);
               reject(res.status(500).send(err));
             } else {
