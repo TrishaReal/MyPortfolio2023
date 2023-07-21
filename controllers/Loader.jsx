@@ -15,6 +15,8 @@ const Loader = (props) => {
           window.location.origin
         ).toString();
 
+        console.log("----> ", absoluteUrl)
+
         const response = await fetch(absoluteUrl);
 
         const content = await response.text();
