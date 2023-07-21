@@ -15,7 +15,7 @@ const getInit = async () => {
     return [...cssPath];
   };
 
-  const styles = Loader("./pippo/assets/css");
+  const styles = Loader("./public/assets/css");
   const scripts = Loader("./public/assets/js/");
 
   return {
