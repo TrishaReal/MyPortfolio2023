@@ -15,8 +15,8 @@ const getInit = async () => {
     return [...cssPath];
   };
 
-  const styles = Loader("public/assets/css/");
-  const scripts = Loader("public/assets/js/");
+  const styles = Loader("/public/assets/css/");
+  const scripts = Loader("/public/assets/js/");
 
   return {
     styles: styles,
