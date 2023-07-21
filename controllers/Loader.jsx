@@ -12,7 +12,7 @@ const Loader = (props) => {
       list?.map(async (scriptUrl) => {
         const absoluteUrl = new URL(
           scriptUrl,
-          window.location.origin
+          'https://www.trishareal.com/'
         ).toString();
 
         console.log("----> ", absoluteUrl)
