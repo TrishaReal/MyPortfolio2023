@@ -12,7 +12,6 @@ const Loader = () => {
     "/assets/js/03_swiper.js",
     "/assets/js/04_splitting.js",
     "/assets/js/05_jarallax.min.js",
-    "/assets/js/jquery-appear.js",
     "/assets/js/06_magnific-popup.js",
     "/assets/js/07_imagesloaded.pkgd.js",
     "/assets/js/08_isotope.pkgd.js",
