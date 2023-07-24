@@ -24,6 +24,16 @@ const HeadComponent = ({ styles }) => {
         media="all"
       />
 
+      <link rel="stylesheet" href="/assets/css/00_bootstrap.css" />
+      <link rel="stylesheet" href="/assets/css/01_font-awesome.css" />
+      <link rel="stylesheet" href="/assets/css/02_magnific-popup.css" />
+      <link rel="stylesheet" href="/assets/css/03_splitting.css" />
+      <link rel="stylesheet" href="/assets/css/04_swiper.css" />
+      <link rel="stylesheet" href="/assets/css/05_animate.css" />
+      <link rel="stylesheet" href="/assets/css/06_style.css" />
+      <link rel="stylesheet" href="/assets/css/07_dark.css" />
+      <link rel="stylesheet" href="/assets/css/custom.css" />
+
       {styles?.map((style) => (
         <link
           key={style}
