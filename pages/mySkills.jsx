@@ -32,7 +32,6 @@ const MySkills = () => {
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 pb-5">
               <div className="numbers-items">
                 <Slide cascade damping={0.1}>
-
                   <div
                     className="numbers-item scrolla-element-anim-1 scroll-animate"
                     data-animate="active">

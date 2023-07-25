@@ -11,6 +11,13 @@ const Footer = () => {
                 className="social-links align-center  scrolla-element-anim-1 scroll-animate"
                 data-animate="active">
                 <a
+                  className="copyright-text downloadCv-footer"
+                  target="_blank"
+                  href="/assets/CV_TrishaS.Real.pdf"
+                  download="CV_TrishaSReal.pdf">
+                  <span>Download CV</span>
+                </a>
+                <a
                   target="_blank"
                   rel="nofollow"
                   href="https://github.com/TrishaReal">

@@ -106,6 +106,7 @@ const Hero = () => {
                 <a
                   target="_blank"
                   href="/assets/CV_TrishaS.Real.pdf"
+                  download="CV_TrishaSReal.pdf"
                   className="btn">
                   <span>Download CV</span>
                 </a>

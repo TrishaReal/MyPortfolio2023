@@ -106,6 +106,18 @@ const Header = () => {
                               Contact
                             </Link>
                           </li>
+
+                          <li className="menu-item">
+                            <Link
+                              className="splitting-text-anim-2"
+                              target="_blank"
+                              download="CV_TrishaSReal.pdf"
+                              href="/assets/CV_TrishaS.Real.pdf"
+                              data-splitting="chars">
+                              Download CV
+                            </Link>
+
+                          </li>
                         </ul>
                       </div>
 

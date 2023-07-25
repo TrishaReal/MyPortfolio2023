@@ -173,7 +173,7 @@ const Contact = () => {
                       <span> Email </span>
                     </div>
                     <div className="lui-text">
-                      <span> dev.trisha.real@gmail.com </span>
+                      <a href="mailto:dev.trisha.real@gmail.com"><span> dev.trisha.real@gmail.com </span></a>
                     </div>
                   </div>
                   <div
@@ -186,7 +186,7 @@ const Contact = () => {
                       <span> Phone </span>
                     </div>
                     <div className="lui-text">
-                      <span> +39 327 407 3331 </span>
+                      <a href="tel:+393274073331"><span> +39 327 407 3331 </span></a>
                     </div>
                   </div>
                 </Slide>

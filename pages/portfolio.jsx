@@ -3,6 +3,125 @@ import React from "react";
 
 const Portfolio = () => {
 
+  const devProjects = [
+    {
+      title: "Sardegna Digital Library",
+      imgSrc: "/assets/images/web-Sdl.png",
+      demoLink: "https://www.sardegnadigitallibrary.it/",
+      category: "Web Development (React Js & Next.js)",
+      description: "The multimedia collection of the Autonomous Region of Sardinia. One of my first projects carried out with the React JS team of Softfobia s.r.l and C22.",
+    },
+    {
+      title: "Regione Autonoma della Sardegna",
+      imgSrc: "/assets/images/web-Ras.png",
+      demoLink: "https://www.regione.sardegna.it/",
+      category: "Web Development (React Js & Next.js)",
+      description: "Official website of the Autonomous Region of Sardinia. I had the opportunity to participate, albeit in a small part, in the improvement and evolution of this project alongside the React JS team of Softfobia s.r.l.",
+    },
+    {
+      title: "Greenpeace Portal",
+      imgSrc: "/assets/images/web-greenpeace.png",
+      demoLink: "https://sostenitori.greenpeace.it/",
+      category: "Web Development (React Js & Next.js)",
+      description: "Project involving the portal for supporters of the environmental and pacifist organization Greenpeace. My second project carried out with the React JS team of Softfobia s.r.l.",
+    },
+    {
+      title: "Pick Me NFT",
+      imgSrc: "/assets/images/web-pickMe.png",
+      githubLink: "https://github.com/TrishaReal/PickMe-REDUX",
+      category: "Web Development (React Js)",
+      description: "App where I got to use popular frontend libraries, with a special emphasis on Redux. Other libraries included Styled-system, Formik, and Yup.",
+    },
+    {
+      title: "Nice Cream",
+      imgSrc: "/assets/images/web-niceCream.png",
+      demoLink: "https://ice-cream-menu-site.netlify.app/",
+      githubLink: "https://github.com/TrishaReal/IceCreamMenuSite",
+      category: "Web Development (React JS)",
+      description: "Creating a categorized ice cream menu for easier filtering and selection.",
+    },
+    {
+      title: "Wiki Drink",
+      imgSrc: "/assets/images/web-wikidrink.png",
+      demoLink: "https://wiki-drink-website.netlify.app/",
+      githubLink: "https://github.com/TrishaReal/WikiDrink-Website",
+      category: "Web Development (React Js)",
+      description: "A complete application featuring a Home Page, an About Page, and a Contact Page. Users can search for the name of any existing cocktail and receive all the instructions to make and enjoy it. If their favorite cocktail is missing, they can reach out to us and we'll add it for them.",
+    },
+    {
+      title: "Color Grading",
+      imgSrc: "/assets/images/web-colors.png",
+      demoLink: "https://myfirst-color-grading-website.netlify.app/",
+      githubLink: "https://github.com/TrishaReal/ColorGrading",
+      category: "Web Development (React JS)",
+      description: "An app that lets users explore various shades starting from a color of their choice and easily copy it to their clipboard with a simple click.",
+    },
+    {
+      title: "Carousel Vacation Packages",
+      imgSrc: "/assets/images/web-vacation.png",
+      demoLink: "https://lista-vacanza.netlify.app/",
+      githubLink: "https://github.com/TrishaReal/ListaVacanza",
+      category: "Web Development (React JS)",
+      description: "Scroll through the window display for a series of Vacation Packages: Start learning how to make websites more engaging by mastering the creation of carousels, for example.",
+    },
+    {
+      title: "Parallax Web",
+      imgSrc: "/assets/images/web-parallax.png",
+      demoLink: "https://first-parallax-website.netlify.app/",
+      githubLink: "https://github.com/TrishaReal/parallax-website",
+      category: "Web Development (Html and Css)",
+      description: " At the beginning of my study of HTML and CSS, I challenged myself by recreating this website with a parallax effect.",
+    },
+
+  ];
+
+  const graphicProjects = [
+    {
+      title: "The Unbearable Lightness of Being",
+      behanceLink: "https://www.behance.net/gallery/139222527/Linsostenibile-leggerezza-dellessere-Milan-Kundera",
+      imgSrc: "/assets/images/graphic-kundera.jpg",
+      category: "Graphic Design (editorial)",
+      description: " Study, analysis, and creation of the cover for Milan Kundera&'s novel 'The Unbearable Lightness of Being'.",
+    },
+    {
+      title: "Giù Le Mani",
+      behanceLink: "https://www.behance.net/gallery/139230679/Franca-Rame-Locandina-Evento",
+      imgSrc: "/assets/images/graphic-franca.jpg",
+      category: "Graphic Design (poster advertising)",
+      description: " Designing a promotional flyer to raise awareness for a theatrical performance on the International Day against Violence towards Women, featuring Franca Rame's powerful play, 'Lo Stupro.'",
+    },
+    {
+      title: "Kobe Bryant 'Through the years'",
+      behanceLink: "https://www.behance.net/gallery/139229395/Kobe-Bryant-Through-The-Years",
+      imgSrc: "/assets/images/graphic-kobe.jpg",
+      category: "Graphic Design (Editorial)",
+      description: "In envisioning the Sports Illustrated cover, I thought it would be fitting to showcase Kobe Bryant as a way to honor his memory following the heartbreaking news in January 2020.",
+    },
+    {
+      title: "Areilà",
+      behanceLink: "https://www.behance.net/gallery/139231125/Areila-Azienda-Agricola-%28Brand-Identity%29",
+      imgSrc: "/assets/images/graphic-areilà.jpg",
+      category: "Brand Identity and Marketing",
+      description: "End-of-year team project. We collaborated to create a logo and brand identity for a Sardinian agricultural industry. We interacted with the client to gather information and study the industry&apos;s image, which guided us in conceptualizing the brand.",
+    },
+    {
+      title: "La Vie Est Belle",
+      behanceLink: "https://www.behance.net/gallery/139230857/Lancome-Paris-La-Vie-Est-Belle",
+      imgSrc: "/assets/images/graphic-lancome.jpg",
+      category: "Graphic Design (advertising)",
+      description: "Creation of an advertising poster to promote products.",
+    },
+    {
+      title: "Vanity Fair Cover",
+      behanceLink: "https://www.behance.net/gallery/139230133/Vanity-Fair-Lady-Gaga",
+      imgSrc: "/assets/images/graphic-gaga.jpg",
+      category: "Graphic Design (editorial)",
+      description: " Vanity Fair Cover: We had to choose a celebrity each to portray, and I chose to depict the two faces of Lady Gaga and create an idealized typical VF cover.",
+    },
+
+
+  ];
+
   return (
     <section className="lui-section lui-gradient-center " id="works-section">
       <div className="lui-heading">
@@ -34,14 +153,14 @@ const Portfolio = () => {
               data-animate="active">
               <a
                 href="#"
-                className="lui-subtitle"
+                className="lui-subtitle active"
                 data-href=".works-col">
                 All
               </a>
 
               <a
                 href="#"
-                className="lui-subtitle  active"
+                className="lui-subtitle"
                 data-href=".sorting-development">
                 Development
               </a>
@@ -51,975 +170,119 @@ const Portfolio = () => {
             </div>
 
             <div className="works-items works-masonry-items row">
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://www.sardegnadigitallibrary.it/"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/web-Sdl.png"
-                          alt="Sardegna Digital Library"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">Web Development (React Js & Next.js)</span>
-                    <h5 className="name">
-                      <a
-                        href="https://www.sardegnadigitallibrary.it/"
-                        target="_blank">
-                        Sardegna Digital Library
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        The multimedia collection of the Autonomous Region of Sardinia. One of my first projects carried out with the React JS team of Softfobia s.r.l and C22.
-                      </p>
-                    </div>
-                    <a
-                      href="https://www.sardegnadigitallibrary.it/"
-                      target="_blank"
-                      className="lnk">
-                      Go to the website
-                    </a>
-                  </div>
+
+              {graphicProjects.map((project, index) => (
+                <div key={`graphicProject-${index}`} className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-graphic">
                   <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
+                    className="works-item scrolla-element-anim-1 scroll-animate"
+                    data-animate="active">
+                    <div className="image">
+                      <div className="img">
+                        <a
+                          href={project.behanceLink}
+                          target="_blank">
+                          <Image
+                            width={550}
+                            height={450}
+                            decoding="async"
+                            src={project.imgSrc}
+                            alt={project.title}
+                          />
+                          <span className="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="desc">
+                      <span className="category">{project.category}</span>
+                      <h5 className="name">
+                        <a
+                          href={project.behanceLink}
+                          target="_blank">
+                          {project.title}
+                        </a>
+                      </h5>
+                      <div className="text">
+                        <p>
+                          {project.description}
+                        </p>
+                      </div>
+
+                      {project.behanceLink && (
+                        <a href={project.behanceLink} target="_blank" className="lnk">
+                          See on behance
+                        </a>
+                      )}
+
+                    </div>
+                    <div
+                      className="bg-img"
+                      style={{
+                        backgroundImage: "url(assets/images/pat-2.png)",
+                      }}></div>
+                  </div>
                 </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://sostenitori.greenpeace.it/"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/web-greenpeace.png"
-                          alt="GreenPeace Portal"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">Web Development (React Js & Next.js)</span>
-                    <h5 className="name">
-                      <a
-                        href="https://sostenitori.greenpeace.it/"
-                        target="_blank">
-                        Greenpeace
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        Project involving the portal for supporters of the environmental and pacifist organization Greenpeace. My second project carried out with the React JS team of Softfobia s.r.l.                  </p>
-                    </div>
-                    <a
-                      href="https://sostenitori.greenpeace.it/"
-                      target="_blank"
-                      className="lnk">
-                      Go to the website
-                    </a>
-                  </div>
+              ))}
+
+
+
+              {devProjects.map((project, index) => (
+                <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development">
                   <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
+                    key={`devProject-${index}`}
+                    className="works-item scrolla-element-anim-1 scroll-animate"
+                    data-animate="active">
+                    <div className="image">
+                      <div className="img">
+                        <a
+                          href={project.demoLink}
+                          target="_blank">
+                          <Image
+                            width={550}
+                            height={450}
+                            decoding="async"
+                            src={project.imgSrc}
+                            alt={project.title}
+                          />
+                          <span className="overlay"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="desc">
+                      <span className="category">
+                        {project.category}
+                      </span>
+                      <h5 className="name">
+                        <a
+                          href={project.demoLink}
+                          target="_blank">
+                          {project.title}
+                        </a>
+                      </h5>
+                      <div className="text">
+                        <p>{project.description}</p>
+                      </div>
+                      {project.demoLink && (
+                        <a href={project.demoLink} target="_blank" className="lnk">
+                          See demo
+                        </a>
+                      )}
+                      <br />
+                      {project.githubLink && (
+                        <a href={project.githubLink} target="_blank" className="lnk">
+                          See on github
+                        </a>
+                      )}
+                    </div>
+                    <div
+                      className="bg-img"
+                      style={{
+                        backgroundImage: "url(assets/images/pat-2.png)",
+                      }}></div>
+                  </div>
                 </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://www.regione.sardegna.it/"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/web-Ras.png"
-                          alt="Regione Autonoma della Sardegna "
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">Web Development (React Js & Next.js)</span>
-                    <h5 className="name">
-                      <a
-                        href="https://www.regione.sardegna.it/"
-                        target="_blank">
-                        Regione Autonoma della Sardegna
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        Official website of the Autonomous Region of Sardinia. I had the opportunity to participate, albeit in a small part, in the improvement and evolution of this project alongside the React JS team of Softfobia s.r.l.</p>
-                    </div>
-                    <a
-                      href="https://www.regione.sardegna.it/"
-                      target="_blank"
-                      className="lnk">
-                      Go to the website
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://github.com/TrishaReal/PickMe-REDUX"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/web-pickMe.png"
-                          alt="Pick Me NFT"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">Web Development (React Js)</span>
-                    <h5 className="name">
-                      <a
-                        href="https://github.com/TrishaReal/PickMe-REDUX"
-                        target="_blank">
-                        Pick Me NFT
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        App where I got to use popular frontend libraries, with
-                        a special emphasis on Redux. Other libraries included
-                        Styled-system, Formik, and Yup.
-                      </p>
-                    </div>
-                    <a
-                      href="https://github.com/TrishaReal/PickMe-REDUX"
-                      target="_blank"
-                      className="lnk">
-                      See on github
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://wiki-drink-website.netlify.app/"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/web-wikidrink.png"
-                          alt=" Wiki Drink"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">Web Development (React Js)</span>
-                    <h5 className="name">
-                      <a href="https://wiki-drink-website.netlify.app/">
-                        Wiki Drink
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        A complete application featuring a Home Page, an About
-                        Page, and a Contact Page. Users can search for the name
-                        of any existing cocktail and receive all the
-                        instructions to make and enjoy it. If their favorite
-                        cocktail is missing, they can reach out to us and
-                        we&apos;ll add it for them.
-                      </p>
-                    </div>
-                    <a
-                      href="https://wiki-drink-website.netlify.app/"
-                      target="_blank"
-                      className="lnk">
-                      See demo
-                    </a>
-                    <br />
-                    <a
-                      href="https://github.com/TrishaReal/WikiDrink-Website"
-                      target="_blank"
-                      className="lnk">
-                      See on github
-                    </a>
-                    <br />
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-graphic ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://www.behance.net/gallery/139230679/Franca-Rame-Locandina-Evento"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/graphic-franca.jpg"
-                          alt=" Giù Le Mani"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">
-                      Graphic Design (poster advertising)
-                    </span>
-                    <h5 className="name">
-                      <a
-                        href="https://www.behance.net/gallery/139230679/Franca-Rame-Locandina-Evento"
-                        target="_blank">
-                        Giù Le Mani
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        Designing a promotional flyer to raise awareness for a
-                        theatrical performance on the International Day against
-                        Violence towards Women, featuring Franca Rame&apos;s
-                        powerful play, &ldquo;Lo Stupro.&rdquo;
-                      </p>
-                    </div>
-                    <a
-                      href="https://www.behance.net/gallery/139230679/Franca-Rame-Locandina-Evento"
-                      target="_blank"
-                      className="lnk">
-                      See on behance
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://ice-cream-menu-site.netlify.app/"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/web-niceCream.png"
-                          alt="Nice Cream"
-                          priority
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">Web Development (React JS)</span>
-                    <h5 className="name">
-                      <a
-                        href="https://ice-cream-menu-site.netlify.app/"
-                        target="_blank">
-                        Nice Cream
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        Creating a categorized ice cream menu for easier
-                        filtering and selection.
-                      </p>
-                    </div>
-                    <a
-                      href="https://ice-cream-menu-site.netlify.app/"
-                      target="_blank"
-                      className="lnk">
-                      See demo
-                    </a>
-                    <br />
-                    <a
-                      href="https://github.com/TrishaReal/IceCreamMenuSite"
-                      target="_blank"
-                      className="lnk">
-                      See on github
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-graphic ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://www.behance.net/gallery/139222527/Linsostenibile-leggerezza-dellessere-Milan-Kundera"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/graphic-kundera.jpg"
-                          alt="The Unbearable Lightness of Being"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">Graphic Design (Editorial)</span>
-                    <h5 className="name">
-                      <a
-                        href="https://www.behance.net/gallery/139222527/Linsostenibile-leggerezza-dellessere-Milan-Kundera"
-                        target="_blank">
-                        Milan Kundera&apos;s Book
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        Study, analysis, and creation of the cover for Milan
-                        Kundera&apos;s novel &ldquo;The Unbearable Lightness of
-                        Being&rdquo;.
-                      </p>
-                    </div>
-                    <a
-                      href="https://www.behance.net/gallery/139222527/Linsostenibile-leggerezza-dellessere-Milan-Kundera"
-                      target="_blank"
-                      className="lnk">
-                      See on behance
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-graphic  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://www.behance.net/gallery/139229395/Kobe-Bryant-Through-The-Years"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/graphic-kobe.jpg"
-                          alt="Through the years"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">Graphic Design (Editorial)</span>
-                    <h5 className="name">
-                      <a
-                        href="https://www.behance.net/gallery/139229395/Kobe-Bryant-Through-The-Years"
-                        target="_blank">
-                        Kobe Bryant <br /> &quot;Through the years&quot;
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        In envisioning the Sports Illustrated cover, I thought
-                        it would be fitting to showcase Kobe Bryant as a way to
-                        honor his memory following the heartbreaking news in
-                        January 2020.
-                      </p>
-                    </div>
-                    <a
-                      href="https://www.behance.net/gallery/139229395/Kobe-Bryant-Through-The-Years"
-                      target="_blank"
-                      className="lnk">
-                      See on behance
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://myfirst-color-grading-website.netlify.app/"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/web-colors.png"
-                          alt="Color Grading"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">Web Development (React JS)</span>
-                    <h5 className="name">
-                      <a
-                        href="https://myfirst-color-grading-website.netlify.app/"
-                        target="_blank">
-                        Color Grading
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        An app that lets users explore various shades starting
-                        from a color of their choice and easily copy it to their
-                        clipboard with a simple click.
-                      </p>
-                    </div>
-                    <a
-                      href="https://myfirst-color-grading-website.netlify.app/"
-                      target="_blank"
-                      className="lnk">
-                      See demo
-                    </a>
-                    <br />
-                    <a
-                      href="https://github.com/TrishaReal/ColorGrading"
-                      target="_blank"
-                      className="lnk">
-                      See on github
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://lista-vacanza.netlify.app/"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/web-vacation.png"
-                          alt="Carousel Vacation Packages"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">Web Development (React JS)</span>
-                    <h5 className="name">
-                      <a
-                        href="https://lista-vacanza.netlify.app/"
-                        target="_blank">
-                        Carousel Vacation Packages
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        Scroll through the window display for a series of
-                        Vacation Packages: Start learning how to make websites
-                        more engaging by mastering the creation of carousels,
-                        for example.
-                      </p>
-                    </div>
-                    <a
-                      href="https://lista-vacanza.netlify.app/"
-                      target="_blank"
-                      className="lnk">
-                      See demo
-                    </a>
-                    <br />
-                    <a
-                      href="https://github.com/TrishaReal/ListaVacanza"
-                      target="_blank"
-                      className="lnk">
-                      See on github
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-graphic  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://www.behance.net/gallery/139231125/Areila-Azienda-Agricola-%28Brand-Identity%29"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/graphic-areilà.jpg"
-                          alt="Areilà"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">
-                      Brand Identity and Marketing
-                    </span>
-                    <h5 className="name">
-                      <a
-                        href="https://www.behance.net/gallery/139231125/Areila-Azienda-Agricola-%28Brand-Identity%29"
-                        target="_blank">
-                        Areilà
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        End-of-year team project. We collaborated to create a
-                        logo and brand identity for a Sardinian agricultural
-                        industry. We interacted with the client to gather
-                        information and study the industry&apos;s image, which
-                        guided us in conceptualizing the brand.
-                      </p>
-                    </div>
-                    <a
-                      href="https://www.behance.net/gallery/139231125/Areila-Azienda-Agricola-%28Brand-Identity%29"
-                      target="_blank"
-                      className="lnk">
-                      See on behance
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-graphic  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://www.behance.net/gallery/139230857/Lancome-Paris-La-Vie-Est-Belle"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/graphic-lancome.jpg"
-                          alt="La vie est belle"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">
-                      Graphic Design (advertising)
-                    </span>
-                    <h5 className="name">
-                      <a
-                        href="https://www.behance.net/gallery/139230857/Lancome-Paris-La-Vie-Est-Belle"
-                        target="_blank">
-                        La Vie Est Belle
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        Creation of an advertising poster to promote products.
-                      </p>
-                    </div>
-                    <a
-                      href="https://www.behance.net/gallery/139230857/Lancome-Paris-La-Vie-Est-Belle"
-                      target="_blank"
-                      className="lnk">
-                      See on behance
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-graphic  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://www.behance.net/gallery/139230133/Vanity-Fair-Lady-Gaga"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/graphic-gaga.jpg"
-                          alt="Vanity Fair Cover"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">Graphic Design (Editorial)</span>
-                    <h5 className="name">
-                      <a
-                        href="https://www.behance.net/gallery/139230133/Vanity-Fair-Lady-Gaga"
-                        target="_blank">
-                        Vanity Fair Cover
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        Vanity Fair Cover: We had to choose a celebrity each to
-                        portray, and I chose to depict the two faces of Lady
-                        Gaga and create an idealized typical VF cover.
-                      </p>
-                    </div>
-                    <a
-                      href="https://www.behance.net/gallery/139230133/Vanity-Fair-Lady-Gaga"
-                      target="_blank"
-                      className="lnk">
-                      See on behance
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://my-first-to-do-list.netlify.app/"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/web-todolist.png"
-                          alt="To do list"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">
-                      Web Development (Html, css, JS)
-                    </span>
-                    <h5 className="name">
-                      <a
-                        href="https://my-first-to-do-list.netlify.app/"
-                        target="_blank">
-                        To Do List
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        One of the first personal projects I worked on was this
-                        to-do list, using just Html, Css, and JavaScript to put
-                        my knowledge into practice and starting learning media
-                        queries to make the website responsive.
-                      </p>
-                    </div>
-                    <a
-                      href="https://my-first-to-do-list.netlify.app/"
-                      target="_blank"
-                      className="lnk">
-                      See demo
-                    </a>
-                    <br />
-                    <a
-                      href="https://github.com/TrishaReal/Simple-ToDoList"
-                      target="_blank"
-                      className="lnk">
-                      See on github
-                    </a>
-                  </div>
-                  <div
-                    width={550}
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://first-parallax-website.netlify.app/"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/web-parallax.png"
-                          alt="Parallax Web"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">
-                      Web Development (Html and Css)
-                    </span>
-                    <h5 className="name">
-                      <a
-                        href="https://first-parallax-website.netlify.app/"
-                        target="_blank">
-                        Parallax Web
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        At the beginning of my study of HTML and CSS, I
-                        challenged myself by recreating this website with a
-                        parallax effect.
-                      </p>
-                    </div>
-                    <a
-                      href="https://first-parallax-website.netlify.app/"
-                      target="_blank"
-                      className="lnk">
-                      See demo
-                    </a>
-                    <br />
-                    <a
-                      href="https://github.com/TrishaReal/parallax-website"
-                      target="_blank"
-                      className="lnk">
-                      See on github
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://whatsapp-web-replica.netlify.app/#"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/web-whatsapp.png"
-                          alt="Whatsapp Web"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">
-                      Web Development (Html, Css, JS)
-                    </span>
-                    <h5 className="name">
-                      <a
-                        href="https://whatsapp-web-replica.netlify.app/#"
-                        target="_blank">
-                        Whatsapp Web
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        As I started putting my HTML, CSS, and JavaScript
-                        knowledge into practice, I embarked on the task of
-                        reproducing WhatsApp Web.
-                      </p>
-                    </div>
-                    <a
-                      href="https://whatsapp-web-replica.netlify.app/#"
-                      target="_blank"
-                      className="lnk">
-                      See demo
-                    </a>
-                    <br />
-                    <a
-                      href="https://github.com/TrishaReal/WhatsappWeb-Replica"
-                      target="_blank"
-                      className="lnk">
-                      See on github
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
-              <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development  ">
-                <div
-                  className="works-item scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
-                  <div className="image">
-                    <div className="img">
-                      <a
-                        href="https://youtube-replica-base.netlify.app/"
-                        target="_blank">
-                        <Image
-                          width={550}
-                          height={450}
-                          decoding="async"
-                          src="/assets/images/web-yt.png"
-                          alt="Youtube Web"
-                        />
-                        <span className="overlay"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="desc">
-                    <span className="category">
-                      Web Development (Html and Css)
-                    </span>
-                    <h5 className="name">
-                      <a
-                        href="https://youtube-replica-base.netlify.app/"
-                        target="_blank">
-                        Youtube Web
-                      </a>
-                    </h5>
-                    <div className="text">
-                      <p>
-                        As I started putting my HTML and CSS knowledge into
-                        practice, I embarked on the task of reproducing Youtube
-                        Web.
-                      </p>
-                    </div>
-                    <a
-                      href="https://youtube-replica-base.netlify.app/"
-                      target="_blank"
-                      className="lnk">
-                      See demo
-                    </a>
-                    <br />
-                    <a
-                      href="https://github.com/TrishaReal/Youtube-Replica"
-                      target="_blank"
-                      className="lnk">
-                      See on github
-                    </a>
-                  </div>
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-2.png)",
-                    }}></div>
-                </div>
-              </div>
+              ))}
+
+
             </div>
 
           </div>

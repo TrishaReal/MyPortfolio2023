@@ -56,6 +56,12 @@ body.light-skin .terms-label {
   }
 }
 
+/* FOOTER */
+.downloadCv-footer {
+  padding-right: 20px;
+}
+
+
 /* HERO */
 
 .section.hero-started .info-list ul li .num-custom {
