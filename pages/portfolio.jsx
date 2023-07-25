@@ -209,7 +209,7 @@ const Portfolio = () => {
 
                       {project.behanceLink && (
                         <a href={project.behanceLink} target="_blank" className="lnk">
-                          See on behance
+                          Open behance
                         </a>
                       )}
 
@@ -262,13 +262,13 @@ const Portfolio = () => {
                       </div>
                       {project.demoLink && (
                         <a href={project.demoLink} target="_blank" className="lnk">
-                          See demo
+                          Open demo
                         </a>
                       )}
                       <br />
                       {project.githubLink && (
                         <a href={project.githubLink} target="_blank" className="lnk">
-                          See on github
+                          Open github
                         </a>
                       )}
                     </div>
