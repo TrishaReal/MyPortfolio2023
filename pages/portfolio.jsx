@@ -226,9 +226,8 @@ const Portfolio = () => {
 
 
               {devProjects.map((project, index) => (
-                <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development">
+                <div key={`devProject-${index}`} className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development">
                   <div
-                    key={`devProject-${index}`}
                     className="works-item scrolla-element-anim-1 scroll-animate"
                     data-animate="active">
                     <div className="image">

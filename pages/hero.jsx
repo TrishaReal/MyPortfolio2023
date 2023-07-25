@@ -122,6 +122,7 @@ const Hero = () => {
                 decoding="async"
                 src="/assets/images/profile01.png"
                 alt="Trisha Sairene Real"
+                priority={true}
               />
               <span className="circle circle-1"></span>
               <span
