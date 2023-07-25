@@ -54,13 +54,13 @@ const Contact = () => {
       thanks: "",
       unsubscribe: {
         name: "Cancel subscription",
-        href: "http://localhost:3000/",
+        href: "https://www.trishareal.com/",
         message: "Intrusive emails?",
         active: false,
       },
       footer: {
         name: "© 2023, Offer by",
-        href: "https://trishasairenereal.vercel.app/",
+        href: "https://www.trishareal.com/",
         message: "trishasairenereal.vercel.app",
         active: true,
       },
@@ -75,7 +75,7 @@ const Contact = () => {
       message: `" <i>${message}</i> "`,
       callToAction: {
         name: "",
-        href: "https://trishasairenereal.vercel.app/",
+        href: "https://www.trishareal.com/",
         active: false,
       },
       conclusion: `Remember to reply and contact <strong>${fullName}</strong> at the email: <strong>${email}</strong>.`,
@@ -88,7 +88,7 @@ const Contact = () => {
       },
       footer: {
         name: "© 2023, Offer by",
-        href: "https://trishasairenereal.vercel.app/",
+        href: "https://www.trishareal.com/",
         message: "trishasairenereal.vercel.app",
         active: true,
       },
@@ -275,7 +275,7 @@ const Contact = () => {
 
                                 <button
                                   href="#"
-                                  className="btn btn-disabled"
+                                  className="btn btn-disabled col-6"
                                   disabled>
                                   <span>Send Message</span>
                                 </button>

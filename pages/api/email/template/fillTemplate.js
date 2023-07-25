@@ -8,20 +8,20 @@ const fillTemplate = (data) => {
         message: 'Come va? Spero che stia andando tutto bene...',
         callToAction: {
             name: 'Call to action',
-            href: 'http://localhost:3000/',
+            href: 'https://www.trishareal.com/',
             active: true,
         },
         conclusion: 'Your conclusion goes here...',
         thanks: 'Grazie per il tuo tempo. Buona Fortuna!',
         unsubscribe: {
             name: 'Unsubscribe',
-            href: 'http://localhost:3000/',
+            href: 'https://www.trishareal.com/',
             message: 'Email invadenti?',
             active: false,
         },
         footer: {
             name: '© 2023, Offerta da',
-            href: 'https://trishasairenereal.vercel.app/',
+            href: 'https://www.trishareal.com/',
             message: 'trishasairenereal.vercel.app',
             active: true,
         },
@@ -40,21 +40,13 @@ const fillTemplate = (data) => {
             <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
                 <title>${options?.title}</title>
-
                 <style>
-                @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
-                </style>
                 /* -------------------------------------
                     GLOBAL RESETS
                 ------------------------------------- */
                 
                 /*All the styling goes here*/
-
-                
                 
                 img {
                     border: none;
@@ -64,7 +56,7 @@ const fillTemplate = (data) => {
             
                 body {
                     background-color: transparent;
-                    background-image: linear-gradient(0deg, #ffffff 0%, #f3efe8 100%);
+    background-image: linear-gradient(0deg, #ffffff 0%, #f8ecdb 100%);
                     font-family: "Jost", sans-serif;
                     -webkit-font-smoothing: antialiased;
                     font-size: 16px;
@@ -92,7 +84,7 @@ const fillTemplate = (data) => {
             
                 .body {
                     background-color: transparent;
-                    background-image: linear-gradient(0deg, #ffffff 0%, #f3efe8 100%);
+    background-image: linear-gradient(0deg, #ffffff 0%, #f8ecdb 100%);
                     width: 100%; 
                 }
             
@@ -120,15 +112,15 @@ const fillTemplate = (data) => {
                 ------------------------------------- */
                 .main {
                     background: #ffffff;
+                    border-radius: 10px;
                     width: 100%; 
-                    border: 2px solid #000;
-                    border-radius: 30px;
+                    border: 2px #000 solid;
                 }
             
                 .wrapper {
                     box-sizing: border-box;
                     padding: 20px; 
-                    
+                   
                 }
             
                 .content-block {
@@ -198,12 +190,10 @@ const fillTemplate = (data) => {
                     BUTTONS
                 ------------------------------------- */
                 .btn {
-                    margin-top: 2em;
                     box-sizing: border-box;
                     width: 100%; }
                     .btn > tbody > tr > td {
-                    padding-bottom: 0; 
-                }
+                    padding-bottom: 15px; }
                     .btn table {
                     width: auto; 
                 }
@@ -213,59 +203,29 @@ const fillTemplate = (data) => {
                     text-align: center; 
                 }
                     .btn a {
-                        padding: 0 40px;
-                        position: relative;
-                        overflow: hidden;
-                        display: inline-block;
-                        vertical-align: top;
-                        font-size: 13px;
-                        color: #000;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        letter-spacing: 0.05em;
-                        height: 56px;
-                        line-height: 52px;
-                        text-align: center;
-                        text-decoration: none;
-                        outline: none !important;
-                        cursor: pointer;
-                        transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
-                        -webkit-transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
-                        border: 2px solid #000;
-                        background: transparent;
-                        box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
-                        border-radius: 56px;
-                        -webkit-border-radius: 56px;
+                    background-color: #ffffff;
+                    border: solid 1px #5C64CF;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    color: #5C64CF;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin: 0;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    text-transform: capitalize; 
                 }
             
                 .btn-primary table td {
-                    background-color: trasparent; 
+                    background-color: #5C64CF; 
                 }
             
                 .btn-primary a {
-                    padding: 0 40px;
-                    position: relative;
-                    overflow: hidden;
-                    display: inline-block;
-                    vertical-align: top;
-                    font-size: 13px;
-                    color: #000;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    letter-spacing: 0.05em;
-                    height: 56px;
-                    line-height: 52px;
-                    text-align: center;
-                    text-decoration: none;
-                    outline: none !important;
-                    cursor: pointer;
-                    transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
-                    -webkit-transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
-                    border: 2px solid #000;
-                    background: transparent;
-                    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
-                    border-radius: 56px;
-                    -webkit-border-radius: 56px;
+                    background-color: #5C64CF;
+                    border-color: #5C64CF;
+                    color: #ffffff; 
                 }
             
                 /* -------------------------------------
@@ -370,7 +330,7 @@ const fillTemplate = (data) => {
                     width: auto !important; 
                     }
 
-               
+                
                 }
             
                 /* -------------------------------------
@@ -404,13 +364,13 @@ const fillTemplate = (data) => {
                     font-weight: inherit;
                     line-height: inherit;
                     }
-                    // .btn-primary table td:hover {
-                    // background-color: #34495e !important; 
-                    // }
-                    // .btn-primary a:hover {
-                    // background-color: #34495e !important;
-                    // border-color: #34495e !important; 
-                    // } 
+                    .btn-primary table td:hover {
+                    background-color: #34495e !important; 
+                    }
+                    .btn-primary a:hover {
+                    background-color: #34495e !important;
+                    border-color: #34495e !important; 
+                    } 
                 }
             
                 </style>
@@ -485,7 +445,7 @@ const fillTemplate = (data) => {
                     options?.footer?.active &&
                     `<tr>
                                         <td class="content-block powered-by">
-                                            ${options?.footer?.name} <a>${options?.footer?.message}</a>.
+                                            ${options?.footer?.name} <a href=${options?.footer?.href}>${options?.footer?.message}</a>.
                                         </td>
                                     </tr>`) ||
                 ''

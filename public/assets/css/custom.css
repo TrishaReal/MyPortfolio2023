@@ -324,6 +324,12 @@ body.dark-skin .msg-confirmed h4 {
   border: 2px solid #262626;
 }
 
+#contact-section .contacts-form .terms-button {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
 
 @media (min-width: 630px) and (max-width: 766.9px) {
   #contact-section .contacts-form .terms-button {
