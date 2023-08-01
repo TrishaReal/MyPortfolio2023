@@ -102,7 +102,7 @@ const Portfolio = () => {
       behanceLink: "https://www.behance.net/gallery/139231125/Areila-Azienda-Agricola-%28Brand-Identity%29",
       imgSrc: "/assets/images/graphic-areilà.jpg",
       category: "Brand Identity and Marketing",
-      description: "End-of-year team project. We collaborated to create a logo and brand identity for a Sardinian agricultural industry. We interacted with the client to gather information and study the industry&apos;s image, which guided us in conceptualizing the brand.",
+      description: "End-of-year team project. We collaborated to create a logo and brand identity for a Sardinian agricultural industry. We interacted with the client to gather information and study the industry's image, which guided us in conceptualizing the brand.",
     },
     {
       title: "La Vie Est Belle",

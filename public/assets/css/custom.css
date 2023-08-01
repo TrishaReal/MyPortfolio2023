@@ -49,10 +49,16 @@ body.light-skin .terms-label {
 }
 
 /* HEADER */
+.menu-full-overlay {
+  position: fixed !important;
+  overflow: hidden;
+
+}
 
 .menu-full-container {
-
   padding-left: 40px !important;
+  height: 100vh;
+  margin-top: 100px !important;
 
 }
 
@@ -238,8 +244,7 @@ body.dark-skin .msg-confirmed {
 .msg-confirmed h4 {
   color: #262626;
   margin: 0 !important;
-  margin-left: 20px !important;
-  margin-top: 20px !important;
+
 }
 
 body.dark-skin .msg-confirmed h4 {
