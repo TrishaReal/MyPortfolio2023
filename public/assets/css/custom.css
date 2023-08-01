@@ -52,13 +52,12 @@ body.light-skin .terms-label {
 .menu-full-overlay {
   position: fixed !important;
   overflow: hidden;
-
 }
 
 .menu-full-container {
   padding-left: 40px !important;
   height: 100vh;
-  margin-top: 100px !important;
+  background-color: pink;
 
 }
 
@@ -73,6 +72,14 @@ body.light-skin .terms-label {
     padding: 30px 50px !important;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .menu-full-overlay .menu-full-container {
+    margin-top: 0 !important;
+    height: 100%;
+  }
+}
+
 
 /* FOOTER */
 .downloadCv-footer {
