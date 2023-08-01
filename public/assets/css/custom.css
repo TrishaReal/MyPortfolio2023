@@ -49,16 +49,15 @@ body.light-skin .terms-label {
 }
 
 /* HEADER */
-.menu-full-overlay {
-  position: fixed !important;
-  overflow: hidden;
-}
+/* .menu-full-overlay {
+ 
+} */
 
 .menu-full-container {
   padding-left: 40px !important;
   height: 100vh;
-  background-color: pink;
-
+  background-color: #98c5ba;
+  overflow: hidden;
 }
 
 @media (min-width: 375px) and (max-width: 400px) {
