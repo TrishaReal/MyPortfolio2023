@@ -56,8 +56,7 @@ body.light-skin .terms-label {
 .menu-full-container {
   padding-left: 40px !important;
   height: 100vh;
-  background-color: #98c5ba;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 @media (min-width: 375px) and (max-width: 400px) {
@@ -308,20 +307,36 @@ body.dark-skin .msg-confirmed h4 {
 }
 
 
+
 #contact-section a.lnk:hover::before {
   margin-right: 15px;
 }
 
 #contact-section .group .textarea-container {
-  background-color: #ffffff;
   height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 30px;
-  border: 2px solid #000 !important;
-
 }
+
+.light-skin .textarea-container {
+  background-color: #ffffff;
+  border: 2px solid #000 !important;
+}
+
+.dark-skin .textarea-container {
+  color: #fff;
+  background: #1d222a;
+  border: 2px solid #a3a5a7;
+}
+
+.download-cv {
+  text-decoration: underline !important;
+  text-underline-offset: 6px;
+  font-size: 20px !important;
+}
+
 
 #contact-section .group textarea {
   border: none !important;

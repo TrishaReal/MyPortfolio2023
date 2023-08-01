@@ -1,8 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 const Header = () => {
+  // const [activeLink, setActiveLink] = useState("");
+
+  // const handleLinkClick = (id) => {
+  //   setActiveLink(id);
+  // };
+
+
+  const router = useRouter();
+  const activeLink = router.asPath;
+
   return (
     <header className="header ">
       <div className="header__builder">
@@ -65,7 +76,7 @@ const Header = () => {
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                       <div className="menu-full">
                         <ul className="menu-full">
-                          <li className="menu-item">
+                          <li className={`menu-item ${activeLink === "/" ? "active" : ""}`}>
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
@@ -73,23 +84,25 @@ const Header = () => {
                               Home
                             </Link>
                           </li>
-                          <li className="menu-item">
+                          <li className={`menu-item ${activeLink.includes("#skills-section") ? "active" : ""}`}>
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
-                              href="#skills-section">
+                              href="#skills-section"
+                            >
                               Skills
                             </Link>
                           </li>
-                          <li className="menu-item">
+                          <li className={`menu-item ${activeLink.includes("#works-section") ? "active" : ""}`}>
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
-                              href="#works-section">
+                              href="#works-section"
+                            >
                               Works
                             </Link>
                           </li>
-                          <li className="menu-item">
+                          <li className={`menu-item ${activeLink.includes("#resume-section") ? "active" : ""}`}>
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
@@ -98,7 +111,7 @@ const Header = () => {
                             </Link>
                           </li>
 
-                          <li className="menu-item">
+                          <li className={`menu-item ${activeLink.includes("#contact-section") ? "active" : ""}`}>
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
@@ -109,7 +122,7 @@ const Header = () => {
 
                           <li className="menu-item">
                             <Link
-                              className="splitting-text-anim-2"
+                              className="splitting-text-anim-2 download-cv"
                               target="_blank"
                               download="CV_TrishaSReal.pdf"
                               href="/assets/CV_TrishaS.Real.pdf"
