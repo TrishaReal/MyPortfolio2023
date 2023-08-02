@@ -42,9 +42,9 @@ const Contact = () => {
       type: "greetings",
       subject: "Thank you for contacting me!",
       preheader: "Thank you for contacting me!",
-      greetings: `Dear <strong>${fullName}</strong>,`,
+      greetings: `dear <strong>${fullName}</strong>`,
       message:
-        "Thank you for contacting me! <br> I will review your request and get back to you asap. <br> In the meantime, please follow me on <b>LinkedIn</b> for further updates. <br> <br>Have a great day and best regards, <br> Trisha.  ",
+        "Thank you for contacting me! <br> I'll review your request and get back to you asap. <br> In the meantime, please follow me on <b>LinkedIn</b> for further updates. <br> <br>Have a great day and best regards, <br> Trisha.  ",
       callToAction: {
         name: "Follow me on LinkedIn",
         href: "https://www.linkedin.com/in/graphic-web-trisha",

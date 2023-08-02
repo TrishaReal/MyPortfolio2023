@@ -4,12 +4,6 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 const Header = () => {
-  // const [activeLink, setActiveLink] = useState("");
-
-  // const handleLinkClick = (id) => {
-  //   setActiveLink(id);
-  // };
-
 
   const router = useRouter();
   const activeLink = router.asPath;

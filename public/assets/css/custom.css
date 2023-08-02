@@ -331,12 +331,6 @@ body.dark-skin .msg-confirmed h4 {
   border: 2px solid #a3a5a7;
 }
 
-.download-cv {
-  text-decoration: underline !important;
-  text-underline-offset: 6px;
-  font-size: 20px !important;
-}
-
 
 #contact-section .group textarea {
   border: none !important;
