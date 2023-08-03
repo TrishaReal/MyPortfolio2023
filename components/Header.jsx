@@ -8,6 +8,22 @@ const Header = () => {
   const router = useRouter();
   const activeLink = router.asPath;
 
+  const handleMenuClick = (e, target) => {
+    e.preventDefault();
+    if (target === '/') {
+      // If the target is the homepage, scroll to the top of the page
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // Otherwise, scroll to the corresponding section
+      const element = document.querySelector(target);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+
+
   return (
     <header className="header ">
       <div className="header__builder">
@@ -74,7 +90,9 @@ const Header = () => {
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
-                              href="/">
+                              href="#"
+                              onClick={(e) => handleMenuClick(e, "/")}
+                            >
                               Home
                             </Link>
                           </li>
@@ -82,7 +100,8 @@ const Header = () => {
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
-                              href="#skills-section"
+                              href="#"
+                              onClick={(e) => handleMenuClick(e, "#skills-section")}
                             >
                               Skills
                             </Link>
@@ -91,7 +110,8 @@ const Header = () => {
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
-                              href="#works-section"
+                              href="#"
+                              onClick={(e) => handleMenuClick(e, "#works-section")}
                             >
                               Works
                             </Link>
@@ -100,7 +120,8 @@ const Header = () => {
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
-                              href="#resume-section">
+                              href="#"
+                              onClick={(e) => handleMenuClick(e, "#resume-section")}>
                               Resume
                             </Link>
                           </li>
@@ -109,7 +130,8 @@ const Header = () => {
                             <Link
                               className="splitting-text-anim-2"
                               data-splitting="chars"
-                              href="#contact-section">
+                              href="#"
+                              onClick={(e) => handleMenuClick(e, "#contact-section")}>
                               Contact
                             </Link>
                           </li>

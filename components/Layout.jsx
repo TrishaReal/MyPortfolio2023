@@ -1,4 +1,5 @@
 import Footer from "./Footer";
+import GoTop from "./GoTop";
 import HeadComponent from "./HeadComponent";
 import Header from "./Header";
 
@@ -13,6 +14,7 @@ const Layout = (props) => {
         <Header />
         <div className="wrapper">{children}</div>
         <Footer />
+        <GoTop />
 
       </div>
     </>
