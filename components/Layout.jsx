@@ -13,6 +13,7 @@ const Layout = (props) => {
         <Header />
         <div className="wrapper">{children}</div>
         <Footer />
+
       </div>
     </>
   );

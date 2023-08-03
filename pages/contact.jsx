@@ -270,7 +270,7 @@ const Contact = () => {
                           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-right terms-button">
                             {!valid && (
                               <>
-                                <div className="terms-label warning-label">
+                                <div className="terms-label warning-label ">
                                   * Please fill out all fields correctly.
                                 </div>
 

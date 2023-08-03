@@ -25,6 +25,8 @@ body.dark-skin::-webkit-scrollbar-thumb:hover {
   background-color: #246353;
 }
 
+
+
 body.light-skin p,
 body.light-skin #contact-section .lui-text span,
 body.light-skin #contact-section .contacts-form label,
@@ -35,6 +37,23 @@ body.light-skin #skills-section .numbers-items .numbers-item .icon i,
 body.light-skin .terms-label {
   color: #262626 !important;
 }
+
+body {
+  cursor: url('/assets/svg/cursorArrow.png')05 05, auto;
+}
+
+
+/* Color of the highlighter/selection */
+::-moz-selection {
+  background-color: #29a586be;
+  color: white;
+}
+
+::selection {
+  background-color: #29a586be;
+  color: white;
+}
+
 
 @media (min-width: 426px) and (max-width: 1250.9px) {
   .container {
@@ -362,6 +381,26 @@ body.dark-skin .msg-confirmed h4 {
   align-items: end;
 }
 
+/* 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  border: 3px solid #127e63;
+  background-color: transparent;
+  color: black !important;
+}
+ */
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #4dc7a87a inset !important;
+  border: 3px solid #127e63;
+}
 
 @media (min-width: 630px) and (max-width: 766.9px) {
   #contact-section .contacts-form .terms-button {
