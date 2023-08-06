@@ -436,7 +436,7 @@ input:-webkit-autofill:active {
   justify-content: center;
   width: 48px;
   height: 48px;
-  background-color: white;
+  background-color: #29a5869a;
   border: 2px #000 solid !important;
   cursor: pointer;
   position: fixed;
@@ -446,6 +446,7 @@ input:-webkit-autofill:active {
   right: 50px;
   z-index: 9;
 }
+
 
 @media (max-width: 425px) {
   .go-top {

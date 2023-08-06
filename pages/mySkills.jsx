@@ -1,6 +1,79 @@
 import { Slide } from "react-awesome-reveal";
 
 const MySkills = () => {
+
+  const personalInfo = [
+    {
+      icon: "far fa-calendar",
+      title: "Birth Date and Place",
+      value: "July 11, 1999 - Milan",
+    },
+    {
+      icon: "fa fa-globe",
+      title: "Nationality",
+      value: "Filipino",
+    },
+    {
+      icon: "fa fa-language",
+      title: "Languages",
+      value: "Italian, English, Tagalog, Spanish",
+    },
+  ];
+
+  // Define skills data
+  const skills = [
+    {
+      name: "Html & Css",
+      width: "80%",
+      value: 80,
+    },
+    {
+      name: "JavaScript",
+      width: "65%",
+      value: 65,
+    },
+    {
+      name: "React Js",
+      width: "65%",
+      value: 65,
+    },
+    {
+      name: "Next.js",
+      width: "45%",
+      value: 45,
+    },
+    {
+      name: "API Calls",
+      width: "50%",
+      value: 50,
+    },
+    {
+      name: "Git",
+      width: "60%",
+      value: 60,
+    },
+    {
+      name: "Bootstrap",
+      width: "70%",
+      value: 70,
+    },
+    {
+      name: "Photoshop",
+      width: "80%",
+      value: 80,
+    },
+    {
+      name: "Illustrator",
+      width: "70%",
+      value: 70,
+    },
+  ];
+
+  const splitIndex = Math.ceil(skills.length / 2);
+  const skillsColumn1 = skills.slice(0, splitIndex);
+  const skillsColumn2 = skills.slice(splitIndex);
+
+
   return (
     <section
       className="lui-section lui-gradient-bottom pt-5"
@@ -29,48 +102,28 @@ const MySkills = () => {
       <div className="v-line v-line-right">
         <div className="container pt-4 ">
           <div className="row">
+
+            {/* Personal Information */}
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 pb-5">
               <div className="numbers-items">
                 <Slide cascade damping={0.1}>
-                  <div
-                    className="numbers-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <div className="icon">
-                      <i aria-hidden="true" className="far fa-calendar"></i>
+                  {personalInfo.map((info, index) => (
+                    <div
+                      key={index}
+                      className="numbers-item scrolla-element-anim-1 scroll-animate"
+                      data-animate="active"
+                    >
+                      <div className="icon">
+                        <i aria-hidden="true" className={info.icon}></i>
+                      </div>
+                      <div className="title">
+                        <span>{info.title}</span>
+                      </div>
+                      <div className="lui-text">
+                        <span>{info.value}</span>
+                      </div>
                     </div>
-                    <div className="title">
-                      <span> Birth Date and Place </span>
-                    </div>
-                    <div className="lui-text">
-                      <span> July 11, 1999 - Milan </span>
-                    </div>
-                  </div>
-                  <div
-                    className="numbers-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <div className="icon">
-                      <i aria-hidden="true" className="fa fa-globe"></i>
-                    </div>
-                    <div className="title">
-                      <span> Nationality </span>
-                    </div>
-                    <div className="lui-text">
-                      <span> Filipino </span>
-                    </div>
-                  </div>
-                  <div
-                    className="numbers-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <div className="icon">
-                      <i aria-hidden="true" className="fa fa-language"></i>
-                    </div>
-                    <div className="title">
-                      <span> Languages </span>
-                    </div>
-                    <div className="lui-text">
-                      <span> Italian, English, Tagalog, Spanish</span>
-                    </div>
-                  </div>
+                  ))}
                 </Slide>
               </div>
 
@@ -78,177 +131,54 @@ const MySkills = () => {
             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
               <div className="skills-items">
                 <Slide cascade damping={0.1} direction="right" className="slide">
-
-
-                  <div
-                    className="skills-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <h6 className="name">
-                      <span> Html & Css</span>
-                    </h6>
-
-                    <div className="dots">
-                      <div className="dot" style={{ width: "95%" }}>
-                        <span></span>
+                  {skillsColumn1.map((skill, index) => (
+                    <div
+                      key={index}
+                      className="skills-item scrolla-element-anim-1 scroll-animate"
+                      data-animate="active"
+                    >
+                      <h6 className="name">
+                        <span>{skill.name}</span>
+                      </h6>
+                      <div className="dots">
+                        <div className="dot" style={{ width: skill.width }}>
+                          <span></span>
+                        </div>
+                      </div>
+                      <div className="value">
+                        <span className="num">
+                          {skill.value} <span>%</span>
+                        </span>
                       </div>
                     </div>
-                    <div className="value">
-                      <span className="num">
-                        95 <span>%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div
-                    className="skills-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <h6 className="name">
-                      <span> JavaScript </span>
-                    </h6>
-
-                    <div className="dots">
-                      <div className="dot" style={{ width: "85%" }}>
-                        <span></span>
-                      </div>
-                    </div>
-                    <div className="value">
-                      <span className="num">
-                        85 <span>%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div
-                    className="skills-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <h6 className="name">
-                      <span> React Js </span>
-                    </h6>
-
-                    <div className="dots">
-                      <div className="dot" style={{ width: "90%" }}>
-                        <span></span>
-                      </div>
-                    </div>
-                    <div className="value">
-                      <span className="num">
-                        90 <span>%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div
-                    className="skills-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <h6 className="name">
-                      <span> Next.js</span>
-                    </h6>
-
-                    <div className="dots">
-                      <div className="dot" style={{ width: "70%" }}>
-                        <span></span>
-                      </div>
-                    </div>
-                    <div className="value">
-                      <span className="num">
-                        70 <span>%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div
-                    className="skills-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <h6 className="name">
-                      <span> API Calls</span>
-                    </h6>
-
-                    <div className="dots">
-                      <div className="dot" style={{ width: "70%" }}>
-                        <span></span>
-                      </div>
-                    </div>
-                    <div className="value">
-                      <span className="num">
-                        70 <span>%</span>
-                      </span>
-                    </div>
-                  </div>
-
+                  ))}
                 </Slide>
               </div>
             </div>
             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
               <div className="skills-items">
                 <Slide cascade damping={0.1} direction="right" className="slide">
-                  <div
-                    className="skills-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <h6 className="name">
-                      <span> Git </span>
-                    </h6>
-
-                    <div className="dots">
-                      <div className="dot" style={{ width: "85%" }}>
-                        <span></span>
+                  {skillsColumn2.map((skill, index) => (
+                    <div
+                      key={index}
+                      className="skills-item scrolla-element-anim-1 scroll-animate"
+                      data-animate="active"
+                    >
+                      <h6 className="name">
+                        <span>{skill.name}</span>
+                      </h6>
+                      <div className="dots">
+                        <div className="dot" style={{ width: skill.width }}>
+                          <span></span>
+                        </div>
+                      </div>
+                      <div className="value">
+                        <span className="num">
+                          {skill.value} <span>%</span>
+                        </span>
                       </div>
                     </div>
-                    <div className="value">
-                      <span className="num">
-                        85 <span>%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div
-                    className="skills-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <h6 className="name">
-                      <span> Bootstrap </span>
-                    </h6>
-
-                    <div className="dots">
-                      <div className="dot" style={{ width: "80%" }}>
-                        <span></span>
-                      </div>
-                    </div>
-                    <div className="value">
-                      <span className="num">
-                        80 <span>%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div
-                    className="skills-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <h6 className="name">
-                      <span> Photoshop </span>
-                    </h6>
-
-                    <div className="dots">
-                      <div className="dot" style={{ width: "80%" }}>
-                        <span></span>
-                      </div>
-                    </div>
-                    <div className="value">
-                      <span className="num">
-                        80 <span>%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div
-                    className="skills-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <h6 className="name">
-                      <span> Illustrator</span>
-                    </h6>
-
-                    <div className="dots">
-                      <div className="dot" style={{ width: "70%" }}>
-                        <span></span>
-                      </div>
-                    </div>
-                    <div className="value">
-                      <span className="num">
-                        70 <span>%</span>
-                      </span>
-                    </div>
-                  </div>
+                  ))}
                 </Slide>
               </div>
             </div>

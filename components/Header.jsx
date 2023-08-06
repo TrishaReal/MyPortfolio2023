@@ -1,23 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
 
   const router = useRouter();
-  const activeLink = router.asPath;
+  const [activeLink, setActiveLink] = useState("/");
 
   const handleMenuClick = (e, target) => {
     e.preventDefault();
-    if (target === '/') {
-      // If the target is the homepage, scroll to the top of the page
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    setActiveLink(target);
+    if (target === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setTimeout(() => {
+        router.push(target, target, { scroll: false });
+      }, 500);
     } else {
-      // Otherwise, scroll to the corresponding section
       const element = document.querySelector(target);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
+        router.push(target, target, { scroll: false });
       }
     }
   };
