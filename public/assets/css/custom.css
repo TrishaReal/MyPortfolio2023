@@ -33,6 +33,36 @@
   height: 22px;
   cursor: pointer;
   border-radius: 50%;
+  position: relative;
+}
+
+.color-option::before {
+  content: attr(data-namecolor);
+  position: absolute;
+  top: 50%;
+  right: 35px;
+  transform: translateY(-50%);
+  padding: 2px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.light-skin .color-option::before {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-skin .color-option::before {
+  background-color: #fff;
+  color: white;
+}
+
+
+.color-option:hover::before {
+  opacity: 1;
 }
 
 .color-option.selected,
@@ -97,13 +127,13 @@ body.light-skin .terms-label {
 
 
 /* Color of the highlighter/selection */
-::-moz-selection {
+/* ::-moz-selection {
   background-color: #29a586be;
   color: white;
-}
+} */
 
 ::selection {
-  background-color: #29a586be;
+  background-color: var(--skin-color);
   color: white;
 }
 

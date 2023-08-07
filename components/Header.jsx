@@ -10,7 +10,15 @@ const Header = () => {
   const [activeLink, setActiveLink] = useState("/");
 
   //Cambio color theme
-  const colors = ["#29a587", "#FDD692", "#DA5268", "#9886B9", "#8DB0D6"];
+
+  const colors = [
+    { code: "#29a587", nameColor: "Green" },
+    { code: "#FDD692", nameColor: "Yellow" },
+    { code: "#DA5268", nameColor: "Red" },
+    { code: "#9886B9", nameColor: "Purple" },
+    { code: "#799FCC", nameColor: "Light Blue" },
+  ];
+
   const defaultColor = "#29a587"; // Colore predefinito
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [selectedColor, setSelectedColor] = useState(defaultColor);
@@ -88,9 +96,10 @@ const Header = () => {
                   {colors.map((color, index) => (
                     <div
                       key={index}
-                      className={`color-option ${selectedColor === color ? "selected" : ""}`}
-                      style={{ backgroundColor: color }}
-                      onClick={() => handleColorChange(color)}
+                      className={`color-option ${selectedColor === color.code ? "selected" : ""}`}
+                      style={{ backgroundColor: color.code }}
+                      data-namecolor={color.nameColor} // Aggiungi l'attributo data-namecolor
+                      onClick={() => handleColorChange(color.code)}
                     />
                   ))}
                 </div>
