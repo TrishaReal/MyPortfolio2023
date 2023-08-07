@@ -1,29 +1,68 @@
+/* :root {
+  --green: var(--skin-color);
+  --lilac: #C8A2C8;
+  --orange: #FFCEA5;
+  --red: #FF7E88;
+  --blue: #8BB2F7;
+} */
+
+/* THEME COLOR SWITCH */
+:root {
+  --skin-color: #29a587;
+}
+
+
+
+.color-dropdown {
+  position: absolute;
+  top: 80px;
+  right: 157px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.color-option {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.color-option.selected,
+.color-option:hover {
+  border: 2px solid #000;
+}
+
+
 /* ScrollBar */
 
 body::-webkit-scrollbar {
-  width: 12px;
-  /* Larghezza della scrollbar */
+  width: 9px;
 }
 
 body.light-skin::-webkit-scrollbar-track {
   background-color: #f3efe8;
-  /* Colore dello sfondo della track */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #29a587;
-  /* Colore del thumb (maniglia) */
-  border-radius: 10px;
-  border: 2px solid #262626;
+  background-color: var(--skin-color);
 }
 
 body.light-skin::-webkit-scrollbar-thumb:hover {
-  background-color: #262626;
+  background-color: rgb(41, 41, 41);
 }
 
 body.dark-skin::-webkit-scrollbar-thumb:hover {
-  background-color: #246353;
+  background-color: #ffffff;
 }
+
 
 
 
@@ -66,9 +105,15 @@ body.light-skin .terms-label {
 }
 
 /* HEADER */
-/* .menu-full-overlay {
- 
-} */
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo span {
+  margin-left: 10px;
+}
 
 .menu-full-container {
   padding-left: 40px !important;
@@ -258,6 +303,10 @@ body.light-skin .terms-label {
   flex-direction: column;
 }
 
+.msg-confirmed svg {
+  fill: var(--skin-color);
+}
+
 body.dark-skin .msg-confirmed {
   background-color: #1d222a;
   border: 2px solid white;
@@ -277,9 +326,8 @@ body.dark-skin .msg-confirmed h4 {
   margin: 10px 0 !important;
 }
 
-#contact-section .txt-warn {
-  color: #262626;
-  font-weight: 400;
+#contact-section .msg-label span {
+  font-weight: 500;
   line-height: 1.7;
   text-transform: none;
   margin-left: 10px;
@@ -298,7 +346,7 @@ body.dark-skin .msg-confirmed h4 {
 #contact-section .ready-label {
   margin-right: 10px;
   font-weight: 600;
-  color: #29a587 !important;
+  color: var(--skin-color) !important;
   text-transform: uppercase;
 }
 
@@ -318,7 +366,7 @@ body.dark-skin .msg-confirmed h4 {
   top: 1px;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: #29a587;
+  color: var(--skin-color);
   transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
   -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 }
@@ -368,7 +416,7 @@ body.dark-skin .msg-confirmed h4 {
 }
 
 #contact-section .group textarea::-webkit-scrollbar-thumb {
-  background-color: #29a587;
+  background-color: var(--skin-color);
   border-radius: 10px;
   border: 2px solid #262626;
 }
@@ -379,16 +427,7 @@ body.dark-skin .msg-confirmed h4 {
   align-items: end;
 }
 
-/* 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  border: 3px solid #127e63;
-  background-color: transparent;
-  color: black !important;
-}
- */
+
 
 
 
@@ -396,8 +435,8 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px #4dc7a87a inset !important;
-  border: 3px solid #127e63;
+  -webkit-box-shadow: 0 0 0 30px #6fbeab7a inset !important;
+  border: 3px solid #308a73;
 }
 
 @media (min-width: 630px) and (max-width: 766.9px) {
@@ -430,14 +469,14 @@ input:-webkit-autofill:active {
 }
 
 
-.go-top {
+.light-skin .go-top {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 48px;
   height: 48px;
-  background-color: #29a5869a;
-  border: 2px #000 solid !important;
+  background-color: white;
+  border: 2px #000 solid;
   cursor: pointer;
   position: fixed;
   border: none;
@@ -445,6 +484,9 @@ input:-webkit-autofill:active {
   bottom: 50px;
   right: 50px;
   z-index: 9;
+  border: 2px solid #000;
+  color: #000;
+  box-shadow: 5px 5px rgb(0 0 0 / 20%);
 }
 
 

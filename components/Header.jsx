@@ -2,12 +2,35 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import Cookie from "js-cookie";
 
 const Header = () => {
 
   const router = useRouter();
   const [activeLink, setActiveLink] = useState("/");
 
+  //Cambio color theme
+  const colors = ["#29a587", "#FDD692", "#DA5268", "#9886B9", "#8DB0D6"];
+  const defaultColor = "#29a587"; // Colore predefinito
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+  const [selectedColor, setSelectedColor] = useState(defaultColor);
+
+  useEffect(() => {
+    const storedColor = localStorage.getItem("selectedColor");
+    if (storedColor) {
+      setSelectedColor(storedColor);
+      document.documentElement.style.setProperty("--skin-color", storedColor);
+    }
+  }, []);
+
+  const handleColorChange = (color) => {
+    document.documentElement.style.setProperty("--skin-color", color);
+    setSelectedColor(color);
+    localStorage.setItem("selectedColor", color); // Salva il colore selezionato nel localStorage
+    setDropdownVisible(false);
+  };
+
+  //Gestione della navigazione da una sezione all'altra nel menu con effetto smooth e activeLink
   const handleMenuClick = (e, target) => {
     e.preventDefault();
     setActiveLink(target);
@@ -26,7 +49,6 @@ const Header = () => {
   };
 
 
-
   return (
     <header className="header ">
       <div className="header__builder">
@@ -35,15 +57,46 @@ const Header = () => {
             <div className="logo ">
               <Link href="/">
                 <Image
-                  width={228}
+                  width={118}
                   height={38}
-                  src="/assets/images/logo02.png"
+                  src="/assets/images/logo01.png"
                   alt=""
                 />
               </Link>
+              <span>
+                <svg className="bi bi-moon-fill pb-1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill={selectedColor} viewBox="0 0 16 16">
+                  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                </svg>
+              </span>
             </div>
           </div>
+
           <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
+            <a href="#" className="color-switcher-btn mx-4" onClick={(e) => {
+              e.preventDefault();
+              setDropdownVisible(!isDropdownVisible);
+            }}>
+              <span className="color-switcher">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill={selectedColor} class="bi bi-palette2" viewBox="0 0 16 16">
+                  <path d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a2.99 2.99 0 0 1-2.121-.879A2.99 2.99 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188v5.647zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zM15 15v-4H9.258l-4.015 4H15zM0 .5v12.495V.5z" />
+                  <path d="M0 12.995V13a3.07 3.07 0 0 0 0-.005z" />
+                </svg>
+              </span>
+
+              {isDropdownVisible && (
+                <div className="color-dropdown">
+                  {colors.map((color, index) => (
+                    <div
+                      key={index}
+                      className={`color-option ${selectedColor === color ? "selected" : ""}`}
+                      style={{ backgroundColor: color }}
+                      onClick={() => handleColorChange(color)}
+                    />
+                  ))}
+                </div>
+              )}
+            </a>
+
             <a href="#" className="switcher-btn">
               <span className="sw-before">
                 <svg

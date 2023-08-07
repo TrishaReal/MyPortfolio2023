@@ -255,7 +255,7 @@ const Contact = () => {
                             <div className="group">
                               <label className="msg-label">
                                 Your Message <b>*</b>
-                                <span className="txt-warn">(At least 10 characters)</span>
+                                <span>(At least 10 characters)</span>
                               </label>
                               <div className="textarea-container">
                                 <textarea
@@ -316,7 +316,7 @@ const Contact = () => {
                           xmlns="http://www.w3.org/2000/svg"
                           width="70"
                           height="70"
-                          fill="#29A587"
+                          fill=""
                           className="bi bi-check-circle"
                           viewBox="0 0 16 16">
                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
