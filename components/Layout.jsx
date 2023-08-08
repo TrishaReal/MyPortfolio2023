@@ -7,9 +7,9 @@ const Layout = (props) => {
   const { children, styles } = props;
 
   const socialLinks = [
-    { icon: "github", url: "https://github.com/TrishaReal" },
-    { icon: "linkedin-in", url: "https://www.linkedin.com/in/trishasairenereal/" },
-    { icon: "behance", url: "https://www.behance.net/trishasairenereal" },
+    { name: "Github", icon: "github", url: "https://github.com/TrishaReal" },
+    { name: "Linkedin", icon: "linkedin", url: "https://www.linkedin.com/in/trishasairenereal/" },
+    { name: "Behance", icon: "behance", url: "https://www.behance.net/trishasairenereal" },
   ];
 
 

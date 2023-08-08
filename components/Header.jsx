@@ -56,6 +56,8 @@ const Header = ({ socialLinks }) => {
     }
   };
 
+
+
   const menuItems = [
     { text: "Home", target: "/" },
     { text: "Skills", target: "#skills-section" },
@@ -70,19 +72,21 @@ const Header = ({ socialLinks }) => {
         <div className="row">
           <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <div className="logo ">
-              <Link href="/">
+              <Link href="/" onClick={(e) => handleMenuClick(e, "/")} >
                 <Image
                   width={118}
                   height={38}
                   src="/assets/images/logo01.png"
                   alt=""
                 />
+
+                <span>
+                  <svg className="bi bi-moon-fill pb-1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill={selectedColor} viewBox="0 0 16 16">
+                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                  </svg>
+                </span>
               </Link>
-              <span>
-                <svg className="bi bi-moon-fill pb-1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill={selectedColor} viewBox="0 0 16 16">
-                  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
-                </svg>
-              </span>
+
             </div>
           </div>
 
@@ -92,10 +96,12 @@ const Header = ({ socialLinks }) => {
               setDropdownVisible(!isDropdownVisible);
             }}>
               <span className="color-switcher">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill={selectedColor} class="bi bi-palette2" viewBox="0 0 16 16">
+                {/* <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill={selectedColor} class="bi bi-palette2" viewBox="0 0 16 16">
                   <path d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a2.99 2.99 0 0 1-2.121-.879A2.99 2.99 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188v5.647zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zM15 15v-4H9.258l-4.015 4H15zM0 .5v12.495V.5z" />
                   <path d="M0 12.995V13a3.07 3.07 0 0 0 0-.005z" />
-                </svg>
+                </svg> */}
+
+                <img src="/assets/svg/palette00.png" alt="" style={{ width: "29px" }} />
               </span>
 
               {isDropdownVisible && (
@@ -105,7 +111,7 @@ const Header = ({ socialLinks }) => {
                       key={index}
                       className={`color-option ${selectedColor === color.code ? "selected" : ""}`}
                       style={{ backgroundColor: color.code }}
-                      data-namecolor={color.nameColor} // Aggiungi l'attributo data-namecolor
+                      titleColor={color.nameColor}
                       onClick={() => handleColorChange(color.code)}
                     />
                   ))}
@@ -180,7 +186,8 @@ const Header = ({ socialLinks }) => {
                               target="_blank"
                               download="CV_TrishaSReal.pdf"
                               href="/assets/CV_TrishaS.Real.pdf"
-                              data-splitting="chars">
+                              data-splitting="chars"
+                              title="pdf format">
                               Download CV
                             </Link>
 
@@ -189,15 +196,16 @@ const Header = ({ socialLinks }) => {
                       </div>
 
                       <div className="menu-social-links">
-                        {socialLinks.map((link, index) => (
+                        {socialLinks?.map((social, index) => (
+
                           <a
                             key={index}
-                            href={link.url}
+                            href={social?.url}
                             target="_blank"
-                            className="scrolla-element-anim-1"
-                            title={link.icon}
+                            className="socialHeader px-2"
+                            socialName={social?.name}
                           >
-                            <i className={`fab fa-${link.icon}`}></i>
+                            <i className={`fab fa-${social?.icon}`}></i>
                           </a>
                         ))}
 

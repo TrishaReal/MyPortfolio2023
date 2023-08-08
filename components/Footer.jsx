@@ -10,15 +10,19 @@ const Footer = ({ socialLinks }) => {
               <div
                 className="social-links align-center  scrolla-element-anim-1 scroll-animate"
                 data-animate="active">
-                {socialLinks.map((link, index) => (
+                {socialLinks?.map((link, index) => (
                   <a
                     key={index}
+                    className="socialFooter px-2"
                     target="_blank"
                     rel="nofollow"
-                    href={link.url}>
-                    <i aria-hidden="true" className={`fab fa-${link.icon}`}></i>
+                    href={link?.url}
+                    social-name={link?.name}>
+                    <i aria-hidden="true" className={`fab fa-${link?.icon}`}></i>
                   </a>
                 ))}
+
+
               </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">

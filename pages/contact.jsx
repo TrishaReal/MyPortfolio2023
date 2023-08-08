@@ -15,6 +15,28 @@ const Contact = () => {
   const emailRegex =
     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+
+  const contactInfo = [
+    {
+      icon: 'far fa-map',
+      title: 'Address',
+      text: 'Cagliari (CA), Sardegna, Italy',
+      link: 'https://www.google.com/maps/place/Cagliari+Sardegna+Italy'
+    },
+    {
+      icon: 'far fa-envelope',
+      title: 'Email',
+      text: 'dev.trisha.real@gmail.com',
+      link: 'mailto:dev.trisha.real@gmail.com'
+    },
+    {
+      icon: 'far fa-address-book',
+      title: 'Phone',
+      text: '+39 327 407 3331',
+      link: 'tel:+393274073331'
+    }
+  ];
+
   useEffect(() => {
     if (
       fullName.length > 1 &&
@@ -151,45 +173,29 @@ const Contact = () => {
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-5 pt-5">
               <div className="numbers-items">
                 <Slide cascade damping={0.1} >
-                  <div
-                    className="numbers-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <div className="icon">
-                      <i aria-hidden="true" className="far fa-map"></i>
+                  {contactInfo.map((info, index) => (
+                    <div
+                      key={index}
+                      className="numbers-item scrolla-element-anim-1 scroll-animate"
+                      data-animate="active"
+                    >
+                      <div className="icon">
+                        <i aria-hidden="true" className={info.icon}></i>
+                      </div>
+                      <div className="title">
+                        <span>{info.title}</span>
+                      </div>
+                      <div className="lui-text">
+                        {info.link ? (
+                          <a href={info.link} target="_blank" rel="noopener noreferrer">
+                            <span>{info.text}</span>
+                          </a>
+                        ) : (
+                          <span>{info.text}</span>
+                        )}
+                      </div>
                     </div>
-                    <div className="title">
-                      <span> Address </span>
-                    </div>
-                    <div className="lui-text">
-                      <span> Cagliari (CA), Sardegna, Italy </span>
-                    </div>
-                  </div>
-                  <div
-                    className="numbers-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <div className="icon">
-                      <i aria-hidden="true" className="far fa-envelope"></i>
-                    </div>
-                    <div className="title">
-                      <span> Email </span>
-                    </div>
-                    <div className="lui-text">
-                      <a href="mailto:dev.trisha.real@gmail.com"><span> dev.trisha.real@gmail.com </span></a>
-                    </div>
-                  </div>
-                  <div
-                    className="numbers-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <div className="icon">
-                      <i aria-hidden="true" className="far fa-address-book"></i>
-                    </div>
-                    <div className="title">
-                      <span> Phone </span>
-                    </div>
-                    <div className="lui-text">
-                      <a href="tel:+393274073331"><span> +39 327 407 3331 </span></a>
-                    </div>
-                  </div>
+                  ))}
                 </Slide>
 
               </div>

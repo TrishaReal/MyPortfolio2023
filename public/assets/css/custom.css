@@ -27,6 +27,28 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.color-dropdown-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.color-dropdown-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.color-dropdown-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.color-dropdown-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
 
 .color-option {
   width: 22px;
@@ -37,7 +59,7 @@
 }
 
 .color-option::before {
-  content: attr(data-namecolor);
+  content: attr(titleColor);
   position: absolute;
   top: 50%;
   right: 35px;
@@ -48,6 +70,15 @@
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   z-index: 1;
+}
+
+.color-option:hover::before {
+  opacity: 1;
+}
+
+.color-option.selected,
+.color-option:hover {
+  border: 2px solid #000;
 }
 
 .light-skin .color-option::before {
@@ -61,14 +92,41 @@
 }
 
 
-.color-option:hover::before {
+
+.menu-social-links .socialHeader {
+  position: relative;
+}
+
+.menu-social-links .socialHeader::before {
+  content: attr(social-name);
+  position: absolute;
+  top: -32px;
+  right: -55px;
+  transform: translateX(-50%);
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.menu-social-links .socialHeader:hover::before {
   opacity: 1;
 }
 
-.color-option.selected,
-.color-option:hover {
-  border: 2px solid #000;
+.light-skin .socialHeader::before {
+  background-color: #333;
+  color: #fff;
 }
+
+.dark-skin .socialHeader::before {
+  background-color: #fff;
+  color: #333;
+}
+
+
+
 
 @media (max-width: 425px) {
   .color-dropdown {
@@ -204,6 +262,41 @@ body.light-skin .terms-label {
 .downloadCv-footer {
   padding-right: 20px;
 }
+
+.footer .social-links .socialFooter {
+  position: relative;
+}
+
+.footer .social-links .socialFooter::before {
+  content: attr(social-name);
+  position: absolute;
+  top: -32px;
+  right: -55px;
+  transform: translateX(-50%);
+  background-color: #333;
+  padding: 2px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  font-size: 15px !important;
+  font-weight: 400;
+}
+
+.footer .social-links .socialFooter:hover::before {
+  opacity: 1;
+}
+
+.light-skin .footer .social-links .socialFooter::before {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-skin .footer .social-links .socialFooter::before {
+  background-color: #fff;
+  color: #333;
+}
+
 
 
 /* HERO */

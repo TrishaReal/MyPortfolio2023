@@ -6,12 +6,12 @@ const MySkills = () => {
     {
       icon: "far fa-calendar",
       title: "Birth Date and Place",
-      value: "July 11, 1999 - Milan",
+      value: "July 11, 1999 - Milan, Italy",
     },
     {
       icon: "fa fa-globe",
       title: "Nationality",
-      value: "Filipino",
+      value: "Filipino (Philippines)",
     },
     {
       icon: "fa fa-language",
