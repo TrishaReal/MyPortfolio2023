@@ -9,8 +9,8 @@ const Header = () => {
   const router = useRouter();
   const [activeLink, setActiveLink] = useState("/");
 
-  //Cambio color theme
 
+  //Cambio color theme
   const colors = [
     { code: "#29a587", nameColor: "Green" },
     { code: "#FDD692", nameColor: "Yellow" },

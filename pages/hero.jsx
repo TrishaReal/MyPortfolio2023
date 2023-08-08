@@ -117,8 +117,8 @@ const Hero = () => {
             </div>
             <div className="slide scrolla-element-anim-1 scroll-animate">
               <Image
-                width={1000}
-                height={1000}
+                width={500}
+                height={500}
                 decoding="async"
                 src="/assets/images/profile01.png"
                 alt="Trisha Sairene Real"

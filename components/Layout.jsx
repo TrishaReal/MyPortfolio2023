@@ -12,6 +12,7 @@ const Layout = (props) => {
 
       <div className="container-page">
         <Header />
+
         <div className="wrapper">{children}</div>
         <Footer />
         <GoTop />
