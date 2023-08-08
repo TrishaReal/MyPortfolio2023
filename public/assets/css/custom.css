@@ -193,7 +193,10 @@ body.light-skin .terms-label {
   z-index: 9999 !important;
   height: 100vh !important;
   overflow: hidden !important;
-  background-color: pink;
+}
+
+.menu-btn {
+  z-index: 99999 !important;
 }
 
 

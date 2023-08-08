@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ socialLinks }) => {
   return (
     <div className="footer lui-gradient-top">
       <div className="footer__builder">
@@ -10,38 +10,22 @@ const Footer = () => {
               <div
                 className="social-links align-center  scrolla-element-anim-1 scroll-animate"
                 data-animate="active">
-                <a
-                  className="copyright-text downloadCv-footer"
-                  target="_blank"
-                  href="/assets/CV_TrishaS.Real.pdf"
-                  download="CV_TrishaSReal.pdf">
-                  <span>Download CV</span>
-                </a>
-                <a
-                  target="_blank"
-                  rel="nofollow"
-                  href="https://github.com/TrishaReal">
-                  <i aria-hidden="true" className="fab fa-github"></i>
-                </a>
-                <a
-                  target="_blank"
-                  rel="nofollow"
-                  href="https://www.linkedin.com/in/trishasairenereal/">
-                  <i aria-hidden="true" className="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                  target="_blank"
-                  rel="nofollow"
-                  href="https://www.behance.net/trishasairenereal">
-                  <i aria-hidden="true" className="fab fa-behance"></i>
-                </a>
+                {socialLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    target="_blank"
+                    rel="nofollow"
+                    href={link.url}>
+                    <i aria-hidden="true" className={`fab fa-${link.icon}`}></i>
+                  </a>
+                ))}
               </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <div
                 className="copyright-text align-center scrolla-element-anim-1 scroll-animate footer-text"
                 data-animate="active">
-                © 2023 <strong>Luique</strong>. All rights reserved
+                © 2023 Copyright. All rights reserved.
               </div>
             </div>
           </div>

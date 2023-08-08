@@ -2,15 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import Cookie from "js-cookie";
 
-const Header = () => {
+const Header = ({ socialLinks }) => {
 
   const router = useRouter();
   const [activeLink, setActiveLink] = useState("/");
 
+  //State per gestione dropdown del theme color switch 
+  const defaultColor = "#29a587"; // Colore predefinito
+  const [selectedColor, setSelectedColor] = useState(defaultColor);
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
 
-  //Cambio color theme
+  //Gestione del theme color change
   const colors = [
     { code: "#29a587", nameColor: "Green" },
     { code: "#FDD692", nameColor: "Yellow" },
@@ -18,10 +21,6 @@ const Header = () => {
     { code: "#9886B9", nameColor: "Purple" },
     { code: "#799FCC", nameColor: "Light Blue" },
   ];
-
-  const defaultColor = "#29a587"; // Colore predefinito
-  const [isDropdownVisible, setDropdownVisible] = useState(false);
-  const [selectedColor, setSelectedColor] = useState(defaultColor);
 
   useEffect(() => {
     const storedColor = localStorage.getItem("selectedColor");
@@ -37,6 +36,7 @@ const Header = () => {
     localStorage.setItem("selectedColor", color); // Salva il colore selezionato nel localStorage
     setDropdownVisible(false);
   };
+
 
   //Gestione della navigazione da una sezione all'altra nel menu con effetto smooth e activeLink
   const handleMenuClick = (e, target) => {
@@ -56,6 +56,13 @@ const Header = () => {
     }
   };
 
+  const menuItems = [
+    { text: "Home", target: "/" },
+    { text: "Skills", target: "#skills-section" },
+    { text: "Works", target: "#works-section" },
+    { text: "Resume", target: "#resume-section" },
+    { text: "Contact", target: "#contact-section" },
+  ];
 
   return (
     <header className="header ">
@@ -151,55 +158,21 @@ const Header = () => {
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                       <div className="menu-full">
                         <ul className="menu-full">
-                          <li className={`menu-item ${activeLink === "/" ? "active" : ""}`}>
-                            <Link
-                              className="splitting-text-anim-2"
-                              data-splitting="chars"
-                              href="#"
-                              onClick={(e) => handleMenuClick(e, "/")}
+                          {menuItems.map((item, index) => (
+                            <li
+                              key={index}
+                              className={`menu-item ${activeLink.includes(item.target) ? "active" : ""}`}
                             >
-                              Home
-                            </Link>
-                          </li>
-                          <li className={`menu-item ${activeLink.includes("#skills-section") ? "active" : ""}`}>
-                            <Link
-                              className="splitting-text-anim-2"
-                              data-splitting="chars"
-                              href="#"
-                              onClick={(e) => handleMenuClick(e, "#skills-section")}
-                            >
-                              Skills
-                            </Link>
-                          </li>
-                          <li className={`menu-item ${activeLink.includes("#works-section") ? "active" : ""}`}>
-                            <Link
-                              className="splitting-text-anim-2"
-                              data-splitting="chars"
-                              href="#"
-                              onClick={(e) => handleMenuClick(e, "#works-section")}
-                            >
-                              Works
-                            </Link>
-                          </li>
-                          <li className={`menu-item ${activeLink.includes("#resume-section") ? "active" : ""}`}>
-                            <Link
-                              className="splitting-text-anim-2"
-                              data-splitting="chars"
-                              href="#"
-                              onClick={(e) => handleMenuClick(e, "#resume-section")}>
-                              Resume
-                            </Link>
-                          </li>
-
-                          <li className={`menu-item ${activeLink.includes("#contact-section") ? "active" : ""}`}>
-                            <Link
-                              className="splitting-text-anim-2"
-                              data-splitting="chars"
-                              href="#"
-                              onClick={(e) => handleMenuClick(e, "#contact-section")}>
-                              Contact
-                            </Link>
-                          </li>
+                              <Link
+                                className="splitting-text-anim-2"
+                                data-splitting="chars"
+                                href="#"
+                                onClick={(e) => handleMenuClick(e, item.target)}
+                              >
+                                {item.text}
+                              </Link>
+                            </li>
+                          ))}
 
                           <li className="menu-item">
                             <Link
@@ -216,27 +189,18 @@ const Header = () => {
                       </div>
 
                       <div className="menu-social-links">
-                        <a
-                          href="https://github.com/TrishaReal"
-                          target="blank"
-                          className="scrolla-element-anim-1"
-                          title="github">
-                          <i className="fab fa-github"></i>
-                        </a>
-                        <a
-                          href="https://www.linkedin.com/in/trishasairenereal/"
-                          target="blank"
-                          className="scrolla-element-anim-1"
-                          title="twitter">
-                          <i className="fab fa-linkedin-in"></i>
-                        </a>
-                        <a
-                          href="https://www.behance.net/trishasairenereal"
-                          target="blank"
-                          className="scrolla-element-anim-1"
-                          title="behance">
-                          <i className="fab fa-behance"></i>
-                        </a>
+                        {socialLinks.map((link, index) => (
+                          <a
+                            key={index}
+                            href={link.url}
+                            target="_blank"
+                            className="scrolla-element-anim-1"
+                            title={link.icon}
+                          >
+                            <i className={`fab fa-${link.icon}`}></i>
+                          </a>
+                        ))}
+
                       </div>
 
                       <div className="v-line-block">
