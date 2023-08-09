@@ -222,7 +222,7 @@ const fillTemplate = (data) => {
                                     <tr>
                                       <td style="padding-right: 0px;padding-left: 0px;" align="center">
     
-                                        <img align="center" border="0" src="./images/image-4.png" alt="" title=""
+                                        <img align="center" border="0" src="https://www.trishareal.com/assets/emailPics/image-4.png" alt="" title=""
                                           style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 480px;"
                                           width="480" />
     
@@ -271,7 +271,7 @@ const fillTemplate = (data) => {
                                               style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
                                               <a href="https://www.linkedin.com/in/trishasairenereal/" title="LinkedIn"
                                                 target="_blank">
-                                                <img src="" alt="LinkedIn" title="LinkedIn" width="32"
+                                                <img src="https://www.trishareal.com/assets/emailPics/image-1.png" alt="LinkedIn" title="LinkedIn" width="32"
                                                   style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
                                               </a>
                                             </td>
@@ -286,7 +286,7 @@ const fillTemplate = (data) => {
                                             <td align="left" valign="middle"
                                               style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
                                               <a href="https://github.com/TrishaReal" title="GitHub" target="_blank">
-                                                <img src="./images/image-3.png" alt="GitHub" title="GitHub" width="32"
+                                                <img src="https://www.trishareal.com/assets/emailPics/image-3.png" alt="GitHub" title="GitHub" width="32"
                                                   style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
                                               </a>
                                             </td>
@@ -301,7 +301,7 @@ const fillTemplate = (data) => {
                                             style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
                                             <a href="https://www.behance.net/trishasairenereal" title="Behance"
                                               target="_blank">
-                                              <img src="images/image-2.png" alt="Behance" title="Behance" width="32"
+                                              <img src="https://www.trishareal.com/assets/emailPics/image-2.png" alt="Behance" title="Behance" width="32"
                                                 style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
                                             </a>
                                           </td>
