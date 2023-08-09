@@ -1,4 +1,4 @@
-import linkedinImg from "./images/image-1.png";
+
 
 const fillTemplate = (data) => {
   const dataDefault = {
