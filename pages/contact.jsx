@@ -172,7 +172,7 @@ const Contact = () => {
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-5 pt-5">
               <div className="numbers-items">
-                <Slide cascade damping={0.1} >
+                <Slide cascade damping={0.1} triggerOnce>
                   {contactInfo.map((info, index) => (
                     <div
                       key={index}
@@ -213,7 +213,7 @@ const Contact = () => {
                   <div className="contacts-form">
 
                     <form id="cform" method="POST">
-                      <Fade direction="right">
+                      <Fade direction="right" triggerOnce>
                         <div className="row">
                           <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <div className="group">

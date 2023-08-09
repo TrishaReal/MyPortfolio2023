@@ -17,7 +17,9 @@ const Header = ({ socialLinks }) => {
   const colors = [
     { code: "#29a587", nameColor: "Green" },
     { code: "#FDD692", nameColor: "Yellow" },
+    { code: "#E88726", nameColor: "Orange" },
     { code: "#DA5268", nameColor: "Red" },
+    { code: "#C0007A", nameColor: "Magenta" },
     { code: "#9886B9", nameColor: "Purple" },
     { code: "#799FCC", nameColor: "Light Blue" },
   ];
@@ -55,7 +57,6 @@ const Header = ({ socialLinks }) => {
       }
     }
   };
-
 
 
   const menuItems = [
@@ -101,7 +102,7 @@ const Header = ({ socialLinks }) => {
                   <path d="M0 12.995V13a3.07 3.07 0 0 0 0-.005z" />
                 </svg> */}
 
-                <img src="/assets/svg/palette00.png" alt="" style={{ width: "29px" }} />
+                <img src="/assets/svg/palette.png" alt="" style={{ width: "28px" }} />
               </span>
 
               {isDropdownVisible && (
@@ -118,7 +119,7 @@ const Header = ({ socialLinks }) => {
                 </div>
               )}
             </a>
-
+            {/* LIGHT AND DARK SKIN VERSION */}
             <a href="#" className="switcher-btn">
               <span className="sw-before">
                 <svg
@@ -151,7 +152,7 @@ const Header = ({ socialLinks }) => {
                 </svg>
               </span>
             </a>
-
+            {/* hamburger menu */}
             <a href="#" className="menu-btn">
               <span></span>
               <span></span>

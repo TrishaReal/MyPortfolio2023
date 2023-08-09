@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 const Portfolio = () => {
 
@@ -124,6 +125,8 @@ const Portfolio = () => {
 
   return (
     <section className="lui-section lui-gradient-center " id="works-section">
+
+
       <div className="lui-heading">
         <div className="container">
           <div className="m-titles align-center">
@@ -144,153 +147,154 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+      <Fade triggerOnce>
+        <div className="v-line v-line-left">
+          <div className="container ">
+            <div className="works-box">
+              <div
+                className="filter-links scrolla-element-anim-1 scroll-animate"
+                data-animate="active">
+                <a
+                  href="#"
+                  className="lui-subtitle active"
+                  data-href=".works-col">
+                  All
+                </a>
 
-      <div className="v-line v-line-left">
-        <div className="container ">
-          <div className="works-box">
-            <div
-              className="filter-links scrolla-element-anim-1 scroll-animate"
-              data-animate="active">
-              <a
-                href="#"
-                className="lui-subtitle active"
-                data-href=".works-col">
-                All
-              </a>
+                <a
+                  href="#"
+                  className="lui-subtitle"
+                  data-href=".sorting-development">
+                  Development
+                </a>
+                <a href="#" className="lui-subtitle" data-href=".sorting-graphic">
+                  Graphic Design
+                </a>
+              </div>
 
-              <a
-                href="#"
-                className="lui-subtitle"
-                data-href=".sorting-development">
-                Development
-              </a>
-              <a href="#" className="lui-subtitle" data-href=".sorting-graphic">
-                Graphic Design
-              </a>
+              <div className="works-items works-masonry-items row">
+
+                {graphicProjects.map((project, index) => (
+                  <div key={`graphicProject-${index}`} className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-graphic">
+                    <div
+                      className="works-item scrolla-element-anim-1 scroll-animate"
+                      data-animate="active">
+                      <div className="image">
+                        <div className="img">
+                          <a
+                            href={project.behanceLink}
+                            target="_blank">
+                            <Image
+                              width={550}
+                              height={450}
+                              decoding="async"
+                              src={project.imgSrc}
+                              alt={project.title}
+                            />
+                            <span className="overlay"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="desc">
+                        <span className="category">{project.category}</span>
+                        <h5 className="name">
+                          <a
+                            href={project.behanceLink}
+                            target="_blank">
+                            {project.title}
+                          </a>
+                        </h5>
+                        <div className="text">
+                          <p>
+                            {project.description}
+                          </p>
+                        </div>
+
+                        {project.behanceLink && (
+                          <a href={project.behanceLink} target="_blank" className="lnk">
+                            Open behance
+                          </a>
+                        )}
+
+                      </div>
+                      <div
+                        className="bg-img"
+                        style={{
+                          backgroundImage: "url(assets/images/pat-2.png)",
+                        }}></div>
+                    </div>
+                  </div>
+                ))}
+
+
+
+                {devProjects.map((project, index) => (
+                  <div key={`devProject-${index}`} className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development">
+                    <div
+                      className="works-item scrolla-element-anim-1 scroll-animate"
+                      data-animate="active">
+                      <div className="image">
+                        <div className="img">
+                          <a
+                            href={project.demoLink}
+                            target="_blank">
+                            <Image
+                              width={550}
+                              height={450}
+                              decoding="async"
+                              src={project.imgSrc}
+                              alt={project.title}
+                            />
+                            <span className="overlay"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="desc">
+                        <span className="category">
+                          {project.category}
+                        </span>
+                        <h5 className="name">
+                          <a
+                            href={project.demoLink}
+                            target="_blank">
+                            {project.title}
+                          </a>
+                        </h5>
+                        <div className="text">
+                          <p>{project.description}</p>
+                        </div>
+                        {project.demoLink && (
+                          <a href={project.demoLink} target="_blank" className="lnk">
+                            Open demo
+                          </a>
+                        )}
+                        <br />
+                        {project.githubLink && (
+                          <a href={project.githubLink} target="_blank" className="lnk">
+                            Open github
+                          </a>
+                        )}
+                      </div>
+                      <div
+                        className="bg-img"
+                        style={{
+                          backgroundImage: "url(assets/images/pat-2.png)",
+                        }}></div>
+                    </div>
+                  </div>
+                ))}
+
+
+              </div>
+
             </div>
 
-            <div className="works-items works-masonry-items row">
-
-              {graphicProjects.map((project, index) => (
-                <div key={`graphicProject-${index}`} className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-graphic">
-                  <div
-                    className="works-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <div className="image">
-                      <div className="img">
-                        <a
-                          href={project.behanceLink}
-                          target="_blank">
-                          <Image
-                            width={550}
-                            height={450}
-                            decoding="async"
-                            src={project.imgSrc}
-                            alt={project.title}
-                          />
-                          <span className="overlay"></span>
-                        </a>
-                      </div>
-                    </div>
-                    <div className="desc">
-                      <span className="category">{project.category}</span>
-                      <h5 className="name">
-                        <a
-                          href={project.behanceLink}
-                          target="_blank">
-                          {project.title}
-                        </a>
-                      </h5>
-                      <div className="text">
-                        <p>
-                          {project.description}
-                        </p>
-                      </div>
-
-                      {project.behanceLink && (
-                        <a href={project.behanceLink} target="_blank" className="lnk">
-                          Open behance
-                        </a>
-                      )}
-
-                    </div>
-                    <div
-                      className="bg-img"
-                      style={{
-                        backgroundImage: "url(assets/images/pat-2.png)",
-                      }}></div>
-                  </div>
-                </div>
-              ))}
-
-
-
-              {devProjects.map((project, index) => (
-                <div key={`devProject-${index}`} className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development">
-                  <div
-                    className="works-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active">
-                    <div className="image">
-                      <div className="img">
-                        <a
-                          href={project.demoLink}
-                          target="_blank">
-                          <Image
-                            width={550}
-                            height={450}
-                            decoding="async"
-                            src={project.imgSrc}
-                            alt={project.title}
-                          />
-                          <span className="overlay"></span>
-                        </a>
-                      </div>
-                    </div>
-                    <div className="desc">
-                      <span className="category">
-                        {project.category}
-                      </span>
-                      <h5 className="name">
-                        <a
-                          href={project.demoLink}
-                          target="_blank">
-                          {project.title}
-                        </a>
-                      </h5>
-                      <div className="text">
-                        <p>{project.description}</p>
-                      </div>
-                      {project.demoLink && (
-                        <a href={project.demoLink} target="_blank" className="lnk">
-                          Open demo
-                        </a>
-                      )}
-                      <br />
-                      {project.githubLink && (
-                        <a href={project.githubLink} target="_blank" className="lnk">
-                          Open github
-                        </a>
-                      )}
-                    </div>
-                    <div
-                      className="bg-img"
-                      style={{
-                        backgroundImage: "url(assets/images/pat-2.png)",
-                      }}></div>
-                  </div>
-                </div>
-              ))}
-
-
+            <div className="lui-bgtitle">
+              <span> Portfolio </span>
             </div>
-
-          </div>
-
-          <div className="lui-bgtitle">
-            <span> Portfolio </span>
           </div>
         </div>
-      </div>
+      </Fade>
     </section>
   );
 };

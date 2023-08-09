@@ -8,15 +8,15 @@ const MySkills = () => {
       title: "Birth Date and Place",
       value: "July 11, 1999 - Milan, Italy",
     },
-    {
-      icon: "fa fa-globe",
-      title: "Nationality",
-      value: "Filipino (Philippines)",
-    },
+    // {
+    //   icon: "fa fa-globe",
+    //   title: "Nationality",
+    //   value: "Filipino (Philippines)",
+    // },
     {
       icon: "fa fa-language",
       title: "Languages",
-      value: "Italian, English, Tagalog, Spanish",
+      value: "Italian, English, Tagalog(ph)",
     },
   ];
 
@@ -106,7 +106,7 @@ const MySkills = () => {
             {/* Personal Information */}
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 pb-5">
               <div className="numbers-items">
-                <Slide cascade damping={0.1}>
+                <Slide cascade damping={0.1} triggerOnce>
                   {personalInfo.map((info, index) => (
                     <div
                       key={index}
@@ -130,7 +130,7 @@ const MySkills = () => {
             </div>
             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
               <div className="skills-items">
-                <Slide cascade damping={0.1} direction="right" className="slide">
+                <Slide cascade damping={0.1} direction="right" className="slide" triggerOnce>
                   {skillsColumn1.map((skill, index) => (
                     <div
                       key={index}
@@ -157,7 +157,7 @@ const MySkills = () => {
             </div>
             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
               <div className="skills-items">
-                <Slide cascade damping={0.1} direction="right" className="slide">
+                <Slide cascade damping={0.1} direction="right" className="slide" triggerOnce>
                   {skillsColumn2.map((skill, index) => (
                     <div
                       key={index}

@@ -110,7 +110,7 @@ const Resume = () => {
           <div className="row d-flex flex-direction-row">
 
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <Fade direction="right">
+              <Fade direction="right" triggerOnce>
                 <h5
                   className="history-title scrolla-element-anim-1 scroll-animate"
                   data-animate="active">
@@ -149,7 +149,7 @@ const Resume = () => {
 
 
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <Fade direction="left">
+              <Fade direction="left" triggerOnce>
                 <h5
                   className="history-title scrolla-element-anim-1 scroll-animate history-title-custom"
                   data-animate="active">

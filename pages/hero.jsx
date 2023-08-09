@@ -45,6 +45,7 @@ const Hero = () => {
                   initial={{ x: 0, opacity: 0 }}
                   whileInView={{ x: [-225, 0], opacity: 1 }}
                   transition={{ duration: 0.8 }}
+                  viewport={{ once: true }}
                   className="title splitting-text-anim-1 scroll-animate"
                   data-splitting="chars"
                   data-animate="active">
