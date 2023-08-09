@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Bounce, Fade, Slide } from "react-awesome-reveal";
 import toast, { Toaster } from "react-hot-toast";
+import imgGithub from "../public/assets/emailPics/image-1.png"
 
 const Contact = () => {
   const [fullName, setFullname] = useState("");
@@ -14,6 +15,7 @@ const Contact = () => {
   const nameRegex = /^(?=.{1,40}$)[a-zA-Z]+(?:[-'\s][a-zA-Z]+)*$/;
   const emailRegex =
     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
 
 
   const contactInfo = [
@@ -65,6 +67,7 @@ const Contact = () => {
       subject: "Thanks for getting in touch!",
       preheader: "Thanks for getting in touch!",
       greetings: `dear <strong>${fullName}</strong>`,
+      img: `${imgGithub}`,
       message:
         "Thank you for contacting me! <br> I'll review your request and get back to you asap. <br> In the meantime, please follow me on <b>LinkedIn</b> for further updates. <br> <br>Have a great day and best regards, <br> Trisha.  ",
       callToAction: {
@@ -83,7 +86,7 @@ const Contact = () => {
       footer: {
         name: "© 2023, Offer by",
         href: "https://www.trishareal.com/",
-        message: "trishasairenereal.vercel.app",
+        message: "trishareal.com",
         active: true,
       },
     };

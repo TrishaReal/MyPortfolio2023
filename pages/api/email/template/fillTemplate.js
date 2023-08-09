@@ -1,3 +1,4 @@
+import linkedinImg from "./images/image-1.png";
 
 const fillTemplate = (data) => {
   const dataDefault = {
@@ -33,6 +34,7 @@ const fillTemplate = (data) => {
     ...data,
   };
 
+
   switch (options?.type) {
     case 'greetings':
       return `
@@ -42,42 +44,30 @@ const fillTemplate = (data) => {
       xmlns:o="urn:schemas-microsoft-com:office:office">
     
     <head>
-      <!--[if gte mso 9]>
-    <xml>
-      <o:OfficeDocumentSettings>
-        <o:AllowPNG/>
-        <o:PixelsPerInch>96</o:PixelsPerInch>
-      </o:OfficeDocumentSettings>
-    </xml>
-    <![endif]-->
+    
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="x-apple-disable-message-reformatting">
-      <!--[if !mso]><!-->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title></title>
     
       <style type="text/css">
-        @media only screen and (min-width: 670px) {
+        @media only screen and (min-width: 520px) {
           .u-row {
-            width: 650px !important;
+            width: 500px !important;
           }
     
           .u-row .u-col {
             vertical-align: top;
           }
     
-          .u-row .u-col-50 {
-            width: 325px !important;
-          }
-    
           .u-row .u-col-100 {
-            width: 650px !important;
+            width: 500px !important;
           }
     
         }
     
-        @media (max-width: 670px) {
+        @media (max-width: 520px) {
           .u-row-container {
             max-width: 100% !important;
             padding-left: 0px !important;
@@ -115,10 +105,6 @@ const fillTemplate = (data) => {
           border-collapse: collapse;
         }
     
-        p {
-          margin: 0;
-        }
-    
         .ie-container table,
         .mso-container table {
           table-layout: fixed;
@@ -139,389 +125,253 @@ const fillTemplate = (data) => {
         }
     
         #u_body a {
-          color: #0000ee;
+          color: #169179;
           text-decoration: underline;
         }
     
         @media (max-width: 480px) {
-          #u_content_heading_3 .v-font-size {
-            font-size: 24px !important;
-          }
-    
-          #u_content_heading_4 .v-font-size {
-            font-size: 20px !important;
-          }
-    
-          #u_content_text_4 .v-font-size {
-            font-size: 16px !important;
-          }
-    
-          #u_content_text_4 .v-line-height {
-            line-height: 130% !important;
-          }
-    
-          #u_content_button_3 .v-size-width {
-            width: 58% !important;
-          }
-    
-          #u_content_button_3 .v-font-size {
-            font-size: 14px !important;
-          }
-    
-          #u_content_button_3 .v-line-height {
-            line-height: 120% !important;
-          }
-    
-          #u_content_button_3 .v-padding {
-            padding: 12px 20px !important;
-          }
-    
-          #u_content_button_9 .v-container-padding-padding {
-            padding: 10px !important;
-          }
-    
-          #u_content_button_9 .v-text-align {
-            text-align: center !important;
-          }
-    
-          #u_content_button_10 .v-container-padding-padding {
-            padding: 10px !important;
-          }
-    
-          #u_content_button_10 .v-text-align {
-            text-align: center !important;
+          #u_content_heading_1 .v-font-size {
+            font-size: 22px !important;
           }
         }
       </style>
     
     
     
-      <!--[if !mso]><!-->
       <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" type="text/css">
-      <!--<![endif]-->
     
     </head>
     
     <body class="clean-body u_body"
       style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: transparent;color: #000000">
-      
-      <span class="preheader">${options?.preheader}</span>
+    
+          <span class="preheader">${options?.preheader}</span>
       <table id="u_body"
         style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: transparent;width:100%"
         cellpadding="0" cellspacing="0">
         <tbody>
           <tr style="vertical-align: top">
             <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
-              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: transparent;"><![endif]-->
     
     
     
               <div class="u-row-container" style="padding: 0px;background-color: transparent">
                 <div class="u-row"
-                  style="margin: 0 auto;min-width: 320px;max-width: 650px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+                  style="margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
                   <div
                     style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
-                    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:650px;"><tr style="background-color: transparent;"><![endif]-->
     
-                    <!--[if (mso)|(IE)]><td align="center" width="650" style="background-color: #f0ebe3;width: 650px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
                     <div class="u-col u-col-100"
-                      style="max-width: 320px;min-width: 650px;display: table-cell;vertical-align: top;">
-                      <div style="background-color: #f0ebe3;height: 100%;width: 100% !important;">
-                        <!--[if (!mso)&(!IE)]><!-->
+                      style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
+                      <div
+                        style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                        <div
+                          style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+    
+                          <table id="u_content_heading_1" style="font-family:'Rubik',sans-serif;" role="presentation"
+                            cellpadding="0" cellspacing="0" width="100%" border="0">
+                            <tbody>
+                              <tr>
+                                <td
+                                  style="overflow-wrap:break-word;word-break:break-word;padding:20px 10px 0px;font-family:'Rubik',sans-serif;"
+                                  align="left">
+    
+                                  <h1 class="v-font-size"
+                                    style="margin: 0px; color: #29a587; line-height: 140%; text-align: center; word-wrap: break-word; font-family: 'Rubik',sans-serif; font-size: 30px; font-weight: 700;">
+                                    <strong> Halu ${options?.greetings}!</strong>
+                                  </h1>
+    
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+    
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+    
+    
+    
+    
+              <div class="u-row-container" style="padding: 0px;background-color: transparent">
+                <div class="u-row"
+                  style="margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+                  <div
+                    style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+    
+                    <div class="u-col u-col-100"
+                      style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
+                      <div style="height: 100%;width: 100% !important;">
                         <div
                           style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;">
-                          <!--<![endif]-->
-    
-                          <table id="u_content_heading_3" style="font-family:'Rubik',sans-serif;" role="presentation"
-                            cellpadding="0" cellspacing="0" width="100%" border="0">
-                            <tbody>
-                              <tr>
-                                <td class="v-container-padding-padding"
-                                  style="overflow-wrap:break-word;word-break:break-word;padding:32px 10px 0px;font-family:'Rubik',sans-serif;"
-                                  align="left">
-    
-                                  <h1 class="v-text-align v-line-height v-font-size"
-                                    style="margin: 0px; color: #29a587; line-height: 140%; text-align: center; word-wrap: break-word; font-family: 'Montserrat',sans-serif; font-size: 33px; font-weight: 700;">
-                                    Halu ${options?.greetings}!</h1>
-    
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-    
-                          <table id="u_content_heading_4" style="font-family:'Rubik',sans-serif;" role="presentation"
-                            cellpadding="0" cellspacing="0" width="100%" border="0">
-                            <tbody>
-                              <tr>
-                                <td class="v-container-padding-padding"
-                                  style="overflow-wrap:break-word;word-break:break-word;padding:20px;font-family:'Rubik',sans-serif;"
-                                  align="left">
-    
-                                  <h2 class="v-text-align v-line-height v-font-size"
-                                    style="margin: 0px; color: #00000; line-height: 100%; text-align: center; word-wrap: break-word; font-family: 'Rubik', sans-serif; font-size: 25px; font-weight: 700;">
-                                    Thanks for getting in touch!</h2>
-    
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-    
-                          <!--[if (!mso)&(!IE)]><!-->
-                        </div><!--<![endif]-->
-                      </div>
-                    </div>
-                    <!--[if (mso)|(IE)]></td><![endif]-->
-                    <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
-                  </div>
-                </div>
-              </div>
-    
-    
-    
-    
-    
-              <div class="u-row-container" style="padding: 0px;background-color: transparent">
-                <div class="u-row"
-                  style="margin: 0 auto;min-width: 320px;max-width: 650px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
-                  <div
-                    style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
-                    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:650px;"><tr style="background-color: transparent;"><![endif]-->
-    
-                    <!--[if (mso)|(IE)]><td align="center" width="650" style="background-color: #f0ebe3;width: 650px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                    <div class="u-col u-col-100"
-                      style="max-width: 320px;min-width: 650px;display: table-cell;vertical-align: top;">
-                      <div
-                        style="background-color: #f0ebe3;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                        <!--[if (!mso)&(!IE)]><!-->
-                        <div
-                          style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                          <!--<![endif]-->
-    
-                          <table id="u_content_text_4" style="font-family:'Rubik',sans-serif;" role="presentation"
-                            cellpadding="0" cellspacing="0" width="100%" border="0">
-                            <tbody>
-                              <tr>
-                                <td class="v-container-padding-padding"
-                                  style="overflow-wrap:break-word;word-break:break-word;padding:25px 20px 5px;font-family:'Rubik',sans-serif;"
-                                  align="left">
-    
-                                  <div class="v-text-align v-line-height v-font-size"
-                                    style="font-size: 17px; line-height: 140%; text-align: center; word-wrap: break-word;">
-                                    <p style="line-height: 130%;">I'll be sure to review your request and get back to you
-                                      asap!</p>
-                                      <p style="line-height: 130%;">
-                                      In the meantime, feel free to connect with me on
-                                      <a href="https://www.linkedin.com/in/trishasairenereal/" style="text-decoration: underline; line-height: 15.6px; color: #29a587;">
-                                        <strong>LinkedIn</strong>
-                                      </a>
-                                      for further updates. Have a wonderful day and best regards!
-                                    </p>
-                                  </div>
-    
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-    
-                          <table id="u_content_button_3" style="font-family:'Rubik',sans-serif;" role="presentation"
-                            cellpadding="0" cellspacing="0" width="100%" border="0">
-                            <tbody>
-                              <tr>
-                                <td class="v-container-padding-padding"
-                                  style="overflow-wrap:break-word;word-break:break-word;padding:30px 20px 40px;font-family:'Rubik',sans-serif;"
-                                  align="left">
-    
-                                  <!--[if mso]><style>.v-button {background: transparent !important;}</style><![endif]-->
-                                  <div class="v-text-align" align="center">
-                                    <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="unla" style="height:42px; v-text-anchor:middle; width:207px;" arcsize="59.5%"  stroke="f" fillcolor="#29a587"><w:anchorlock/><center style="color:#FFFFFF;font-family: 'Rubik',sans-serif; "><![endif]-->
-                                    <a href="https://www.linkedin.com/in/trishasairenereal/" target="_blank" class="v-button v-size-width v-font-size"
-                                      style="box-sizing: border-box;display: inline-block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #FFFFFF; background-color: #29a587; border-radius: 25px;-webkit-border-radius: 25px; -moz-border-radius: 25px; width:34%; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;border-top-width: 0px; border-top-style: solid; border-left-width: 0px; border-left-style: solid; border-right-width: 0px; border-right-style: solid; border-bottom-width: 0px; border-bottom-style: solid;font-family: 'Rubik',sans-serif; font-size: 15px;font-weight: 700; ">
-                                      <span class="v-line-height v-padding"
-                                        style="display:block;padding:12px 20px;line-height:120%;"><span
-                                          style="line-height: 16.8px;">Visit my LinkedIn</span></span>
-                                    </a>
-                                    <!--[if mso]></center></v:roundrect><![endif]-->
-                                  </div>
-    
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-    
-                          <!--[if (!mso)&(!IE)]><!-->
-                        </div><!--<![endif]-->
-                      </div>
-                    </div>
-                    <!--[if (mso)|(IE)]></td><![endif]-->
-                    <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
-                  </div>
-                </div>
-              </div>
-    
-    
-    
-    
-    
-              <div class="u-row-container" style="padding: 0px;background-color: transparent">
-                <div class="u-row"
-                  style="margin: 0 auto;min-width: 320px;max-width: 650px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
-                  <div
-                    style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
-                    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:650px;"><tr style="background-color: transparent;"><![endif]-->
-    
-                    <!--[if (mso)|(IE)]><td align="center" width="325" style="background-color: #29a587;width: 325px;padding: 10px 0px 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                    <div class="u-col u-col-50"
-                      style="max-width: 320px;min-width: 325px;display: table-cell;vertical-align: top;">
-                      <div
-                        style="background-color: #29a587;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                        <!--[if (!mso)&(!IE)]><!-->
-                        <div
-                          style="box-sizing: border-box; height: 100%; padding: 10px 0px 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                          <!--<![endif]-->
-    
-                          <table id="u_content_button_9" style="font-family:'Rubik',sans-serif;" role="presentation"
-                            cellpadding="0" cellspacing="0" width="100%" border="0">
-                            <tbody>
-                              <tr>
-                                <td class="v-container-padding-padding"
-                                  style="overflow-wrap:break-word;word-break:break-word;padding:10px 25px 10px 10px;font-family:'Rubik',sans-serif;"
-                                  align="left">
-    
-                                  <!--[if mso]><style>.v-button {background: transparent !important;}</style><![endif]-->
-                                  <div class="v-text-align" align="right">
-                                    <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://github.com/TrishaReal" style="height:31px; v-text-anchor:middle; width:90px;" arcsize="64.5%"  strokecolor="#ffffff" strokeweight="1px" fillcolor="#29a587"><w:anchorlock/><center style="color:#FFFFFF;font-family: 'Rubik',sans-serif; "><![endif]-->
-                                    <a href="https://github.com/TrishaReal" target="_blank"
-                                      class="v-button v-size-width v-font-size"
-                                      style="box-sizing: border-box;display: inline-block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #FFFFFF; background-color: #29a587; border-radius: 20px;-webkit-border-radius: 20px; -moz-border-radius: 20px; width:auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;border-top-width: 1px; border-top-style: solid; border-top-color: #ffffff; border-left-width: 1px; border-left-style: solid; border-left-color: #ffffff; border-right-width: 1px; border-right-style: solid; border-right-color: #ffffff; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #ffffff;font-family: 'Rubik',sans-serif; font-size: 16px;">
-                                      <span class="v-line-height v-padding"
-                                        style="display:block;padding:6px 20px;line-height:120%;"><span
-                                          style="line-height: 19.2px;">Github</span></span>
-                                    </a>
-                                    <!--[if mso]></center></v:roundrect><![endif]-->
-                                  </div>
-    
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-    
-                          <!--[if (!mso)&(!IE)]><!-->
-                        </div><!--<![endif]-->
-                      </div>
-                    </div>
-                    <!--[if (mso)|(IE)]></td><![endif]-->
-                    <!--[if (mso)|(IE)]><td align="center" width="325" style="background-color: #29a587;width: 325px;padding: 10px 0px 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                    <div class="u-col u-col-50"
-                      style="max-width: 320px;min-width: 325px;display: table-cell;vertical-align: top;">
-                      <div
-                        style="background-color: #29a587;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                        <!--[if (!mso)&(!IE)]><!-->
-                        <div
-                          style="box-sizing: border-box; height: 100%; padding: 10px 0px 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                          <!--<![endif]-->
-    
-                          <table id="u_content_button_10" style="font-family:'Rubik',sans-serif;" role="presentation"
-                            cellpadding="0" cellspacing="0" width="100%" border="0">
-                            <tbody>
-                              <tr>
-                                <td class="v-container-padding-padding"
-                                  style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 10px 25px;font-family:'Rubik',sans-serif;"
-                                  align="left">
-    
-                                  <!--[if mso]><style>.v-button {background: transparent !important;}</style><![endif]-->
-                                  <div class="v-text-align" align="left">
-                                    <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.behance.net/trishasairenereal" style="height:31px; v-text-anchor:middle; width:106px;" arcsize="64.5%"  strokecolor="#ffffff" strokeweight="1px" fillcolor="#29a587"><w:anchorlock/><center style="color:#ffffff;font-family: 'Rubik',sans-serif; "><![endif]-->
-                                    <a href="https://www.behance.net/trishasairenereal" target="_blank"
-                                      class="v-button v-size-width v-font-size"
-                                      style="box-sizing: border-box;display: inline-block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #ffffff; background-color: #29a587; border-radius: 20px;-webkit-border-radius: 20px; -moz-border-radius: 20px; width:auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;border-top-width: 1px; border-top-style: solid; border-top-color: #ffffff; border-left-width: 1px; border-left-style: solid; border-left-color: #ffffff; border-right-width: 1px; border-right-style: solid; border-right-color: #ffffff; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #ffffff;font-family: 'Rubik',sans-serif; font-size: 16px;">
-                                      <span class="v-line-height v-padding"
-                                        style="display:block;padding:6px 20px;line-height:120%;"><span
-                                          style="line-height: 19.2px;">Behance</span></span>
-                                    </a>
-                                    <!--[if mso]></center></v:roundrect><![endif]-->
-                                  </div>
-    
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-    
-                          <!--[if (!mso)&(!IE)]><!-->
-                        </div><!--<![endif]-->
-                      </div>
-                    </div>
-                    <!--[if (mso)|(IE)]></td><![endif]-->
-                    <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
-                  </div>
-                </div>
-              </div>
-    
-    
-    
-    
-    
-              <div class="u-row-container" style="padding: 0px;background-color: transparent">
-                <div class="u-row"
-                  style="margin: 0 auto;min-width: 320px;max-width: 650px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
-                  <div
-                    style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
-                    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:650px;"><tr style="background-color: transparent;"><![endif]-->
-    
-                    <!--[if (mso)|(IE)]><td align="center" width="650" style="background-color: #29a587;width: 650px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                    <div class="u-col u-col-100"
-                      style="max-width: 320px;min-width: 650px;display: table-cell;vertical-align: top;">
-                      <div
-                        style="background-color: #29a587;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                        <!--[if (!mso)&(!IE)]><!-->
-                        <div
-                          style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                          <!--<![endif]-->
     
                           <table style="font-family:'Rubik',sans-serif;" role="presentation" cellpadding="0" cellspacing="0"
                             width="100%" border="0">
                             <tbody>
                               <tr>
-                                <td class="v-container-padding-padding"
-                                  style="overflow-wrap:break-word;word-break:break-word;padding:35px 10px;font-family:'Rubik',sans-serif;"
+                                <td
+                                  style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Rubik',sans-serif;"
                                   align="left">
     
-                                  <div class="v-text-align v-line-height v-font-size"
-                                    style="font-size: 14px; color: #ffffff; line-height: 140%; text-align: center; word-wrap: break-word;">
-                                    <p style="line-height: 140%;">© 2023, Offer by <span
-                                        style="color: #ffffff; line-height: 19.6px;"><a rel="noopener"
-                                          href="https://www.trishareal.com/" target="_blank" style="color: #ffffff;"><span
-                                            style="text-decoration: underline; line-height: 19.6px;"><strong>trishareal.com</strong></span></a></span>
-                                    </p>
-                                  </div>
+                                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                      <td style="padding-right: 0px;padding-left: 0px;" align="center">
     
+                                        <img align="center" border="0" src="./images/image-4.png" alt="" title=""
+                                          style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 480px;"
+                                          width="480" />
+    
+                                      </td>
+                                    </tr>
+                                  </table>
                                 </td>
                               </tr>
                             </tbody>
                           </table>
-    
-                          <!--[if (!mso)&(!IE)]><!-->
-                        </div><!--<![endif]-->
+                        </div>
                       </div>
                     </div>
-                    <!--[if (mso)|(IE)]></td><![endif]-->
-                    <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
                   </div>
                 </div>
               </div>
     
     
+              <div class="u-row-container" style="padding: 0px;background-color: transparent">
+                <div class="u-row"
+                  style="margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+                  <div
+                    style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
     
-              <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <!--[if mso]></div><![endif]-->
-      <!--[if IE]></div><![endif]-->
-    </body>
+                    <div class="u-col u-col-100"
+                      style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
+                      <div
+                        style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                        <div
+                          style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                          <table style="font-family:'Rubik',sans-serif;" role="presentation" cellpadding="0" cellspacing="0"
+                            width="100%" border="0">
+                            <tbody>
+                              <tr>
+                                <td
+                                  style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Rubik',sans-serif;"
+                                  align="left">
     
-    </html>
+                                  <div align="center">
+                                    <div style="display: table; max-width:152px;">
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32"
+                                        style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 19px">
+                                        <tbody>
+                                          <tr style="vertical-align: top">
+                                            <td align="left" valign="middle"
+                                              style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+                                              <a href="https://www.linkedin.com/in/trishasairenereal/" title="LinkedIn"
+                                                target="_blank">
+                                                <img src="" alt="LinkedIn" title="LinkedIn" width="32"
+                                                  style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+    
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32"
+                                        style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 19px">
+                                        <tbody>
+                                          <tr style="vertical-align: top">
+                                            <td align="left" valign="middle"
+                                              style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+                                              <a href="https://github.com/TrishaReal" title="GitHub" target="_blank">
+                                                <img src="./images/image-3.png" alt="GitHub" title="GitHub" width="32"
+                                                  style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32"
+                                      style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 0px">
+                                      <tbody>
+                                        <tr style="vertical-align: top">
+                                          <td align="left" valign="middle"
+                                            style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+                                            <a href="https://www.behance.net/trishasairenereal" title="Behance"
+                                              target="_blank">
+                                              <img src="images/image-2.png" alt="Behance" title="Behance" width="32"
+                                                style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+  
+  
+                                  </div>
+                                </div>
+  
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="u-row-container" style="padding: 0px;background-color: transparent">
+                <div class="u-row"
+                  style="margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+                  <div
+                    style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+  
+                    <div class="u-col u-col-100"
+                      style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
+                      <div
+                        style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+  
+                        <table style="font-family:'Rubik',sans-serif;" role="presentation" cellpadding="0" cellspacing="0"
+                          width="100%" border="0">
+                          <tbody>
+                            <tr>
+                              <td
+                                style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Rubik',sans-serif;"
+                                align="left">
+  
+                                <div class="v-font-size"
+                                  style="font-size: 16px; line-height: 140%; text-align: center; word-wrap: break-word;">
+                                  <p style="line-height: 140%;">© 2023, Offer by  <a rel="noopener"
+                                      href="https://www.trishareal.com/" target="_blank">trishareal.com</a></p>
+                                </div>
+  
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+  
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+  
+  
+  
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+  </body>
+  
+  </html>
           `;
 
     case 'summary':
