@@ -93,7 +93,7 @@ const Hero = () => {
                     target="_blank"
                     rel="nofollow"
                     href="https://www.linkedin.com/in/trishasairenereal/">
-                    <i aria-hidden="true" className="fab fa-linkedin-in"></i>
+                    <i aria-hidden="true" className="fab fa-linkedin"></i>
                   </a>
                   <a
                     target="_blank"

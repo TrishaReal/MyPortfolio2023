@@ -7,9 +7,17 @@ const Footer = ({ socialLinks }) => {
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
               <div
-                className="social-links align-center  scrolla-element-anim-1 scroll-animate"
-                data-animate="active">
+                className="social-links align-center ">
+                <a
+                  className="copyright-text downloadCv-footer"
+                  target="_blank"
+                  href="/assets/CV_TrishaS.Real.pdf"
+                  download="CV_TrishaSReal.pdf">
+                  <span>Download CV</span>
+                </a>
+
                 {socialLinks?.map((link, index) => (
                   <a
                     key={index}
@@ -26,9 +34,7 @@ const Footer = ({ socialLinks }) => {
               </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <div
-                className="copyright-text align-center scrolla-element-anim-1 scroll-animate footer-text"
-                data-animate="active">
+              <div className="copyright-text align-center  footer-text">
                 © 2023 Copyright. All rights reserved.
               </div>
             </div>

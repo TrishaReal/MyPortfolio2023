@@ -40,14 +40,14 @@ const Portfolio = () => {
       category: "Web Development (React Js)",
       description: "App where I got to use popular frontend libraries, with a special emphasis on Redux. Other libraries included Styled-system, Formik, and Yup.",
     },
-    {
-      title: "Nice Cream",
-      imgSrc: "/assets/images/web-niceCream.png",
-      demoLink: "https://ice-cream-menu-site.netlify.app/",
-      githubLink: "https://github.com/TrishaReal/IceCreamMenuSite",
-      category: "Web Development (React JS)",
-      description: "Creating a categorized ice cream menu for easier filtering and selection.",
-    },
+    // {
+    //   title: "Nice Cream",
+    //   imgSrc: "/assets/images/web-niceCream.png",
+    //   demoLink: "https://ice-cream-menu-site.netlify.app/",
+    //   githubLink: "https://github.com/TrishaReal/IceCreamMenuSite",
+    //   category: "Web Development (React JS)",
+    //   description: "Creating a categorized ice cream menu for easier filtering and selection.",
+    // },
     {
       title: "Wiki Drink",
       imgSrc: "/assets/images/web-wikidrink.png",
