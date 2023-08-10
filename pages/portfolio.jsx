@@ -13,6 +13,13 @@ const Portfolio = () => {
       description: "The multimedia collection of the Autonomous Region of Sardinia. One of my first projects carried out with the React JS team of Softfobia s.r.l and C22.",
     },
     {
+      title: "My Gaxa",
+      imgSrc: "/assets/images/web-myGaxa.png",
+      demoLink: "https://mygaxa.gaxaenergia.it/",
+      category: "Web Development (React Js)",
+      description: "This summer of 2023, I had the pleasure of working as a member of the React JS team at Softfobia S.r.l. on the My Gaxa portal:  the customer area of Gaxa, a utility company founded in Sardinia that provides electricity and gas services. The entire website was built using pure React, showcasing its capabilities.",
+    },
+    {
       title: "Regione Autonoma della Sardegna",
       imgSrc: "/assets/images/web-Ras.png",
       demoLink: "https://www.regione.sardegna.it/",
@@ -103,7 +110,7 @@ const Portfolio = () => {
       behanceLink: "https://www.behance.net/gallery/139231125/Areila-Azienda-Agricola-%28Brand-Identity%29",
       imgSrc: "/assets/images/graphic-areilà.jpg",
       category: "Brand Identity and Marketing",
-      description: "End-of-year team project. We collaborated to create a logo and brand identity for a Sardinian agricultural industry. We interacted with the client to gather information and study the industry's image, which guided us in conceptualizing the brand.",
+      description: "End-of-year team project in collaboration with Accademia d'Arte di Cagliari. We collaborated to create a logo and brand identity for a Sardinian agricultural industry. We interacted with the client to gather information and study the industry's image, which guided us in conceptualizing the brand.",
     },
     {
       title: "La Vie Est Belle",
