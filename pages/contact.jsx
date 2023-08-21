@@ -66,7 +66,7 @@ const Contact = () => {
       type: "greetings",
       subject: "Thanks for getting in touch!",
       preheader: "Thanks for getting in touch!",
-      greetings: `dear <strong>${fullName}</strong>`,
+      greetings: `dear  <strong>${fullName}</strong>`,
       img: `${imgGithub}`,
       message:
         "Thank you for contacting me! <br> I'll review your request and get back to you asap. <br> In the meantime, please follow me on <b>LinkedIn</b> for further updates. <br> <br>Have a great day and best regards, <br> Trisha.  ",

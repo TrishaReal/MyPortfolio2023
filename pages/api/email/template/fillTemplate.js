@@ -24,7 +24,7 @@ const fillTemplate = (data) => {
     footer: {
       name: '© 2023, Offerta da',
       href: 'https://www.trishareal.com/',
-      message: 'trishasairenereal.vercel.app',
+      message: 'www.trishareal.com',
       active: true,
     },
   };
@@ -572,7 +572,7 @@ const fillTemplate = (data) => {
     
                                 <div class="v-line-height v-font-size"
                                   style="font-size: 15.5px; line-height: 140%; text-align: center; word-wrap: break-word;">
-                                  <p style="line-height: 140%;">${options?.subject}</p>
+                                  <strong> <p style="line-height: 140%;">${options?.subject}</p></strong>
                                   <p style="line-height: 140%;">${options?.message}</p>
                                 </div>
     

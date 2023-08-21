@@ -17,9 +17,9 @@ const Header = ({ socialLinks }) => {
   const colors = [
     { code: "#29a587", nameColor: "Green" },
     { code: "#FDD692", nameColor: "Yellow" },
-    { code: "#E88726", nameColor: "Orange" },
+    { code: "#FF8B5C", nameColor: "Orange" },
     { code: "#DA5268", nameColor: "Red" },
-    { code: "#C0007A", nameColor: "Magenta" },
+    // { code: "#C0007A", nameColor: "Magenta" },
     { code: "#9886B9", nameColor: "Purple" },
     { code: "#799FCC", nameColor: "Light Blue" },
   ];
