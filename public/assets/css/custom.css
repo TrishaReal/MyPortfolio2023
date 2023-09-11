@@ -226,6 +226,32 @@ body.light-skin .terms-label {
   overflow: hidden !important;
 }
 
+@media screen and (max-width: 385.99px) {
+  .header .logo img {
+    width: 90px;
+    height: auto;
+  }
+
+  .header .color-switcher-btn,
+  .header .switcher-btn,
+  .header .menu-btn {
+    margin: 0 10px !important;
+  }
+
+  .header .color-switcher-btn img {
+    width: 24px !important;
+  }
+
+  .header .switcher-btn svg {
+    width: 21px !important;
+  }
+
+
+
+
+}
+
+
 @media (min-width: 375px) and (max-width: 400px) {
   .menu-full-container {
     padding-left: 80px !important;
@@ -351,13 +377,35 @@ body.light-skin .terms-label {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #started-section .section.hero-started .slide {
-    transform: scale(0.7) !important;
+    transform: scale(0.7);
   }
 
   .lui-section-hero div.description {
     padding-top: 0 !important;
   }
 
+}
+
+@media (max-width: 385.99px) {
+  #started-section .section.hero-started .slide {
+    transform: scale(0.5);
+  }
+
+  .section.hero-started .info-list {
+    transform: scale(1.2);
+  }
+
+  .section.hero-started .info-list ul {
+    left: 30px !important;
+  }
+
+  .section.hero-started .info-list ul li:nth-child(1) {
+    margin: 160px 0 0 177px !important
+  }
+
+  .section.hero-started .info-list ul li:nth-child(2) {
+    margin: -30px 0 0 476px !important;
+  }
 }
 
 /* SKILLS */
