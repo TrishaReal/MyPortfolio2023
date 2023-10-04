@@ -42,7 +42,7 @@ const Resume = () => {
       ),
     },
     {
-      title: "Graphic & Web Deisgn",
+      title: "Graphic & Web Design",
       company: "Cagliari Art Academy",
       date: "2019 - 2020",
       description: "Course where I gained comprehensive knowledge in creating brands, brand identities, web and print graphics, digital editing, and compositions. The course covered various professional software widely used in the market, including Adobe Photoshop, Adobe Illustrator, Adobe InDesign, and more.",
