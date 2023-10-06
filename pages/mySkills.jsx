@@ -23,9 +23,19 @@ const MySkills = () => {
   // Define skills data
   const skills = [
     {
-      name: "Html & Css",
+      name: "Html5",
       width: "80%",
       value: 80,
+    },
+    {
+      name: "Css/Css3",
+      width: "80%",
+      value: 80,
+    },
+    {
+      name: "Bootstrap",
+      width: "70%",
+      value: 70,
     },
     {
       name: "JavaScript",
@@ -53,17 +63,12 @@ const MySkills = () => {
       value: 60,
     },
     {
-      name: "Bootstrap",
-      width: "70%",
-      value: 70,
-    },
-    {
-      name: "Photoshop",
+      name: "Adobe Photoshop",
       width: "80%",
       value: 80,
     },
     {
-      name: "Illustrator",
+      name: "Adobe Illustrator",
       width: "70%",
       value: 70,
     },
