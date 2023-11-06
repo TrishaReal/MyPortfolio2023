@@ -6,10 +6,8 @@ const Footer = ({ socialLinks }) => {
       <div className="footer__builder">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-
-              <div
-                className="social-links align-center ">
+            <div className="col-12 col-md-6">
+              <div className="download-cv text-center">
                 <a
                   className="copyright-text downloadCv-footer"
                   target="_blank"
@@ -17,7 +15,10 @@ const Footer = ({ socialLinks }) => {
                   download="CV_TrishaSReal.pdf">
                   <span>Download CV</span>
                 </a>
-
+              </div>
+            </div>
+            <div className="col-12 col-md-6">
+              <div className="social-links text-center">
                 {socialLinks?.map((link, index) => (
                   <a
                     key={index}
@@ -25,16 +26,17 @@ const Footer = ({ socialLinks }) => {
                     target="_blank"
                     rel="nofollow"
                     href={link?.url}
-                    social-name={link?.name}>
+                    social-name={link?.name}
+                  >
                     <i aria-hidden="true" className={`fab fa-${link?.icon}`}></i>
                   </a>
                 ))}
-
-
               </div>
             </div>
-            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <div className="copyright-text align-center  footer-text">
+          </div>
+          <div className="row">
+            <div className="col-12">
+              <div className="copyright-text text-center footer-text">
                 © 2023 Copyright. All rights reserved.
               </div>
             </div>
