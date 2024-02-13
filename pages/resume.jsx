@@ -52,8 +52,15 @@ const Resume = () => {
   const experienceData = [
     {
       title: "Jr React F.E Developer",
-      company: "Softfobia S.r.l",
-      date: "Mar.2022 - Present",
+      company: "Minsait (An Indra Company)",
+      date: "Jan.2024 - Present",
+      description:
+        "",
+    },
+    {
+      title: "Jr React F.E Developer",
+      company: "Softfobia S.r.l (An Indra Company)",
+      date: "Mar.2023 - Jan.2024",
       description:
         "Following the internship at this company, I've had the opportunity to continue working with them, allowing me to further enhance my skills and continue working in the React JS team utilizing the M.E.R.N javascript stack for various projects. In the short time that I've been working here, I've already had the chance to collaborate on projects for clients such as the Sardegna Region, Green Peace, Gaxa etc...",
     },
@@ -64,20 +71,20 @@ const Resume = () => {
       description:
         " I've taken on small commissioned projects such as creating invitations, making menu modifications for pizzerias, designing banners for social media profiles, and more. These freelance jobs have provided me with valuable experience and opportunities to continuously apply and enhance my skills.",
     },
-    {
-      title: "Babysitter",
-      company: "Piras Family",
-      date: "2018 - 2021",
-      description:
-        "After graduating from high school, I worked as a babysitter/personal nanny. This kind of job allowed me to acquire various soft skills, including time management, safety awareness, discipline strategies, stress management, patience, problem-solving and conflict resolution, event planning, communication, and relationship building. These qualities are essential in any work setting.",
-    },
-    {
-      title: "Cashier & Waitress",
-      company: "Eurasia, Cagliari",
-      date: "Summer 2017",
-      description:
-        "Essential in every work sector are also the following skills I have acquired while working as a waitress: customer service orientation, ability to work in a team, kindness and politeness, resilience to fatigue and stress, dynamism and speed, precision and attention to detail, flexibility, reliability, and honesty.",
-    },
+    // {
+    //   title: "Babysitter",
+    //   company: "Piras Family",
+    //   date: "2018 - 2021",
+    //   description:
+    //     "After graduating from high school, I worked as a babysitter/personal nanny. This kind of job allowed me to acquire various soft skills, including time management, safety awareness, discipline strategies, stress management, patience, problem-solving and conflict resolution, event planning, communication, and relationship building. These qualities are essential in any work setting.",
+    // },
+    // {
+    //   title: "Cashier & Waitress",
+    //   company: "Eurasia, Cagliari",
+    //   date: "Summer 2017",
+    //   description:
+    //     "Essential in every work sector are also the following skills I have acquired while working as a waitress: customer service orientation, ability to work in a team, kindness and politeness, resilience to fatigue and stress, dynamism and speed, precision and attention to detail, flexibility, reliability, and honesty.",
+    // },
   ];
 
 

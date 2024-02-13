@@ -24,18 +24,18 @@ const MySkills = () => {
   const skills = [
     {
       name: "Html5",
-      width: "80%",
-      value: 80,
+      width: "90%",
+      value: 90,
     },
     {
       name: "Css/Css3",
-      width: "80%",
-      value: 80,
+      width: "90%",
+      value: 90,
     },
     {
       name: "Bootstrap",
-      width: "70%",
-      value: 70,
+      width: "80%",
+      value: 80,
     },
     {
       name: "JavaScript",
@@ -49,23 +49,13 @@ const MySkills = () => {
     },
     {
       name: "Next.js",
-      width: "45%",
-      value: 45,
-    },
-    {
-      name: "API Calls",
       width: "50%",
       value: 50,
     },
     {
-      name: "Git",
-      width: "60%",
-      value: 60,
-    },
-    {
       name: "Adobe Photoshop",
-      width: "80%",
-      value: 80,
+      width: "70%",
+      value: 70,
     },
     {
       name: "Adobe Illustrator",
