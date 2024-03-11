@@ -2,24 +2,28 @@ import React, { useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 
 const Resume = () => {
-
   const [activeEducationItem, setActiveEducationItem] = useState(0);
   const [activeExperienceItem, setActiveExperienceItem] = useState(0);
 
   const toggleActiveEducationItem = (index) => {
-    setActiveEducationItem((prevActiveItem) => (prevActiveItem === index ? null : index));
+    setActiveEducationItem((prevActiveItem) =>
+      prevActiveItem === index ? null : index
+    );
   };
 
   const toggleActiveExperienceItem = (index) => {
-    setActiveExperienceItem((prevActiveItem) => (prevActiveItem === index ? null : index));
+    setActiveExperienceItem((prevActiveItem) =>
+      prevActiveItem === index ? null : index
+    );
   };
 
   const educationData = [
     {
       title: "Internship Web Development",
-      company: "Softfobia S.r.l (An Indra Company)",
+      company: "Softfobia (An Indra Company)",
       date: "Oct.2022 - Mar.2023",
-      description: "During a 6-month internship, I had the opportunity to revisit, enhance, and solidify my web programming skills, focusing primarily on the JavaScript language with the React Js library. Additionally, I gained experience in utilizing the M.E.R.N stack, which encompasses various JavaScript software tools.",
+      description:
+        "During a 6-month internship, I had the opportunity to revisit, enhance, and solidify my web programming skills, focusing primarily on the JavaScript language with the React Js library. Additionally, I gained experience in utilizing the M.E.R.N stack, which encompasses various JavaScript software tools.",
     },
     {
       title: "React Js and Redux",
@@ -34,10 +38,11 @@ const Resume = () => {
       date: "2020 - 2021",
       description: (
         <>
-          Self-taught study in which I have focused on the main Front-End development languages such as: <br />
+          Self-taught study in which I have focused on the main Front-End
+          development languages such as: <br />
           - HTML5 <br />
-          - CSS/CSS3/SASS: Media Queries, Flexbox, Grid, Animations <br />
-          - JAVASCRIPT: JQuery, Ajax Calls
+          - CSS/CSS3/SASS: Media Queries, Flexbox, Grid, Animations <br />-
+          JAVASCRIPT: JQuery, Ajax Calls
         </>
       ),
     },
@@ -45,7 +50,8 @@ const Resume = () => {
       title: "Graphic & Web Design",
       company: "Cagliari Art Academy",
       date: "2019 - 2020",
-      description: "Course where I gained comprehensive knowledge in creating brands, brand identities, web and print graphics, digital editing, and compositions. The course covered various professional software widely used in the market, including Adobe Photoshop, Adobe Illustrator, Adobe InDesign, and more.",
+      description:
+        "Course where I gained comprehensive knowledge in creating brands, brand identities, web and print graphics, digital editing, and compositions. The course covered various professional software widely used in the market, including Adobe Photoshop, Adobe Illustrator, Adobe InDesign, and more.",
     },
   ];
 
@@ -55,12 +61,12 @@ const Resume = () => {
       company: "Minsait (An Indra Company)",
       date: "Jan.2024 - Present",
       description:
-        "",
+        "In early 2024, I kept on working with Minsait (an Indra company) after the management switch from Softfobia.",
     },
     {
       title: "Jr React F.E Developer",
-      company: "Softfobia S.r.l (An Indra Company)",
-      date: "Mar.2023 - Jan.2024",
+      company: "Softfobia (An Indra Company)",
+      date: "Mar.2023 - Dec.2023",
       description:
         "Following the internship at this company, I've had the opportunity to continue working with them, allowing me to further enhance my skills and continue working in the React JS team utilizing the M.E.R.N javascript stack for various projects. In the short time that I've been working here, I've already had the chance to collaborate on projects for clients such as the Sardegna Region, Green Peace, Gaxa etc...",
     },
@@ -87,7 +93,6 @@ const Resume = () => {
     // },
   ];
 
-
   return (
     <section className="lui-section lui-gradient-top " id="resume-section">
       <div className="lui-heading">
@@ -96,13 +101,15 @@ const Resume = () => {
             <h2
               className="m-title splitting-text-anim-1 scroll-animate"
               data-splitting="words"
-              data-animate="active">
+              data-animate="active"
+            >
               <span> Resume </span>
             </h2>
             <div
               className="m-subtitle splitting-text-anim-1 scroll-animate"
               data-splitting="words"
-              data-animate="active">
+              data-animate="active"
+            >
               <span>
                 my <b>Story</b>
               </span>
@@ -113,26 +120,30 @@ const Resume = () => {
 
       <div className="v-line v-line-right">
         <div className="container">
-
           <div className="row d-flex flex-direction-row">
-
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <Fade direction="right" triggerOnce>
                 <h5
                   className="history-title scrolla-element-anim-1 scroll-animate"
-                  data-animate="active">
+                  data-animate="active"
+                >
                   <span> Education </span>
                 </h5>
                 <div className="history-items">
                   {educationData.map((item, index) => (
                     <div
                       key={index}
-                      className={`history-item lui-collapse-item ${activeEducationItem === index ? "opened" : ""
-                        } scrolla-element-anim-1 scroll-animate`}
+                      className={`history-item lui-collapse-item ${
+                        activeEducationItem === index ? "opened" : ""
+                      } scrolla-element-anim-1 scroll-animate`}
                       data-animate="active"
                       onClick={() => toggleActiveEducationItem(index)}
                     >
-                      <h6 className={`name lui-collapse-btn ${activeEducationItem === index ? "active" : ""}`}>
+                      <h6
+                        className={`name lui-collapse-btn ${
+                          activeEducationItem === index ? "active" : ""
+                        }`}
+                      >
                         <span>{item.title}</span>
                       </h6>
                       <div className="history-content">
@@ -145,6 +156,27 @@ const Resume = () => {
                         <div className="text">
                           <div>
                             <p>{item.description}</p>
+
+                            {item.title === "Graphic & Web Design" && (
+                              <a
+                                target="_blank"
+                                href="/assets/graphicDesignCertificate_TrishaR.pdf"
+                                className="btn-lnk"
+                                download="graphicDesignCertificate_TrishaR.pdf"
+                              >
+                                Download Graphic Design Certificate
+                              </a>
+                            )}
+                            {item.title === "React Js and Redux" && (
+                              <a
+                                target="_blank"
+                                href="/assets/images/UdemyCertificate_TrishaR.jpeg"
+                                className="btn-lnk"
+                                download="UdemyCertificate_TrishaR.jpeg"
+                              >
+                                Download React Redux Certificate
+                              </a>
+                            )}
                           </div>
                         </div>
                       </div>
@@ -153,26 +185,30 @@ const Resume = () => {
                 </div>
               </Fade>
             </div>
-
 
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <Fade direction="left" triggerOnce>
                 <h5
                   className="history-title scrolla-element-anim-1 scroll-animate history-title-custom"
-                  data-animate="active">
+                  data-animate="active"
+                >
                   <span> Experience </span>
                 </h5>
                 <div className="history-items">
-
                   {experienceData.map((item, index) => (
                     <div
                       key={index}
-                      className={`history-item lui-collapse-item ${activeExperienceItem === index ? "opened" : ""
-                        } scrolla-element-anim-1 scroll-animate`}
+                      className={`history-item lui-collapse-item ${
+                        activeExperienceItem === index ? "opened" : ""
+                      } scrolla-element-anim-1 scroll-animate`}
                       data-animate="active"
                       onClick={() => toggleActiveExperienceItem(index)}
                     >
-                      <h6 className={`name lui-collapse-btn ${activeExperienceItem === index ? "active" : ""}`}>
+                      <h6
+                        className={`name lui-collapse-btn ${
+                          activeExperienceItem === index ? "active" : ""
+                        }`}
+                      >
                         <span>{item.title}</span>
                       </h6>
                       <div className="history-content">
@@ -193,10 +229,7 @@ const Resume = () => {
                 </div>
               </Fade>
             </div>
-
           </div>
-
-
 
           <div className="lui-bgtitle">
             <span> History </span>

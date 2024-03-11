@@ -320,14 +320,15 @@ body.light-skin .terms-label {
   font-size: 30px !important;
 }
 
-@media (min-width:1251px) and (max-width: 1403.9px) {
+@media (min-width:1251px)  {
   div.container {
     padding-left: 60px;
     padding-right: 60px;
   }
 
   #started-section .section.hero-started .slide {
-    transform: scale(0.8);
+    left: 600px;
+    transform: scale(0.8) !important;
   }
 }
 
@@ -442,7 +443,7 @@ body.light-skin .terms-label {
   }
 }
 
-@media (min-width: 1251px) {
+/* @media (min-width: 1251px) {
   #resume-section .history-content {
     height: 250px !important;
   }
@@ -482,7 +483,7 @@ body.light-skin .terms-label {
   #resume-section .history-content {
     height: 250px;
   }
-}
+} */
 
 /* CONTACTS */
 .btn-disabled {

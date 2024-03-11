@@ -39,28 +39,28 @@ const MySkills = () => {
     },
     {
       name: "JavaScript",
-      width: "65%",
-      value: 65,
+      width: "75%",
+      value: 75,
     },
     {
       name: "React Js",
-      width: "65%",
-      value: 65,
+      width: "75%",
+      value: 75,
     },
     {
       name: "Next.js",
+      width: "60%",
+      value: 60,
+    },
+    {
+      name: "Adobe Photoshop",
       width: "50%",
       value: 50,
     },
     {
-      name: "Adobe Photoshop",
-      width: "70%",
-      value: 70,
-    },
-    {
       name: "Adobe Illustrator",
-      width: "70%",
-      value: 70,
+      width: "50%",
+      value: 50,
     },
   ];
 
